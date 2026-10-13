@@ -139,6 +139,8 @@ services:
     build:
       context: ../
       dockerfile: docker/Dockerfile.base
+      ssh:
+        - default
       args:
         - ISAACSIM_BASE_IMAGE_ARG=${ISAACSIM_BASE_IMAGE:-nvcr.io/nvidia/isaac-sim}
         - ISAACSIM_VERSION_ARG=${ISAACSIM_VERSION:-6.1.0}

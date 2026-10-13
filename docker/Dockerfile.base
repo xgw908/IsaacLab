@@ -1,4 +1,3 @@
-# syntax=docker/dockerfile:1
 
 # Copyright (c) 2022-2025, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
 # All rights reserved.
@@ -68,12 +67,22 @@ RUN apt-get update && \
     ncurses-term \
     cmake \
     git \
+    openssh-client \
     curl \
     wget \
  && rm -rf /var/lib/apt/lists/*
 
+RUN mkdir -p /root/.ssh && \
+    ssh-keyscan -p 443 ssh.github.com >> /root/.ssh/known_hosts && \
+    chmod 700 /root/.ssh && \
+    chmod 600 /root/.ssh/known_hosts
+
 # Fail if the base image brings Git LFS: scanners flag the Go modules embedded in its binary.
 RUN if command -v git-lfs; then echo "git-lfs must not ship in this image" >&2; exit 1; fi
+
+RUN git config --global \
+    url."ssh://git@ssh.github.com:443/".insteadOf \
+    "https://github.com/"
 
 # Install the Carbonite environment shim that serializes glibc environment
 # access across Kit worker threads. Use /etc/ld.so.preload because Isaac Sim's
@@ -141,6 +150,7 @@ COPY --parents source/*/pyproject.toml ${ISAACLAB_PATH}/
 ARG IMAGE_EXTRAS="--extra sb3 --extra skrl --extra rl-games --extra rsl-rl --extra viser --extra rerun --extra mimic --extra teleop --extra test --extra tetrahedralization --extra ov"
 
 RUN --mount=type=cache,target=/root/.cache/uv \
+    --mount=type=ssh \
     cd ${ISAACLAB_PATH} && \
     uv sync --frozen --inexact ${IMAGE_EXTRAS} \
       --no-install-workspace --no-install-package imageio-ffmpeg && \
@@ -162,6 +172,7 @@ RUN uv run --project ${ISAACLAB_PATH} --no-sync python ${ISAACLAB_PATH}/tools/in
 # FFmpeg binary stays out of the distributed image; users who enable video recording install
 # MoviePy and its video backend explicitly.
 RUN --mount=type=cache,target=/root/.cache/uv \
+    --mount=type=ssh \
     cd ${ISAACLAB_PATH} && \
     uv sync --frozen --inexact ${IMAGE_EXTRAS} \
       --no-install-package imageio-ffmpeg && \
