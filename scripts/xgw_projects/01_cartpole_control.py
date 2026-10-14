@@ -120,9 +120,9 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
 
         # Feedback gains
         k_theta = 80.0
-        k_theta_d = 0
-        k_x = 2.0
-        k_x_d = 0
+        k_theta_d = 0.0
+        k_x = 0.0
+        k_x_d = 0.0
 
         # Compute cart force
         force = (
