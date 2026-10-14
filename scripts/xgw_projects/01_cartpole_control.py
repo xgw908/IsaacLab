@@ -80,7 +80,9 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
     # Simulation loop
     while sim.is_running():
         # Reset
-        if count == 0:
+        if count % 2000 == 0:
+            # reset counter
+            count = 0
             # reset the scene entities
             # root state
             # we offset the root state by the origin since the states are written in simulation world frame
@@ -117,10 +119,10 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
         pole_vel = joint_vel[:, 1]
 
         # Feedback gains
-        k_theta = 80.0
-        k_theta_d = 12.0
-        k_x = 2.0
-        k_x_d = 4.0
+        k_theta = 40.0
+        k_theta_d = 0
+        k_x = -2.0
+        k_x_d = 0
 
         # Compute cart force
         force = (
@@ -144,7 +146,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
         # Perform step
         sim.step()
         # Increment counter
-        count = 1
+        count += 1
         # Update buffers
         robot.update(sim_dt)
 
