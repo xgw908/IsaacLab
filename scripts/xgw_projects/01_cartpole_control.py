@@ -119,9 +119,9 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
         pole_vel = joint_vel[:, 1]
 
         # Feedback gains
-        k_theta =-150.0
-        k_theta_d = -10.0
-        k_x = 5.0
+        k_theta =-200.0
+        k_theta_d = 0.0
+        k_x = 10.0
         k_x_d = 0.0
 
         # Compute cart force
