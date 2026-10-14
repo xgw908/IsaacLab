@@ -80,9 +80,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
     # Simulation loop
     while sim.is_running():
         # Reset
-        if count % 500 == 0:
-            # reset counter
-            count = 0
+        if count == 0:
             # reset the scene entities
             # root state
             # we offset the root state by the origin since the states are written in simulation world frame
@@ -97,7 +95,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
                 robot.data.default_joint_pos.torch.clone(),
                 robot.data.default_joint_vel.torch.clone(),
             )
-            joint_pos += torch.rand_like(joint_pos) * 0.1
+            joint_pos += torch.rand_like(joint_pos) * 0.01
             robot.write_joint_position_to_sim_index(position=joint_pos)
             robot.write_joint_velocity_to_sim_index(velocity=joint_vel)
             # clear internal buffers
@@ -106,15 +104,38 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
         # Apply random action
         # -- generate random joint efforts
         # efforts = torch.randn_like(robot.data.joint_pos.torch) * 5.0
-        
-        # Apply deterministic action
-        efforts = torch.zeros_like(robot.data.joint_pos.torch)
+        # Read current states
+        joint_pos = robot.data.joint_pos.torch
+        joint_vel = robot.data.joint_vel.torch
 
-        # Apply force to the first joint of every cart-pole
-        if (count // 100) % 2 == 0:
-            efforts[:, 0] = 5.0
-        else:
-            efforts[:, 0] = -5.0
+        # Cart position and velocity
+        cart_pos = joint_pos[:, 0]
+        cart_vel = joint_vel[:, 0]
+
+        # Pole angle and angular velocity
+        pole_angle = joint_pos[:, 1]
+        pole_vel = joint_vel[:, 1]
+
+        # Feedback gains
+        k_theta = 80.0
+        k_theta_d = 12.0
+        k_x = 2.0
+        k_x_d = 4.0
+
+        # Compute cart force
+        force = (
+            k_theta * pole_angle
+            + k_theta_d * pole_vel
+            + k_x * cart_pos
+            + k_x_d * cart_vel
+        )
+
+        # Limit maximum force
+        force = torch.clamp(force, -50.0, 50.0)
+
+        # Only control the cart joint
+        efforts = torch.zeros_like(joint_pos)
+        efforts[:, 0] = force
         
         # -- apply action to the robot
         robot.actuators.target_command.set_effort_index(value=efforts)
@@ -123,7 +144,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
         # Perform step
         sim.step()
         # Increment counter
-        count += 1
+        count = 1
         # Update buffers
         robot.update(sim_dt)
 
