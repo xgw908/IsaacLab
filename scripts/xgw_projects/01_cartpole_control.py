@@ -97,7 +97,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
                 robot.data.default_joint_pos.torch.clone(),
                 robot.data.default_joint_vel.torch.clone(),
             )
-            joint_pos += torch.rand_like(joint_pos) * 0.01
+            joint_pos += torch.rand_like(joint_pos) * 0.1
             robot.write_joint_position_to_sim_index(position=joint_pos)
             robot.write_joint_velocity_to_sim_index(velocity=joint_vel)
             # clear internal buffers
@@ -119,8 +119,8 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
         pole_vel = joint_vel[:, 1]
 
         # Feedback gains
-        k_theta = -160.0
-        k_theta_d = 0.0
+        k_theta =-150.0
+        k_theta_d = -150.0
         k_x = 5.0
         k_x_d = 0.0
 
@@ -133,7 +133,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
         )
 
         # Limit maximum force
-        force = torch.clamp(force, -100.0,100.0)
+        force = torch.clamp(force, -50.0, 50.0)
 
         # Only control the cart joint
         efforts = torch.zeros_like(joint_pos)
