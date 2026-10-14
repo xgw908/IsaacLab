@@ -80,7 +80,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
     # Simulation loop
     while sim.is_running():
         # Reset
-        if count % 2000 == 0:
+        if count % 500 == 0:
             # reset counter
             count = 0
             # reset the scene entities
@@ -119,9 +119,9 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
         pole_vel = joint_vel[:, 1]
 
         # Feedback gains
-        k_theta = 40.0
+        k_theta = 80.0
         k_theta_d = 0
-        k_x = -2.0
+        k_x = 2.0
         k_x_d = 0
 
         # Compute cart force
@@ -137,7 +137,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
 
         # Only control the cart joint
         efforts = torch.zeros_like(joint_pos)
-        efforts[:, 0] = force
+        efforts[:, 0] = -force
         
         # -- apply action to the robot
         robot.actuators.target_command.set_effort_index(value=efforts)
