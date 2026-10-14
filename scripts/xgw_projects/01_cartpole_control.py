@@ -137,7 +137,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
 
         # Only control the cart joint
         efforts = torch.zeros_like(joint_pos)
-        efforts[:, 0] = -force
+        efforts[:, 0] = force
         
         # -- apply action to the robot
         robot.actuators.target_command.set_effort_index(value=efforts)
