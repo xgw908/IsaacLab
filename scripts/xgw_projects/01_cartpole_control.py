@@ -119,7 +119,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
         pole_vel = joint_vel[:, 1]
 
         # Feedback gains
-        k_theta =-200.0
+        k_theta = -160.0
         k_theta_d = 0.0
         k_x = 5.0
         k_x_d = 0.0
@@ -133,7 +133,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
         )
 
         # Limit maximum force
-        force = torch.clamp(force, -50.0, 50.0)
+        force = torch.clamp(force, -100.0,100.0)
 
         # Only control the cart joint
         efforts = torch.zeros_like(joint_pos)
