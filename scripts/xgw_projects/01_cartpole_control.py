@@ -80,7 +80,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
     # Simulation loop
     while sim.is_running():
         # Reset
-        if count % 700== 0:
+        if count % 1000 == 0:
             # reset counter
             count = 0
             # reset the scene entities
@@ -119,9 +119,9 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
         pole_vel = joint_vel[:, 1]
 
         # Feedback gains
-        k_theta = -160.0
+        k_theta =-200.0
         k_theta_d = 0.0
-        k_x = 10.0
+        k_x = 5.0
         k_x_d = 0.0
 
         # Compute cart force
