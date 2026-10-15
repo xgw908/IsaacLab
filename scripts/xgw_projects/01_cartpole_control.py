@@ -119,7 +119,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
         pole_vel = joint_vel[:, 1]
 
         # Feedback gains
-        k_theta = -160.0
+        k_theta = -300.0
         k_theta_d = -5.0
         k_x = 0.0
         k_x_d = 0.0
