@@ -120,7 +120,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
 
         # Feedback gains
         k_theta = -600.0
-        k_theta_d = -200.0
+        k_theta_d = -100.0
         k_x = 0.0
         k_x_d = 0.0
 
