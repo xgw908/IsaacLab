@@ -142,7 +142,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
     )
 
         # Limit maximum force
-        force = torch.clamp(force, 100.0,100.0)
+        force = torch.clamp(force, -100.0,100.0)
 
         # Only control the cart joint
         efforts = torch.zeros_like(joint_pos)
