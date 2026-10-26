@@ -1,0 +1,19 @@
+# Large upstream assets stay on disk and are restored by scripts/download_assets.py.
+__pycache__/
+*.py[cod]
+.venv/
+generated_usd/
+# Retain these small inputs despite parent rules for USD and generated files.
+!/assets/official/ur5/generated/*.urdf
+!/assets/official/leap_hand_v1_right/generated/*.urdf
+!/assets/official/leap_hand_v1_right/isaac_lab_reference/**/*.usd
+/assets/official/leap_hand_v1_right/cad/full_assembly_right.stp
+/assets/official/leap_hand_v1_right/cad/right_urdf.zip
+/assets/official/leap_hand_v1_right/isaac_lab_reference/leap_hand_v1_right/configuration/leap_hand_right_base.usd
+/assets/official/leap_hand_v1_right/sim_reference/leap_hand/palm_lower.stl
+/assets/official/leap_hand_v1_right/urdf/website_right/palm_lower.stl
+/assets/references/bodex/ur5_leap/meshes/leap/palm_lower.stl
+/assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower.glb
+/assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower.obj
+/assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower_left.glb
+/assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower_left.obj

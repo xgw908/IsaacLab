@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  video.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  image.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  </style>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Low-Cost, Efficient, and Anthropomorphic Hand for Robot Learning">
+  <meta name="keywords" content="Robot Hand, Dexterous Manipuation, Machine Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:site_name" content="LEAP Hand: Low-Cost, Efficient, and Anthropomorphic Hand for Robot Learning" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="LEAP Hand: Low-Cost, Efficient, and Anthropomorphic Hand for Robot Learning" />
+  <meta property="og:description" content="LEAP Hand: Low-Cost, Efficient, and Anthropomorphic Hand for Robot Learning" />
+  <meta property="og:url" content="http://leaphand.com" />
+  <meta property="og:image" content="http://leaphand.com/static/videos/teaser.png" />
+  <meta property="og:video" content="http://leaphand.com/static/videos/compressed.mp4" />
+
+  <meta property="article:publisher" content="http://leaphand.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leap Hand: Low-Cost, Efficient, and Anthropomorphic Hand for Robot Learning" />
+  <meta name="twitter:url" content="http://leaphand.com/" />
+  <meta name="twitter:image" content="http://leaphand.com/static/figures/teaser.png"/>
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:player" content="" />
+  <meta name="twitter:player:width" content="640" />
+  <meta name="twitter:player:height" content="360" />
+
+
+  <title>LEAP Hand: Low-Cost, Efficient, and Anthropomorphic Hand for Robot Learning</title>
+
+  <link href="./static/css/fonts.googleapis.com_css_family=Google+Sans_Noto+Sans_Castoro.css"
+        rel="stylesheet">
+
+  <script src="./static/js/ajax.googleapis.com_ajax_libs_jquery_3.5.1_jquery.min.js"></script>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/cdn.jsdelivr.net_gh_jpswalsh_academicons@1_css_academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/cdn.jsdelivr.net_npm_bootstrap@5.1.3_dist_css_bootstrap.min.css">
+  <script src="./static/js/isInViewport.min.js"></script>
+  <script src="./static/js/cdn.jsdelivr.net_npm_bootstrap@5.1.3_dist_js_bootstrap.bundle.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <style>
+    .nav-item
+    {
+      font-size: 25px;
+      
+    }
+    .navbar-nav .nav-link {
+      margin-right: 7px;
+      margin-left: 7px;
+    }
+    </style>    
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #BCD5FA;"> 
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Collapsible wrapper -->
+      <div
+        class="navbar-collapse justify-content-center"
+        id="navbarCenteredExample"
+      >
+        <!-- Left links -->
+        <ul class="navbar-nav mb-5 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./" >Main Paper</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./parts" >Parts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./leap_cad">CAD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./assembly" >Assembly</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./purchase" >Purchase</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Software
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://github.com/leap-hand/LEAP_Hand_API" target="_blank">API</a></li>
+              <li><a class="dropdown-item" href="https://github.com/leap-hand/Bidex_Manus_Teleop" target="_blank">Glove</a></li>
+              <li><a class="dropdown-item" href="https://github.com/leap-hand/Bidex_VisionPro_Teleop" target="_blank">Vision Pro</a></li>
+              <li><a class="dropdown-item" href="https://github.com/leap-hand/LEAP_Hand_API/blob/main/useful_tools/mano_to_leap_mapping.py" target="_blank">MANO</a></li>
+              <li><a class="dropdown-item" href="https://github.com/leap-hand/LEAP_Hand_Sim"
+                  target="_blank">Isaac Gym</a></li>
+<li><a class="dropdown-item" href="https://github.com/leap-hand/LEAP_Hand_Isaac_Lab"
+                  target="_blank">Isaac Lab</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="row">
+            <div class="alert alert-primary text-center" role="alert">
+              Thank you for your interest.  Please save this link so you can return later to it directly!
+              <br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col"  style="text-align:center;">
+              <div class="sketchfab-embed-wrapper"> <iframe title="LEAP Full Assembly Left" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="360" src="https://sketchfab.com/models/ede5ab026cd14e0aac2fe6cdf232c072/embed?camera=0"> </iframe> </div>
+              <a href="./static/cad/urdf/leap_left.zip" style="padding-right: 75px; font-weight: bold; color: #1CAAD9;">Download Left URDF</a>
+              <br>
+              <a href="./static/cad/stp/full_assembly_left.step" style="padding-right: 80px; font-weight: bold; color: #1CAAD9;">Download Left STP</a>
+            </div>
+            <div class="col">
+              <div class="sketchfab-embed-wrapper"> <iframe title="LEAP Full Assembly Right" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="360" src="https://sketchfab.com/models/229cba1aae88468aa7ce890306adba92/embed?camera=0"> </iframe> </div>
+                <a href="./static/cad/urdf/leap_right.zip" style="padding-left: 175px; font-weight: bold; color: #1CAAD9;">Download Right URDF</a>
+                <br>
+                <a href="./static/cad/stp/full_assembly_right.step" style="padding-left: 180px; font-weight: bold; color: #1CAAD9;">Download Right STP</a>
+            </div>
+          </div>
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><bold>3D Printed Parts</bold></h3>    <!--Todo Add pan around gif of each object-->        
+          <div class = "row">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <!-- <th data-width="100">Item</th> -->
+                  <th class="col-1">Item</th>
+                  <th class="col-1">Preview</th>
+                  <th class="col-1">Download</th>
+                  <th class="col-1">Quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img style="width:300px;" class="img-fluid" src="./static/part_img/palm_right.JPG" /></td>
+                  <td>
+                    <div class="sketchfab-embed-wrapper"> <iframe title="Palm Lower" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/317e1ff4e80c403393934339573178de/embed?autospin=1&autostart=0&camera=0"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/palm-lower-317e1ff4e80c403393934339573178de?utm_medium=embed&utm_campaign=share-popup&utm_content=317e1ff4e80c403393934339573178de" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"></a></p></div>
+                  </td>
+                  <td><a href="./static/cad/stl/palm_lower.stl">Palm Right STL</a> <br> <a href="./static/cad/stp/palm_lower.stp">Palm Right STP</a>
+                  <br><br>
+                  <a href="./static/cad/stl/palm_lower_left.stl">Palm Left STL</a> <br> <a href="./static/cad/stp/palm_lower_left.stp">Palm Left STP</a></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td><img style="width:300px;" class="img-fluid" src="./static/part_img/cable_spacer.JPG" /></td>
+                  <td>
+                    <div class="sketchfab-embed-wrapper"> <iframe title="Cable Spacer" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/8718cffdf91942a9b49c70199b2cf427/embed?autospin=1&autostart=0&camera=0"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/cable-spacer-8718cffdf91942a9b49c70199b2cf427?utm_medium=embed&utm_campaign=share-popup&utm_content=8718cffdf91942a9b49c70199b2cf427" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"></a></p></div>
+                  </td>
+                  <td><a href="./static/cad/stl/cable_spacer.stl">Cable Spacer STL</a> <br> <br>
+
+                  <a href="./static/cad/stp/cable_spacer.stp">Cable Spacer STP</a>        
+                  </td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td><img style="width:300px;" class="img-fluid" src="./static/part_img/mcp.JPG" /></td>
+                  <td>
+                    <div class="sketchfab-embed-wrapper"> <iframe title="MCP Bracket" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/965579760b8a403391211ac71f6cf661/embed?autospin=1&autostart=0&camera=0"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/mcp-bracket-965579760b8a403391211ac71f6cf661?utm_medium=embed&utm_campaign=share-popup&utm_content=965579760b8a403391211ac71f6cf661" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"></a></p></div>
+                  </td>
+                  <td><a href="./static/cad/stl/mcp_bracket.stl">MCP Bracket STL</a>
+                  <br><br>
+                  <a href="./static/cad/stp/mcp_bracket.stp">MCP Bracket STP</a>
+                  </td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td><img style="width:300px;" class="img-fluid" src="./static/part_img/dip_spacer.JPG" /></td>
+                  <td>
+                    <div class="sketchfab-embed-wrapper"> <iframe title="DIP Spacer" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/2a8d294de51f4bc8b4f9810b4b027d0a/embed?autospin=1&autostart=0&camera=0"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/dip-spacer-2a8d294de51f4bc8b4f9810b4b027d0a?utm_medium=embed&utm_campaign=share-popup&utm_content=2a8d294de51f4bc8b4f9810b4b027d0a" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"></a></p></div>
+                  </td>
+                  <td><a href="./static/cad/stl/dip_spacer.stl">DIP Spacer STL</a>
+                  <br><br>
+                  <a href="./static/cad/stp/dip_spacer.stp">DIP Spacer STP</a>
+                  </td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+          <div class="column is-full-width">
+            <h3 class="title is-4" style="text-align: center;"><bold>Top Plate</bold></h3>  
+            <p class="fs-5" style="text-align: center; padding-bottom: 10px;"> Pick one of these depending on your mounting setup.  Mirror it for the left hand.</p>
+            <div class = "row">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <!-- <th data-width="100">Item</th> -->
+                    <th class="col-1">Item</th>
+                    <th class="col-1">Preview</th>
+                    <th class="col-1">Download</th>
+                    <th class="col-1">Quantity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img style="width:300px;" class="img-fluid" src="./static/part_img/upper_no_holes.JPG" /></td>
+                    <td><div class="sketchfab-embed-wrapper"> <iframe title="Palm Upper No Holes" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/28b1329bf43e47daad2ea33bd7c5dd48/embed?autospin=1&autostart=0&camera=0"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/palm-upper-no-holes-28b1329bf43e47daad2ea33bd7c5dd48?utm_medium=embed&utm_campaign=share-popup&utm_content=28b1329bf43e47daad2ea33bd7c5dd48" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"></a></p></div>
+                    </td>
+                    <td><a href="./static/cad/stl/palm_upper_no_holes.stl">No Holes STL</a> <br><br>
+                      <a href="./static/cad/palm_upper_no_holes.stp">No Holes STP</a> <br><br>    
+                      <a href="./static/cad/palm_upper_no_holes.obj">No Holes OBJ</a>              
+                    </td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td><img style="width:300px;" class="img-fluid" src="./static/part_img/palm_upper_xarm.JPG" /></td>
+                    <td>
+                      <div class="sketchfab-embed-wrapper"> <iframe title="Palm Upper xArm/Franka/UR5" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/1a62a68e5c1a4cae971a01643d9a53ca/embed?autospin=1&autostart=0&camera=0"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/palm-upper-xarmfranka-1a62a68e5c1a4cae971a01643d9a53ca?utm_medium=embed&utm_campaign=share-popup&utm_content=1a62a68e5c1a4cae971a01643d9a53ca" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"></a></p></div>
+                    </td>
+                    <td><a href="./static/cad/stl/palm_upper_xarm_franka.stl">Xarm/Franka/UR5 STL</a>
+                    <br><br>
+                    <a href="./static/cad/stp/palm_upper_xarm_franka.stp">Xarm/Franka/UR5 STP</a>
+                    </td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="column is-full-width">
+            <h3 class="title is-4" style="text-align: center;"><bold>Fingertip</bold></h3>  
+            <p class="fs-5" style="text-align: center; padding-bottom: 10px;"> Pick one set of these depending on your task. <br> Soft material is recommended.  It requires a different CAD using smaller holes for the brass inserts.</p>
+            <div class = "row">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="col-1">Item</th>
+                    <th class="col-1">Preview</th>
+                    <th class="col-1">Download</th>
+                    <th class="col-1">Download (Soft)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img style="width:300px;" class="img-fluid" src="./static/part_img/fingertip_regular.JPG" /></td>
+                    <td>
+                      <div class="sketchfab-embed-wrapper"> <iframe title="Finger Tip" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/2913960bde12451abf001869ebd20424/embed?autospin=1&autostart=0&camera=0"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/finger-tip-2913960bde12451abf001869ebd20424?utm_medium=embed&utm_campaign=share-popup&utm_content=2913960bde12451abf001869ebd20424" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"></a></p></div>
+                    </td>
+                    <td><a href="./static/cad/stl/fingertips/finger_tip.stl">Base Fingertip STL</a>
+                    <br><br>
+                    <a href="./static/cad/stp/fingertips/finger_tip.stp">Base Fingertip STP</a>
+                    </td>
+                    <td><a href="./static/cad/stl/fingertips/finger_tip_soft.stl">Soft Base Fingertip STL</a>
+                    <br><br>
+                    <a href="./static/cad/stp/fingertips/finger_tip_soft.stp">Soft Base Fingertip STP</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img style="width:300px;" class="img-fluid" src="./static/part_img/fingertip_wedge.JPG" /></td>
+                    <td>
+                      <div class="sketchfab-embed-wrapper"> <iframe title="Finger Tip Wedge" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/935236a9cd284ddc8e57ea1b5b8d686e/embed?autospin=1&autostart=0&camera=0"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/finger-tip-wedge-935236a9cd284ddc8e57ea1b5b8d686e?utm_medium=embed&utm_campaign=share-popup&utm_content=935236a9cd284ddc8e57ea1b5b8d686e" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"></a> </p></div>
+                    </td>
+                    <td><a href="./static/cad/stl/fingertips/wedge_finger_tip.stl">Wedge Fingertip STL</a>
+                    <br><br>
+                    <a href="./static/cad/stp/fingertips/wedge_finger_tip.stp">Wedge Fingertip STP</a>
+                    </td>
+                    <td><a href="./static/cad/stl/fingertips/wedge_finger_tip_soft.stl">Soft Wedge Fingertip STL</a>
+                    <br><br>
+                    <a href="./static/cad/stp/fingertips/wedge_finger_tip_soft.stp">Soft Wedge Fingertip STP</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img style="width:300px;" class="img-fluid" src="./static/part_img/fingertip_thin.JPG" /></td>
+                    <td>
+                    <div class="sketchfab-embed-wrapper"> <iframe title="Thinner Finger Tip" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport executionT-while-not-rendered web-share src="https://sketchfab.com/models/7583e90558ac43ddad58e9976ddb736f/embed?autospin=1&autostart=0&camera=0"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/thinner-finger-tip-7583e90558ac43ddad58e9976ddb736f?utm_medium=embed&utm_campaign=share-popup&utm_content=7583e90558ac43ddad58e9976ddb736f" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"></a></p></div>
+                    </td>
+                    <td><a href="./static/cad/stl/fingertips/thinner_finger_tip.stl">Thin Fingertip STL</a>
+                    <br><br>
+                    <a href="./static/cad/stp/fingertips/thinner_finger_tip.stp">Thin Fingertip STP</a>
+                    </td>
+                    <td><a href="./static/cad/stl/fingertips/thinner_finger_tip_soft.stl">Soft Thin Fingertip STL</a>
+                      <br><br>
+                      <a href="./static/cad/stp/fingertips/thinner_finger_tip_soft.stp">Soft Thin Fingertip STP</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img style="width:300px;" class="img-fluid" src="./static/part_img/fingertip_round.JPG" /></td>
+                    <td>
+                      <div class="sketchfab-embed-wrapper"> <iframe title="Round Finger Tip" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/c7fed7004406477ba04e2d7f6f6771f8/embed?autospin=1&camera=0"> </iframe> </div>
+                    </td>
+                    <td><a href="./static/cad/stl/fingertips/round_finger_tip.stl">Round Fingertip STL</a>
+                    <br><br>
+                    <a href="./static/cad/stp/fingertips/round_finger_tip.stp">Round Fingertip STP</a>
+                    </td>
+                    <td><a href="./static/cad/stl/fingertips/round_finger_tip_soft.stl">Soft Round Fingertip STL</a>
+                    <br><br>
+                    <a href="./static/cad/stp/fingertips/round_finger_tip_soft.stp">Soft Round Fingertip STP</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class = "row">
+          <div class="card w-25">
+            <div class="card-body">
+              <h5 class="card-title">Printer:</h5>
+              <p class="card-text">We use Ender 3 S1 Pro. <br> Any deposition-based printer will work, but direct drive such as S1 is required for flexible filament.</p>
+            </div>
+        </div>
+          <div class="card w-25">
+            <div class="card-body">
+              <h5 class="card-title">Software:</h5>
+              <p class="card-text">I recommend <a href="https://ultimaker.com/software/ultimaker-cura/">Cura 5</a>, choose your correct printer. With Cura and the regular quality setting, all parts can be printed in under 24 hours.
+              <br>See <a href="./static/cad/cura_files.zip">here for sample .3mf files.</a></p>
+            </div>
+          </div>
+          <div class="card w-25">
+            <div class="card-body">
+              <h5 class="card-title">Settings (PLA):</h5>
+              <li class="list-group-item">Palm: 60% Infill, supports.</li>
+              <li class="list-group-item">Rest: 100% Infill, no support.</li>
+              <li class="list-group-item">200C Nozzle and 60C Bed</li>
+            </div>
+          </div>
+          <div class="card w-25">
+            <div class="card-body">
+              <h5 class="card-title">Settings (<a href = "https://ninjatek.com/shop/edge/">Ninjaflex Edge</a> for Optional Soft Fingertips):</h5>
+              <li class="list-group-item">20% Infill no support. </li>
+              <li class="list-group-item">240C Nozzle and 60C Bed </li>
+            </div>
+          </div>
+        </div>
+        <br>
+        By downloading these files, you agree to our CC BY-NC-SA Attribution-NonCommercial-ShareAlike license which allows you to use and build upon our work non-commercially.
+          <br> The design for LEAP Hand is provided as-is and without warranty.
+          <img src="./static/figures/license.png"> 
+      </div>
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <!-- <a class="large-font bottom_buttons" disabled>
+        <i class="fab fa-github"></i>
+      </a> -->
+      <br />
+      
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  var mainLoopId = setInterval(function(){
+    $('video').not('#teaser').each(function(){
+  if ($(this).is(":in-viewport")) {
+      $(this)[0].play();
+  } else {
+      $(this)[0].pause();
+  }
+  })
+},200);
+
+
+</script>
+</body>
+</html>

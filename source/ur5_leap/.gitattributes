@@ -1,0 +1,3 @@
+# Preserve upstream bytes, including original line endings. Large files use the pinned downloader.
+assets/official/** -text -filter !diff !merge
+assets/references/** -text -filter !diff !merge

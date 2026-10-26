@@ -1,0 +1,1499 @@
+{
+  "retrieved_at_utc": "2026-10-26T15:42:22.386548+00:00",
+  "files": [
+    {
+      "destination": "assets/official/leap_hand_v1_right/cad/full_assembly_right.stp",
+      "size": 25389720,
+      "sha256": "cb93047580fcf855d17747481908ba3d50ca0fe191fe5393cb7e125156fa53ea",
+      "source": "website",
+      "label": "Download Right STP",
+      "url": "https://v1.leaphand.com/static/cad/stp/full_assembly_right.step"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/cad/leap_cad.html",
+      "size": 26024,
+      "sha256": "86f9ed2646cad3daaf84d1faf83154dcd09c00c38bfd89acaee8a712a746eff1",
+      "source": "website",
+      "url": "https://v1.leaphand.com/leap_cad"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/cad/palm_upper_xarm_franka_ur5.stl",
+      "size": 213284,
+      "sha256": "3ce0162dea9b65f79012a5a1965634ff1ac99b18ed34aa81ebeded9939712be0",
+      "source": "website",
+      "label": "Xarm/Franka/UR5 STL",
+      "url": "https://v1.leaphand.com/static/cad/stl/palm_upper_xarm_franka.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/cad/palm_upper_xarm_franka_ur5.stp",
+      "size": 91446,
+      "sha256": "7be2bbb2185cc58774bb0ff6b34288593f082254c1f8281b510c97947a47b169",
+      "source": "website",
+      "label": "Xarm/Franka/UR5 STP",
+      "url": "https://v1.leaphand.com/static/cad/stp/palm_upper_xarm_franka.stp"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/cad/right_urdf.zip",
+      "size": 2950694,
+      "sha256": "65c46277b792bd608efabff4ffed6c88d1a8d0d5066b05fd9800ffb453721908",
+      "source": "website",
+      "label": "Download Right URDF",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/README.md",
+      "size": 5191,
+      "sha256": "08c78c232b8e3f71e9e57dc6a765f8686c02c1ba28d483a2c947e6732295c1ca",
+      "source": "lab",
+      "original_path": "README.md",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/README.md"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/leap.py",
+      "size": 1919,
+      "sha256": "94f2844f96891297a96df9fbc1e9bfc8ff79e0d954e9df0e7cbab019d8fbd659",
+      "source": "lab",
+      "original_path": "source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap.py",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap.py"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/leap_hand_v1_right/configuration/leap_hand_right_base.usd",
+      "size": 2724719,
+      "sha256": "ead8bc1f84792b49fee017cbaf05edead1c2c4fc82d85fbe07c64c5a4244f8a6",
+      "source": "lab",
+      "original_path": "source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/configuration/leap_hand_right_base.usd",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/configuration/leap_hand_right_base.usd"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/leap_hand_v1_right/configuration/leap_hand_right_physics.usd",
+      "size": 6444,
+      "sha256": "c905b89cb698bfc5385439ab68329a371c722defc92512e32e14edc2afe81217",
+      "source": "lab",
+      "original_path": "source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/configuration/leap_hand_right_physics.usd",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/configuration/leap_hand_right_physics.usd"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/leap_hand_v1_right/configuration/leap_hand_right_sensor.usd",
+      "size": 650,
+      "sha256": "c560a256351c9469a305f98017df099dbe1f24d19c9d275df7cd080a8d5ba61c",
+      "source": "lab",
+      "original_path": "source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/configuration/leap_hand_right_sensor.usd",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/configuration/leap_hand_right_sensor.usd"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/leap_hand_v1_right/leap_hand_right.usd",
+      "size": 1605,
+      "sha256": "13398e1850c7737e864b1bcd7205c5dd1e7c6831aa008c43d312c39cb2c12675",
+      "source": "lab",
+      "original_path": "source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/leap_hand_right.usd",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/leap_hand_right.usd"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/leap_hand_v1_right/use_yuzhe_dex-urdf.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "lab",
+      "original_path": "source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/use_yuzhe_dex-urdf.txt",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/use_yuzhe_dex-urdf.txt"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/LICENSE.txt",
+      "size": 1062,
+      "sha256": "5a91c3d709c2ee3a71f166b46e3208cebd83c0c7a870746c729b31a01f156984",
+      "source": "sim",
+      "original_path": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/LICENSE.txt"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/README.md",
+      "size": 3625,
+      "sha256": "691c8b42457893ddad2709f7fb2f65ab80e276da1a24f50d9fb6f42ef629b475",
+      "source": "sim",
+      "original_path": "README.md",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/README.md"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/dip.part",
+      "size": 420,
+      "sha256": "c58ca1652b6ed46f68d225c617c08296b7b372b46b1a62aea30db012f7a55cad",
+      "source": "sim",
+      "original_path": "assets/leap_hand/dip.part",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/dip.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/dip.stl",
+      "size": 1538284,
+      "sha256": "9222f0ee1fa0077c70a219f7952df6f4208b003ad06a608e006cd0d8057d4b1c",
+      "source": "sim",
+      "original_path": "assets/leap_hand/dip.stl",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/dip.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/fingertip.part",
+      "size": 426,
+      "sha256": "6d9d1520499f356715c458c87bfe8a334767868483ef1027ee18a296a12f913f",
+      "source": "sim",
+      "original_path": "assets/leap_hand/fingertip.part",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/fingertip.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/fingertip.stl",
+      "size": 562684,
+      "sha256": "e149e01e395b58950332dc2e2bda4b51b5557328a73c80b990d184c2e84dcc53",
+      "source": "sim",
+      "original_path": "assets/leap_hand/fingertip.stl",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/fingertip.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/mcp_joint.part",
+      "size": 426,
+      "sha256": "cfe91cce8754ac2fc52cc3f49e8d4488b50769e410af349d5eac5814a45d0042",
+      "source": "sim",
+      "original_path": "assets/leap_hand/mcp_joint.part",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/mcp_joint.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/mcp_joint.stl",
+      "size": 1608784,
+      "sha256": "56af82c57b469d491f544d6de12e2696b4284b50e89ca271502aaa0631f04b59",
+      "source": "sim",
+      "original_path": "assets/leap_hand/mcp_joint.stl",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/mcp_joint.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/palm_lower.part",
+      "size": 427,
+      "sha256": "6083097427c28e9b3e0b5a8593aa77f19e84e365042ed996aa3c91d41176cd21",
+      "source": "sim",
+      "original_path": "assets/leap_hand/palm_lower.part",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/palm_lower.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/palm_lower.stl",
+      "size": 4347184,
+      "sha256": "eae47756f1a1978b255a36c0b75c24c0af886d10026c2950a2b0acef66f09c8c",
+      "source": "sim",
+      "original_path": "assets/leap_hand/palm_lower.stl",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/palm_lower.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/pip.part",
+      "size": 420,
+      "sha256": "20ba1c3aca516cadb4ae81714cd65c23d6444ad2a895fe13a5779e1757fc48d5",
+      "source": "sim",
+      "original_path": "assets/leap_hand/pip.part",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/pip.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/pip.stl",
+      "size": 1051084,
+      "sha256": "b778405c95127023c8b110e6e2f5a181ad8a46dadc2ac98d3f038debae52ef33",
+      "source": "sim",
+      "original_path": "assets/leap_hand/pip.stl",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/pip.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/robot.urdf",
+      "size": 20448,
+      "sha256": "b3f29881e1c013f8b4eda85e9afecc6b2f4b89b5b49b643183ef6031422ed7f4",
+      "source": "sim",
+      "original_path": "assets/leap_hand/robot.urdf",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/robot.urdf"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_dip.part",
+      "size": 426,
+      "sha256": "958a4307217d691af56ce0a63a714edee089c23619c58a445ccb82e195d28fe8",
+      "source": "sim",
+      "original_path": "assets/leap_hand/thumb_dip.part",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_dip.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_dip.stl",
+      "size": 1451484,
+      "sha256": "7261cf99cd44ae42360dc72a417c2526a73ec8ff4c446858042d6d0675b4f2bf",
+      "source": "sim",
+      "original_path": "assets/leap_hand/thumb_dip.stl",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_dip.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_fingertip.part",
+      "size": 432,
+      "sha256": "b3f3318d55ec8a8e79447178fe4a5bf4f174c2e100cacdf8330ce790ea417c2a",
+      "source": "sim",
+      "original_path": "assets/leap_hand/thumb_fingertip.part",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_fingertip.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_fingertip.stl",
+      "size": 1111984,
+      "sha256": "b43c5a13cf67a25da5ea64afafdcae2179b53971f940375c94656919d717dfb0",
+      "source": "sim",
+      "original_path": "assets/leap_hand/thumb_fingertip.stl",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_fingertip.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_pip.part",
+      "size": 426,
+      "sha256": "83f3ae21c69faa24c440d2a89af2ab646e447e286641e59a8bfc74350f07093f",
+      "source": "sim",
+      "original_path": "assets/leap_hand/thumb_pip.part",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_pip.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_pip.stl",
+      "size": 468884,
+      "sha256": "40532d5d555e150748f8563fb378ab3d0839b9221eb5ef108e86fde01a98dfe0",
+      "source": "sim",
+      "original_path": "assets/leap_hand/thumb_pip.stl",
+      "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_pip.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/dip.part",
+      "size": 420,
+      "sha256": "c58ca1652b6ed46f68d225c617c08296b7b372b46b1a62aea30db012f7a55cad",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "dip.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/dip.stl",
+      "size": 1538284,
+      "sha256": "9222f0ee1fa0077c70a219f7952df6f4208b003ad06a608e006cd0d8057d4b1c",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "dip.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/fingertip.part",
+      "size": 426,
+      "sha256": "6d9d1520499f356715c458c87bfe8a334767868483ef1027ee18a296a12f913f",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "fingertip.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/fingertip.stl",
+      "size": 562684,
+      "sha256": "e149e01e395b58950332dc2e2bda4b51b5557328a73c80b990d184c2e84dcc53",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "fingertip.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/mcp_joint.part",
+      "size": 426,
+      "sha256": "cfe91cce8754ac2fc52cc3f49e8d4488b50769e410af349d5eac5814a45d0042",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "mcp_joint.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/mcp_joint.stl",
+      "size": 1608784,
+      "sha256": "56af82c57b469d491f544d6de12e2696b4284b50e89ca271502aaa0631f04b59",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "mcp_joint.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/palm_lower.part",
+      "size": 427,
+      "sha256": "6083097427c28e9b3e0b5a8593aa77f19e84e365042ed996aa3c91d41176cd21",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "palm_lower.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/palm_lower.stl",
+      "size": 4347184,
+      "sha256": "eae47756f1a1978b255a36c0b75c24c0af886d10026c2950a2b0acef66f09c8c",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "palm_lower.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/pip.part",
+      "size": 420,
+      "sha256": "20ba1c3aca516cadb4ae81714cd65c23d6444ad2a895fe13a5779e1757fc48d5",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "pip.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/pip.stl",
+      "size": 1051084,
+      "sha256": "b778405c95127023c8b110e6e2f5a181ad8a46dadc2ac98d3f038debae52ef33",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "pip.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/robot.urdf",
+      "size": 20822,
+      "sha256": "c7fb6f93018d13d9fffe878b4b34489948fca8d97bc2c43e3da01b0cf01f247b",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "robot.urdf"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_dip.part",
+      "size": 426,
+      "sha256": "958a4307217d691af56ce0a63a714edee089c23619c58a445ccb82e195d28fe8",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "thumb_dip.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_dip.stl",
+      "size": 1451484,
+      "sha256": "7261cf99cd44ae42360dc72a417c2526a73ec8ff4c446858042d6d0675b4f2bf",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "thumb_dip.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_fingertip.part",
+      "size": 432,
+      "sha256": "b3f3318d55ec8a8e79447178fe4a5bf4f174c2e100cacdf8330ce790ea417c2a",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "thumb_fingertip.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_fingertip.stl",
+      "size": 1111984,
+      "sha256": "b43c5a13cf67a25da5ea64afafdcae2179b53971f940375c94656919d717dfb0",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "thumb_fingertip.stl"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_pip.part",
+      "size": 426,
+      "sha256": "83f3ae21c69faa24c440d2a89af2ab646e447e286641e59a8bfc74350f07093f",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "thumb_pip.part"
+    },
+    {
+      "destination": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_pip.stl",
+      "size": 468884,
+      "sha256": "40532d5d555e150748f8563fb378ab3d0839b9221eb5ef108e86fde01a98dfe0",
+      "source": "website",
+      "url": "https://v1.leaphand.com/static/cad/urdf/leap_right.zip",
+      "archive_member": "thumb_pip.stl"
+    },
+    {
+      "destination": "assets/official/ur5/LICENSE",
+      "size": 1459,
+      "sha256": "143077f9f6a8de5a99f78c2c2472801fb53cf240277ef661642f079b9acdfff8",
+      "source": "ur",
+      "original_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/LICENSE"
+    },
+    {
+      "destination": "assets/official/ur5/README.md",
+      "size": 4306,
+      "sha256": "7bf26581913a851476323daab7226fb5fb8aa19b0acbda3969abe58be2689a18",
+      "source": "ur",
+      "original_path": "README.md",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/README.md"
+    },
+    {
+      "destination": "assets/official/ur5/config/initial_positions.yaml",
+      "size": 127,
+      "sha256": "19456f7115a4f319ed415c327f19d2834745a6167deaa45efc357c6945d6b5d9",
+      "source": "ur",
+      "original_path": "config/initial_positions.yaml",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/config/initial_positions.yaml"
+    },
+    {
+      "destination": "assets/official/ur5/config/ur5/default_kinematics.yaml",
+      "size": 639,
+      "sha256": "4559bd027c93ce7c0e2a343d6f71f742fe4a67ea9d7ef67535189f4efbe9c3ac",
+      "source": "ur",
+      "original_path": "config/ur5/default_kinematics.yaml",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/config/ur5/default_kinematics.yaml"
+    },
+    {
+      "destination": "assets/official/ur5/config/ur5/joint_limits.yaml",
+      "size": 2867,
+      "sha256": "279609c61e61c2097d3d7f47cc7fca1bfe66c939f1dc096eff8d140f9ec0e22f",
+      "source": "ur",
+      "original_path": "config/ur5/joint_limits.yaml",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/config/ur5/joint_limits.yaml"
+    },
+    {
+      "destination": "assets/official/ur5/config/ur5/physical_parameters.yaml",
+      "size": 2435,
+      "sha256": "2679eda80ff2c0055a6f0db558bb4160bc6d33c7a6267a204133494b36c27abe",
+      "source": "ur",
+      "original_path": "config/ur5/physical_parameters.yaml",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/config/ur5/physical_parameters.yaml"
+    },
+    {
+      "destination": "assets/official/ur5/config/ur5/visual_parameters.yaml",
+      "size": 2377,
+      "sha256": "c03da5592477f6ba8f115e9ae01fd2bb8a60b1976b8897ef9923dfee81395d13",
+      "source": "ur",
+      "original_path": "config/ur5/visual_parameters.yaml",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/config/ur5/visual_parameters.yaml"
+    },
+    {
+      "destination": "assets/official/ur5/doc/index.rst",
+      "size": 4815,
+      "sha256": "23ca4967fb7b06d86d91c70908197d6006cb009e9ddd115dcae0d573f9848ace",
+      "source": "ur",
+      "original_path": "doc/index.rst",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/doc/index.rst"
+    },
+    {
+      "destination": "assets/official/ur5/doc/robot_frames.rst",
+      "size": 3022,
+      "sha256": "a7803e838561c2b1eb52a4cdb215a27a93fe27a687a41907d7b239937a568e73",
+      "source": "ur",
+      "original_path": "doc/robot_frames.rst",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/doc/robot_frames.rst"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/collision/base.stl",
+      "size": 11834,
+      "sha256": "81c2ad265f7140313c305d9bfdf98d5b00f5978e9b01acbf12243602dc4dd151",
+      "source": "ur",
+      "original_path": "meshes/ur5/collision/base.stl",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/base.stl"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/collision/forearm.stl",
+      "size": 52584,
+      "sha256": "8e79aa80a532494ba5320c30b40363ff63d228e3d59e2904703dca341dcba2ac",
+      "source": "ur",
+      "original_path": "meshes/ur5/collision/forearm.stl",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/forearm.stl"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/collision/shoulder.stl",
+      "size": 33784,
+      "sha256": "1d62e23a8c3ff9e6334fb157c805e6202037bcfca65bc6a36c5c9ae866751b3b",
+      "source": "ur",
+      "original_path": "meshes/ur5/collision/shoulder.stl",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/shoulder.stl"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/collision/upperarm.stl",
+      "size": 58884,
+      "sha256": "55c11ac0ad1e144f230849b2033532e8b140b2e818ea497296d08dfb88757440",
+      "source": "ur",
+      "original_path": "meshes/ur5/collision/upperarm.stl",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/upperarm.stl"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/collision/wrist1.stl",
+      "size": 35184,
+      "sha256": "0a1fd12150140efdee91650dcb4c2d0443065551a9207a2d2dbde58ff1fb4eb7",
+      "source": "ur",
+      "original_path": "meshes/ur5/collision/wrist1.stl",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/wrist1.stl"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/collision/wrist2.stl",
+      "size": 35184,
+      "sha256": "c1d9f7843366068cb331f3f5c43fa716d3eceeb8c80216eccbbc878905dab123",
+      "source": "ur",
+      "original_path": "meshes/ur5/collision/wrist2.stl",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/wrist2.stl"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/collision/wrist3.stl",
+      "size": 22384,
+      "sha256": "cf7220397b56f1d3047be9465eea1181d471b40fc82728052e31c97588585b4b",
+      "source": "ur",
+      "original_path": "meshes/ur5/collision/wrist3.stl",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/wrist3.stl"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/visual/base.dae",
+      "size": 157910,
+      "sha256": "366e6cb99a2bf5027dae92d2bd428d27224b0a5af96ca9f1e68f5b92860c2011",
+      "source": "ur",
+      "original_path": "meshes/ur5/visual/base.dae",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/base.dae"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/visual/forearm.dae",
+      "size": 1469403,
+      "sha256": "2fabc6738b33365b5c54b59304f128907c5e214d25d5e4cc40487b67718a3dbe",
+      "source": "ur",
+      "original_path": "meshes/ur5/visual/forearm.dae",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/forearm.dae"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/visual/shoulder.dae",
+      "size": 1007765,
+      "sha256": "fd15be6d2edbc6403e00f4f6e00bd3970491d3d53cc77eeb55c98bcd8f6b49ca",
+      "source": "ur",
+      "original_path": "meshes/ur5/visual/shoulder.dae",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/shoulder.dae"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/visual/upperarm.dae",
+      "size": 2004987,
+      "sha256": "06b46dce3dadb55a71dc55dc710a3a6206006a902e507f05267dde6ffe4c9c8c",
+      "source": "ur",
+      "original_path": "meshes/ur5/visual/upperarm.dae",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/upperarm.dae"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/visual/wrist1.dae",
+      "size": 948689,
+      "sha256": "3eb98c0a440ea8f4e91fd2cbb3bf39bd8b96acbb5ebdb697e64603395f1d0a79",
+      "source": "ur",
+      "original_path": "meshes/ur5/visual/wrist1.dae",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/wrist1.dae"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/visual/wrist2.dae",
+      "size": 947502,
+      "sha256": "2a60ae57fd85ee06e77482029b10fe09fd53dc68169138380e64d98d5f134f09",
+      "source": "ur",
+      "original_path": "meshes/ur5/visual/wrist2.dae",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/wrist2.dae"
+    },
+    {
+      "destination": "assets/official/ur5/meshes/ur5/visual/wrist3.dae",
+      "size": 123930,
+      "sha256": "23430d8b8ec0c94c5a69fe5e70931399d3d8e07d40f277334fe62d82b959cef5",
+      "source": "ur",
+      "original_path": "meshes/ur5/visual/wrist3.dae",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/wrist3.dae"
+    },
+    {
+      "destination": "assets/official/ur5/package.xml",
+      "size": 4341,
+      "sha256": "d5b79186aa09b1c9b54e9a4c0b236774b6e0e77857d52217c1e23fcacdb44498",
+      "source": "ur",
+      "original_path": "package.xml",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/package.xml"
+    },
+    {
+      "destination": "assets/official/ur5/urdf/inc/ur_common.xacro",
+      "size": 20150,
+      "sha256": "70edfb657368ba53d3ab9717054cb1cbecba061229d2ffaa179ed0c43205f0f2",
+      "source": "ur",
+      "original_path": "urdf/inc/ur_common.xacro",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/inc/ur_common.xacro"
+    },
+    {
+      "destination": "assets/official/ur5/urdf/inc/ur_joint_control.xacro",
+      "size": 4099,
+      "sha256": "5b18f42b31d3fcd7916abefc59a2959c484d2cae0fb766dfe782708c9d39743d",
+      "source": "ur",
+      "original_path": "urdf/inc/ur_joint_control.xacro",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/inc/ur_joint_control.xacro"
+    },
+    {
+      "destination": "assets/official/ur5/urdf/inc/ur_sensors.xacro",
+      "size": 825,
+      "sha256": "d774af270ece1a55b89e688aece885886f48d69d2de912d19d66cf82d294880e",
+      "source": "ur",
+      "original_path": "urdf/inc/ur_sensors.xacro",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/inc/ur_sensors.xacro"
+    },
+    {
+      "destination": "assets/official/ur5/urdf/inc/ur_transmissions.xacro",
+      "size": 2669,
+      "sha256": "85096b2102ef26cb11313956e9ba737f3fae63a0b702108f8cf3253de1cdadf3",
+      "source": "ur",
+      "original_path": "urdf/inc/ur_transmissions.xacro",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/inc/ur_transmissions.xacro"
+    },
+    {
+      "destination": "assets/official/ur5/urdf/ros2_control_mock_hardware.xacro",
+      "size": 1075,
+      "sha256": "cf8e5c28d07fbe49bcf61a8f83b19f89aa534a5bb7c4b31832505421609bc234",
+      "source": "ur",
+      "original_path": "urdf/ros2_control_mock_hardware.xacro",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/ros2_control_mock_hardware.xacro"
+    },
+    {
+      "destination": "assets/official/ur5/urdf/ur.urdf.xacro",
+      "size": 2362,
+      "sha256": "f5a9d09b8962401fd57f11eccdd18311b7b4da761ba5cbe576791f7ba9c1ea3e",
+      "source": "ur",
+      "original_path": "urdf/ur.urdf.xacro",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/ur.urdf.xacro"
+    },
+    {
+      "destination": "assets/official/ur5/urdf/ur_macro.xacro",
+      "size": 21122,
+      "sha256": "5e496360ce0f5c7e7302a49e93f65ae9f52a4a433689d2c08298ff0e9d1648bc",
+      "source": "ur",
+      "original_path": "urdf/ur_macro.xacro",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/ur_macro.xacro"
+    },
+    {
+      "destination": "assets/official/ur5/urdf/ur_mocked.urdf.xacro",
+      "size": 3057,
+      "sha256": "99266cf4a01d8f98ef1da3cc34e0c544e3d85a99e12264d2837b1b84063a8169",
+      "source": "ur",
+      "original_path": "urdf/ur_mocked.urdf.xacro",
+      "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/ur_mocked.urdf.xacro"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/LICENSE",
+      "size": 4396,
+      "sha256": "797d1e69fe7fd1c502e87af12c5a0ed08a84c7a8a22af1c7a3589cbfadff4364",
+      "source": "bodex",
+      "original_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/LICENSE"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/LICENSE_ASSETS",
+      "size": 21428,
+      "sha256": "208e6ee6488630aaba4d9f06113844f58c8867d3be6348c122a6aa8b9e2409c1",
+      "source": "bodex",
+      "original_path": "LICENSE_ASSETS",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/LICENSE_ASSETS"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/README.md",
+      "size": 5507,
+      "sha256": "56fb62b899bcc547b3e88a5875c8c47eed55d7817e5ec91ae246de6d1fec4ab0",
+      "source": "bodex",
+      "original_path": "README.md",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/README.md"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap/dip.stl",
+      "size": 1538284,
+      "sha256": "9222f0ee1fa0077c70a219f7952df6f4208b003ad06a608e006cd0d8057d4b1c",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap/dip.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/dip.stl",
+      "lfs_oid_sha256": "9222f0ee1fa0077c70a219f7952df6f4208b003ad06a608e006cd0d8057d4b1c",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/dip.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap/fingertip.stl",
+      "size": 562684,
+      "sha256": "e149e01e395b58950332dc2e2bda4b51b5557328a73c80b990d184c2e84dcc53",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap/fingertip.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/fingertip.stl",
+      "lfs_oid_sha256": "e149e01e395b58950332dc2e2bda4b51b5557328a73c80b990d184c2e84dcc53",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/fingertip.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap/mcp_joint.stl",
+      "size": 1608784,
+      "sha256": "56af82c57b469d491f544d6de12e2696b4284b50e89ca271502aaa0631f04b59",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap/mcp_joint.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/mcp_joint.stl",
+      "lfs_oid_sha256": "56af82c57b469d491f544d6de12e2696b4284b50e89ca271502aaa0631f04b59",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/mcp_joint.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap/palm_lower.stl",
+      "size": 4347184,
+      "sha256": "eae47756f1a1978b255a36c0b75c24c0af886d10026c2950a2b0acef66f09c8c",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap/palm_lower.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/palm_lower.stl",
+      "lfs_oid_sha256": "eae47756f1a1978b255a36c0b75c24c0af886d10026c2950a2b0acef66f09c8c",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/palm_lower.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap/pip.stl",
+      "size": 1051084,
+      "sha256": "b778405c95127023c8b110e6e2f5a181ad8a46dadc2ac98d3f038debae52ef33",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap/pip.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/pip.stl",
+      "lfs_oid_sha256": "b778405c95127023c8b110e6e2f5a181ad8a46dadc2ac98d3f038debae52ef33",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/pip.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap/thumb_dip.stl",
+      "size": 1451484,
+      "sha256": "7261cf99cd44ae42360dc72a417c2526a73ec8ff4c446858042d6d0675b4f2bf",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_dip.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_dip.stl",
+      "lfs_oid_sha256": "7261cf99cd44ae42360dc72a417c2526a73ec8ff4c446858042d6d0675b4f2bf",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_dip.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap/thumb_fingertip.stl",
+      "size": 1111984,
+      "sha256": "b43c5a13cf67a25da5ea64afafdcae2179b53971f940375c94656919d717dfb0",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_fingertip.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_fingertip.stl",
+      "lfs_oid_sha256": "b43c5a13cf67a25da5ea64afafdcae2179b53971f940375c94656919d717dfb0",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_fingertip.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap/thumb_pip.stl",
+      "size": 468884,
+      "sha256": "40532d5d555e150748f8563fb378ab3d0839b9221eb5ef108e86fde01a98dfe0",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_pip.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_pip.stl",
+      "lfs_oid_sha256": "40532d5d555e150748f8563fb378ab3d0839b9221eb5ef108e86fde01a98dfe0",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_pip.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/convex_tip.obj",
+      "size": 188444,
+      "sha256": "c17c643fac380264a3d81437cf5fe511691653a744363e5fa57b9ac849bd2485",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/convex_tip.obj",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/convex_tip.obj",
+      "lfs_oid_sha256": "c17c643fac380264a3d81437cf5fe511691653a744363e5fa57b9ac849bd2485",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/convex_tip.obj"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/convex_tip_thumb.obj",
+      "size": 174798,
+      "sha256": "5b0a1ec80ff81a6ccdf534bb045bac00e918b01b61cdd2c02f292abda9f32ad5",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/convex_tip_thumb.obj",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/convex_tip_thumb.obj",
+      "lfs_oid_sha256": "5b0a1ec80ff81a6ccdf534bb045bac00e918b01b61cdd2c02f292abda9f32ad5",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/convex_tip_thumb.obj"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/dip.stl",
+      "size": 200084,
+      "sha256": "3ea168768eda81203d0971916056f910f9849e9c9b6fee831751da9f4ca023de",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/dip.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/dip.stl",
+      "lfs_oid_sha256": "3ea168768eda81203d0971916056f910f9849e9c9b6fee831751da9f4ca023de",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/dip.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/fingertip.stl",
+      "size": 200084,
+      "sha256": "9463f37541267a148074af7148e9e095c4b9a2a3ad9e88a7dde255e4fe348a54",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/fingertip.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/fingertip.stl",
+      "lfs_oid_sha256": "9463f37541267a148074af7148e9e095c4b9a2a3ad9e88a7dde255e4fe348a54",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/fingertip.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/mcp_joint.stl",
+      "size": 200084,
+      "sha256": "21b4585379017a111de3c3dfe8145ce8c63a03b74e896086b036143808ace93e",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/mcp_joint.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/mcp_joint.stl",
+      "lfs_oid_sha256": "21b4585379017a111de3c3dfe8145ce8c63a03b74e896086b036143808ace93e",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/mcp_joint.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/palm_lower.stl",
+      "size": 200084,
+      "sha256": "f3d50cb1517cc01cc52987d4f4712d54945b810aba27a83630cf6f724dcc7673",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/palm_lower.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/palm_lower.stl",
+      "lfs_oid_sha256": "f3d50cb1517cc01cc52987d4f4712d54945b810aba27a83630cf6f724dcc7673",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/palm_lower.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/pip.stl",
+      "size": 200084,
+      "sha256": "b2f746379c1b987c2896ccd88d2f3f66c164bc14d33b425a7f8ca294d2e75d79",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/pip.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/pip.stl",
+      "lfs_oid_sha256": "b2f746379c1b987c2896ccd88d2f3f66c164bc14d33b425a7f8ca294d2e75d79",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/pip.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/thumb_dip.stl",
+      "size": 200084,
+      "sha256": "38d5294fec996cf8d8a36d4a448c314baca61ce3d957c0ebaec34be7e502bce1",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_dip.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_dip.stl",
+      "lfs_oid_sha256": "38d5294fec996cf8d8a36d4a448c314baca61ce3d957c0ebaec34be7e502bce1",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_dip.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/thumb_fingertip.stl",
+      "size": 200084,
+      "sha256": "507e5ca7c10bc7a584223dd5ac4b215473207e2d50840ddf3432c53012b093ff",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_fingertip.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_fingertip.stl",
+      "lfs_oid_sha256": "507e5ca7c10bc7a584223dd5ac4b215473207e2d50840ddf3432c53012b093ff",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_fingertip.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/thumb_pip.stl",
+      "size": 200084,
+      "sha256": "bdbb08759fc360f1a3fdc1b68df7aceb960ba1164dc026fa8443b773035bc076",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_pip.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_pip.stl",
+      "lfs_oid_sha256": "bdbb08759fc360f1a3fdc1b68df7aceb960ba1164dc026fa8443b773035bc076",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_pip.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur10e",
+      "size": 33,
+      "sha256": "d50878540695be43897770668640079379b01b7e5767d83e27989f75fd24c579",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur10e",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur10e"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/base.stl",
+      "size": 28984,
+      "sha256": "c7af57d109de6a73f57943613bb000346518df06bb5ae119a2e80cf00bcbebde",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/base.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/base.stl",
+      "lfs_oid_sha256": "c7af57d109de6a73f57943613bb000346518df06bb5ae119a2e80cf00bcbebde",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/base.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/forearm.stl",
+      "size": 52584,
+      "sha256": "8e79aa80a532494ba5320c30b40363ff63d228e3d59e2904703dca341dcba2ac",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/forearm.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/forearm.stl",
+      "lfs_oid_sha256": "8e79aa80a532494ba5320c30b40363ff63d228e3d59e2904703dca341dcba2ac",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/forearm.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/shoulder.stl",
+      "size": 33784,
+      "sha256": "1d62e23a8c3ff9e6334fb157c805e6202037bcfca65bc6a36c5c9ae866751b3b",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/shoulder.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/shoulder.stl",
+      "lfs_oid_sha256": "1d62e23a8c3ff9e6334fb157c805e6202037bcfca65bc6a36c5c9ae866751b3b",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/shoulder.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/upperarm.stl",
+      "size": 58884,
+      "sha256": "55c11ac0ad1e144f230849b2033532e8b140b2e818ea497296d08dfb88757440",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/upperarm.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/upperarm.stl",
+      "lfs_oid_sha256": "55c11ac0ad1e144f230849b2033532e8b140b2e818ea497296d08dfb88757440",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/upperarm.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/wrist1.stl",
+      "size": 35184,
+      "sha256": "0a1fd12150140efdee91650dcb4c2d0443065551a9207a2d2dbde58ff1fb4eb7",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist1.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist1.stl",
+      "lfs_oid_sha256": "0a1fd12150140efdee91650dcb4c2d0443065551a9207a2d2dbde58ff1fb4eb7",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist1.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/wrist2.stl",
+      "size": 35184,
+      "sha256": "c1d9f7843366068cb331f3f5c43fa716d3eceeb8c80216eccbbc878905dab123",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist2.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist2.stl",
+      "lfs_oid_sha256": "c1d9f7843366068cb331f3f5c43fa716d3eceeb8c80216eccbbc878905dab123",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist2.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/wrist3.stl",
+      "size": 22384,
+      "sha256": "cf7220397b56f1d3047be9465eea1181d471b40fc82728052e31c97588585b4b",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist3.stl",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist3.stl",
+      "lfs_oid_sha256": "cf7220397b56f1d3047be9465eea1181d471b40fc82728052e31c97588585b4b",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist3.stl"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/base.dae",
+      "size": 156606,
+      "sha256": "0f84adc5ad2d4af30ac3f1f7b46f0e33bf36deb08d254fa4632ab1858e95fb73",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/base.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/base.dae",
+      "lfs_oid_sha256": "0f84adc5ad2d4af30ac3f1f7b46f0e33bf36deb08d254fa4632ab1858e95fb73",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/base.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/forearm.dae",
+      "size": 1473169,
+      "sha256": "a163079ff71fa2a5cdea9a642a1ec31007b9b6c29ce14d106e7cb088896b4c8b",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/forearm.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/forearm.dae",
+      "lfs_oid_sha256": "a163079ff71fa2a5cdea9a642a1ec31007b9b6c29ce14d106e7cb088896b4c8b",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/forearm.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/shoulder.dae",
+      "size": 1011530,
+      "sha256": "fce5dd86671eeb56ddc821f138ad5fd45e03a5c7d31bdf59f3b46f193e1c9455",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/shoulder.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/shoulder.dae",
+      "lfs_oid_sha256": "fce5dd86671eeb56ddc821f138ad5fd45e03a5c7d31bdf59f3b46f193e1c9455",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/shoulder.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/upperarm.dae",
+      "size": 2008753,
+      "sha256": "bcfe8208ad1cbeada65166078d6b883413e9aa4e05fa891d1d80d780aecf4fd7",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/upperarm.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/upperarm.dae",
+      "lfs_oid_sha256": "bcfe8208ad1cbeada65166078d6b883413e9aa4e05fa891d1d80d780aecf4fd7",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/upperarm.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/wrist1.dae",
+      "size": 952454,
+      "sha256": "0eeddca348d2e2db0d834298a58a3ea09b7aafe59051f1f552d6114d92de5acd",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist1.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist1.dae",
+      "lfs_oid_sha256": "0eeddca348d2e2db0d834298a58a3ea09b7aafe59051f1f552d6114d92de5acd",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist1.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/wrist2.dae",
+      "size": 951267,
+      "sha256": "9be5d84e57e63adeccd9110cc87d0e457cabb13cdd4603016f9a22233f1dc34e",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist2.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist2.dae",
+      "lfs_oid_sha256": "9be5d84e57e63adeccd9110cc87d0e457cabb13cdd4603016f9a22233f1dc34e",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist2.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/wrist3.dae",
+      "size": 127695,
+      "sha256": "7630f9d288ecbbf24d9def977521e766ccedd6b4e89334253c818a049b462e37",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist3.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist3.dae",
+      "lfs_oid_sha256": "7630f9d288ecbbf24d9def977521e766ccedd6b4e89334253c818a049b462e37",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist3.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/base.dae",
+      "size": 236224,
+      "sha256": "2c185b0007ea05499e6fc8cfb72838cbcdbe3d5402e4c7d6d4affa3b4cbaffc0",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/base.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/base.dae",
+      "lfs_oid_sha256": "2c185b0007ea05499e6fc8cfb72838cbcdbe3d5402e4c7d6d4affa3b4cbaffc0",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/base.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/forearm.dae",
+      "size": 241838,
+      "sha256": "8e1e6d4b53cfee9a3240e2f1e7e67ab6d86ff5436990562ee8ab4a58f35a0a64",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/forearm.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/forearm.dae",
+      "lfs_oid_sha256": "8e1e6d4b53cfee9a3240e2f1e7e67ab6d86ff5436990562ee8ab4a58f35a0a64",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/forearm.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/shoulder.dae",
+      "size": 241180,
+      "sha256": "c4448cad2c4b999e0284f44b9aac9a0e1db1034b18f6a3155e2057a8b3900dab",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/shoulder.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/shoulder.dae",
+      "lfs_oid_sha256": "c4448cad2c4b999e0284f44b9aac9a0e1db1034b18f6a3155e2057a8b3900dab",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/shoulder.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/upperarm.dae",
+      "size": 240499,
+      "sha256": "2adfeb3f33a0543d8e61fdcd0945162cd3ac1b81a1fdd6cf6545a7ac32c128d9",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/upperarm.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/upperarm.dae",
+      "lfs_oid_sha256": "2adfeb3f33a0543d8e61fdcd0945162cd3ac1b81a1fdd6cf6545a7ac32c128d9",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/upperarm.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/wrist1.dae",
+      "size": 240120,
+      "sha256": "60f768cdaf3b0ff9aadf577c520b20491e5d1c0a87cd7ea74e1203c426041dc3",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist1.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist1.dae",
+      "lfs_oid_sha256": "60f768cdaf3b0ff9aadf577c520b20491e5d1c0a87cd7ea74e1203c426041dc3",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist1.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/wrist2.dae",
+      "size": 239537,
+      "sha256": "a1307087f475e112d55adce4e962149131d3a4c8210b37d5d0d8490852bcd8f8",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist2.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist2.dae",
+      "lfs_oid_sha256": "a1307087f475e112d55adce4e962149131d3a4c8210b37d5d0d8490852bcd8f8",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist2.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/wrist3.dae",
+      "size": 235316,
+      "sha256": "d27edf7dbfc16be8a8d81525312254d8696126329c74f7136c191afbae869e93",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist3.dae",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist3.dae",
+      "lfs_oid_sha256": "d27edf7dbfc16be8a8d81525312254d8696126329c74f7136c191afbae869e93",
+      "lfs_url": "https://media.githubusercontent.com/media/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist3.dae"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/meshes/ur5e",
+      "size": 32,
+      "sha256": "f016f96e510ad82c61ecc5c8d9a0597a9777b582be64688469f6e00d9d50ff24",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/meshes/ur5e",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5e"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/urdf/leap_hand.urdf",
+      "size": 25422,
+      "sha256": "b1b5d345e0c64d4afb1ec5089cd6859651ec462b62ef720698050f6ba83f2b93",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/urdf/leap_hand.urdf",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/urdf/leap_hand.urdf"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/urdf/leap_hand_simplified.urdf",
+      "size": 25188,
+      "sha256": "ab8d3951f9ae9d9c63bb8c716dc30782a5ed02b6226ebc0ed0d66fb9bb8b760e",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/urdf/leap_hand_simplified.urdf",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/urdf/leap_hand_simplified.urdf"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/urdf/ur5_leap.urdf",
+      "size": 38121,
+      "sha256": "e1915b885a6c6315c296687ad02ab6bc5c660094424af994a4992b99dcc08bf7",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/urdf/ur5_leap.urdf",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/urdf/ur5_leap.urdf"
+    },
+    {
+      "destination": "assets/references/bodex/ur5_leap/urdf/ur5_leap_simplified.urdf",
+      "size": 38385,
+      "sha256": "d08ba1d4dee42b084b8bbc58730fe830fd05bff5bd4961fcc69e5110427e1696",
+      "source": "bodex",
+      "original_path": "src/curobo/content/assets/robot/leap_description/urdf/ur5_leap_simplified.urdf",
+      "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/urdf/ur5_leap_simplified.urdf"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/LICENSE",
+      "size": 1064,
+      "sha256": "0d03314867c05da60a2046bdd2e604b0f4e7aea5b057d6a5bbb1b12fa1656ba3",
+      "source": "cord",
+      "original_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/LICENSE"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/README.md",
+      "size": 16443,
+      "sha256": "781edb1561c8aa460d5f7d078d995c771a142f368933b2995fd058a737d2ae23",
+      "source": "cord",
+      "original_path": "README.md",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/README.md"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/collision/white_tip.obj",
+      "size": 640739,
+      "sha256": "bbc1d4b64f4f4115fb0fd776a14abd9496e339804bf42cb645d30aee13e61f88",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/collision/white_tip.obj",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/collision/white_tip.obj"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/collision/white_tip_thumb.obj",
+      "size": 402712,
+      "sha256": "80e7c3de59c0b1b141e2c91ffa36374bef11636e362173d7a68a79022829020f",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/collision/white_tip_thumb.obj",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/collision/white_tip_thumb.obj"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/dip.glb",
+      "size": 1485152,
+      "sha256": "548013ccb478a29552b2d8e150cc5f90f45c6a638bc008e9ed4f81b23228a6c0",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/dip.glb",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/dip.glb"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/dip.mtl",
+      "size": 253,
+      "sha256": "240a97143e932aba69009abdd728066939517cf808108623a014ef577976caeb",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/dip.mtl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/dip.mtl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/dip.obj",
+      "size": 1013886,
+      "sha256": "472e054348c5a0e987829e721d5ba8486ddd47d867e416bb45d8d2a2ff917acf",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/dip.obj",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/dip.obj"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/fingertip.glb",
+      "size": 544612,
+      "sha256": "e422eb83230fed126c38d7b6f43a5f9ec71b58059c8acefdcf6b2ec04bdc0e7c",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/fingertip.glb",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/fingertip.glb"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/fingertip.mtl",
+      "size": 436,
+      "sha256": "7e972e2fb3bd55d0aac677a6cc41a2c1a6678868ac0b4f1a03af5786540fc3d7",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/fingertip.mtl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/fingertip.mtl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/fingertip.obj",
+      "size": 359831,
+      "sha256": "6bfa2afb2a06557ce0c54b03baec13522bfe561aabb576bd4701d4704f93ec0f",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/fingertip.obj",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/fingertip.obj"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/mcp_joint.glb",
+      "size": 1557804,
+      "sha256": "7b33228fa19433e260c20588698416d4a0fc7018cdf927c28316513d21f79c3e",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/mcp_joint.glb",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/mcp_joint.glb"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/mcp_joint.mtl",
+      "size": 253,
+      "sha256": "240a97143e932aba69009abdd728066939517cf808108623a014ef577976caeb",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/mcp_joint.mtl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/mcp_joint.mtl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/mcp_joint.obj",
+      "size": 1065471,
+      "sha256": "3d7194a6a33626ffcdfce78a0ca854e67b6b49f2e09a3bd62656f94515fdfbec",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/mcp_joint.obj",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/mcp_joint.obj"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower.glb",
+      "size": 5045588,
+      "sha256": "3262010395bce54e8441adffc704b4cf10a2a1f69c3aa726ff5bb63de61a9f57",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower.glb",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower.glb"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower.mtl",
+      "size": 253,
+      "sha256": "240a97143e932aba69009abdd728066939517cf808108623a014ef577976caeb",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower.mtl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower.mtl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower.obj",
+      "size": 2978219,
+      "sha256": "90d1d9b2a1c9eea15fbeb2232019c6191a55a3c4afa7f7427ce7afa0e3108b07",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower.obj",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower.obj"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower_left.glb",
+      "size": 5338144,
+      "sha256": "c080628e0d47dd074db4499a942a3d623261034d6dabbb5c3b6be985eb1a7977",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower_left.glb",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower_left.glb"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower_left.mtl",
+      "size": 236,
+      "sha256": "8d089b69a407ec56c2beea4be14c24d0be0a8eab7fae7df04f35cb147ef69153",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower_left.mtl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower_left.mtl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower_left.obj",
+      "size": 4514064,
+      "sha256": "5369c7bb802fb7effb58ff24d64da77b8630330c800cf490d96b631e93fed1e9",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower_left.obj",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower_left.obj"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip.glb",
+      "size": 1036400,
+      "sha256": "f538bd1a1aff270032c55ec12b6b5f6df263465d8ad70900ef71ea8b3c7755f2",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/pip.glb",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/pip.glb"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip.mtl",
+      "size": 253,
+      "sha256": "240a97143e932aba69009abdd728066939517cf808108623a014ef577976caeb",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/pip.mtl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/pip.mtl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip.obj",
+      "size": 673869,
+      "sha256": "3fff19dc1f0100bb5f34eaf8a40fcf3db40f96fd7179bb7336e538b21ff8e067",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/pip.obj",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/pip.obj"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip_left.glb",
+      "size": 1076996,
+      "sha256": "297c1aa40bc83e12b471f0e16950188153ea88f20a3fe8197823b9c1a3702470",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/pip_left.glb",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/pip_left.glb"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip_left.mtl",
+      "size": 236,
+      "sha256": "8d089b69a407ec56c2beea4be14c24d0be0a8eab7fae7df04f35cb147ef69153",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/pip_left.mtl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/pip_left.mtl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip_left.obj",
+      "size": 1115403,
+      "sha256": "8a9206845849784efef43486e2dafaad142f32a53c0d0fdde0381d178ec6acb4",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/pip_left.obj",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/pip_left.obj"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_dip.glb",
+      "size": 1452096,
+      "sha256": "90d8564dfc71b191a14a0464c6812255f32350647bae32eab8eac15972cc6db5",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_dip.glb",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_dip.glb"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_dip.mtl",
+      "size": 253,
+      "sha256": "240a97143e932aba69009abdd728066939517cf808108623a014ef577976caeb",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_dip.mtl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_dip.mtl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_dip.obj",
+      "size": 968312,
+      "sha256": "5b402876601f2b0b36631e6a54ad20588f88e74f52320b6c902a8bc694578689",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_dip.obj",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_dip.obj"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_fingertip.glb",
+      "size": 1263544,
+      "sha256": "a88ba3ddc33179f6cb9427ab5dc8019dc1005d38ba1b75adf36d1c5531a30654",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_fingertip.glb",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_fingertip.glb"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_fingertip.mtl",
+      "size": 436,
+      "sha256": "7e972e2fb3bd55d0aac677a6cc41a2c1a6678868ac0b4f1a03af5786540fc3d7",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_fingertip.mtl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_fingertip.mtl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_fingertip.obj",
+      "size": 734609,
+      "sha256": "4695d72a70285e8a0132ed4de49876cf99c813182e3a24b172b53631224890de",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_fingertip.obj",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_fingertip.obj"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_pip.glb",
+      "size": 402568,
+      "sha256": "4fc1fcc3421ef81e07492ec1842e2fba1b2c3dcf60007ba2ae03525836e5be2d",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_pip.glb",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_pip.glb"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_pip.mtl",
+      "size": 253,
+      "sha256": "240a97143e932aba69009abdd728066939517cf808108623a014ef577976caeb",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_pip.mtl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_pip.mtl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_pip.obj",
+      "size": 294575,
+      "sha256": "d28876cc3b674323aa7d8a628a4240cda2757c61263b05e86a66280035a2689d",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_pip.obj",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_pip.obj"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/base.stl",
+      "size": 28984,
+      "sha256": "c7af57d109de6a73f57943613bb000346518df06bb5ae119a2e80cf00bcbebde",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/collision/base.stl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/base.stl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/forearm.stl",
+      "size": 52584,
+      "sha256": "8e79aa80a532494ba5320c30b40363ff63d228e3d59e2904703dca341dcba2ac",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/collision/forearm.stl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/forearm.stl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/shoulder.stl",
+      "size": 33784,
+      "sha256": "1d62e23a8c3ff9e6334fb157c805e6202037bcfca65bc6a36c5c9ae866751b3b",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/collision/shoulder.stl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/shoulder.stl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/upperarm.stl",
+      "size": 58884,
+      "sha256": "55c11ac0ad1e144f230849b2033532e8b140b2e818ea497296d08dfb88757440",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/collision/upperarm.stl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/upperarm.stl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/wrist1.stl",
+      "size": 35184,
+      "sha256": "0a1fd12150140efdee91650dcb4c2d0443065551a9207a2d2dbde58ff1fb4eb7",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/collision/wrist1.stl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/wrist1.stl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/wrist2.stl",
+      "size": 35184,
+      "sha256": "c1d9f7843366068cb331f3f5c43fa716d3eceeb8c80216eccbbc878905dab123",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/collision/wrist2.stl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/wrist2.stl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/wrist3.stl",
+      "size": 22384,
+      "sha256": "cf7220397b56f1d3047be9465eea1181d471b40fc82728052e31c97588585b4b",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/collision/wrist3.stl",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/wrist3.stl"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/base.dae",
+      "size": 153711,
+      "sha256": "2059aec60ceea5793181d52ecd07a25bac2a88f90182b96c4cf66f07cfb78de7",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/visual/base.dae",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/base.dae"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/forearm.dae",
+      "size": 1470273,
+      "sha256": "d7b40d794f81ba1658a442be9e7f193d445053564444a29f952b6bf7028706a2",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/visual/forearm.dae",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/forearm.dae"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/shoulder.dae",
+      "size": 1008635,
+      "sha256": "2bfa801f928dd92ec8a83826f84aa30ad511d53f4760f5f83c7385a1bc924aa1",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/visual/shoulder.dae",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/shoulder.dae"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/upperarm.dae",
+      "size": 2005857,
+      "sha256": "0577221909b0b76445c4dd21c02aca97f04b5185fef7b33f5a484db679e3de34",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/visual/upperarm.dae",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/upperarm.dae"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/wrist1.dae",
+      "size": 949559,
+      "sha256": "1cc29d29a40f2eefc89a280236dac1317babcb583538e7b31fdbc621f6a284a0",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/visual/wrist1.dae",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/wrist1.dae"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/wrist2.dae",
+      "size": 948372,
+      "sha256": "d8cc770127fc7cc3c587594660971811b52092df75b6178895828f74df37ea0f",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/visual/wrist2.dae",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/wrist2.dae"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/wrist3.dae",
+      "size": 124800,
+      "sha256": "8ee319c507ad0e0db4d77594cc03192f1660a3d0db03bae6f827518876d027af",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5/visual/wrist3.dae",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/wrist3.dae"
+    },
+    {
+      "destination": "assets/references/cordvip/ur5_leaphand/ur5_leaphand.urdf",
+      "size": 33792,
+      "sha256": "1ea131081012544a772bcd4e111456de966523304d3a8efb81e7edf42151ba24",
+      "source": "cord",
+      "original_path": "generate_pc/assets/ur5_leaphand/ur5_leaphand.urdf",
+      "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5_leaphand.urdf"
+    }
+  ],
+  "failures": []
+}

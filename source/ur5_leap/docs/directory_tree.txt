@@ -1,0 +1,262 @@
+source/ur5_leap/
+├── assets/
+│   ├── combined/
+│   │   └── ur5_leap_right/
+│   │       ├── config/
+│   │       │   ├── joint_mapping.json
+│   │       │   └── mounting.json
+│   │       ├── meshes/
+│   │       │   └── README.md
+│   │       ├── urdf/
+│   │       │   └── ur5_leap_right.urdf
+│   │       └── README.md
+│   ├── official/
+│   │   ├── leap_hand_v1_right/
+│   │   │   ├── cad/
+│   │   │   │   ├── full_assembly_right.stp
+│   │   │   │   ├── leap_cad.html
+│   │   │   │   ├── palm_upper_xarm_franka_ur5.stl
+│   │   │   │   ├── palm_upper_xarm_franka_ur5.stp
+│   │   │   │   └── right_urdf.zip
+│   │   │   ├── generated/
+│   │   │   │   └── leap_hand_right.urdf
+│   │   │   ├── isaac_lab_reference/
+│   │   │   │   ├── leap_hand_v1_right/
+│   │   │   │   │   ├── configuration/
+│   │   │   │   │   │   ├── leap_hand_right_base.usd
+│   │   │   │   │   │   ├── leap_hand_right_physics.usd
+│   │   │   │   │   │   └── leap_hand_right_sensor.usd
+│   │   │   │   │   ├── leap_hand_right.usd
+│   │   │   │   │   └── use_yuzhe_dex-urdf.txt
+│   │   │   │   ├── README.md
+│   │   │   │   └── leap.py
+│   │   │   ├── meshes/
+│   │   │   │   └── README.md
+│   │   │   ├── sim_reference/
+│   │   │   │   ├── leap_hand/
+│   │   │   │   │   ├── dip.part
+│   │   │   │   │   ├── dip.stl
+│   │   │   │   │   ├── fingertip.part
+│   │   │   │   │   ├── fingertip.stl
+│   │   │   │   │   ├── mcp_joint.part
+│   │   │   │   │   ├── mcp_joint.stl
+│   │   │   │   │   ├── palm_lower.part
+│   │   │   │   │   ├── palm_lower.stl
+│   │   │   │   │   ├── pip.part
+│   │   │   │   │   ├── pip.stl
+│   │   │   │   │   ├── robot.urdf
+│   │   │   │   │   ├── thumb_dip.part
+│   │   │   │   │   ├── thumb_dip.stl
+│   │   │   │   │   ├── thumb_fingertip.part
+│   │   │   │   │   ├── thumb_fingertip.stl
+│   │   │   │   │   ├── thumb_pip.part
+│   │   │   │   │   └── thumb_pip.stl
+│   │   │   │   ├── LICENSE.txt
+│   │   │   │   └── README.md
+│   │   │   ├── urdf/
+│   │   │   │   └── website_right/
+│   │   │   │       ├── dip.part
+│   │   │   │       ├── dip.stl
+│   │   │   │       ├── fingertip.part
+│   │   │   │       ├── fingertip.stl
+│   │   │   │       ├── mcp_joint.part
+│   │   │   │       ├── mcp_joint.stl
+│   │   │   │       ├── palm_lower.part
+│   │   │   │       ├── palm_lower.stl
+│   │   │   │       ├── pip.part
+│   │   │   │       ├── pip.stl
+│   │   │   │       ├── robot.urdf
+│   │   │   │       ├── thumb_dip.part
+│   │   │   │       ├── thumb_dip.stl
+│   │   │   │       ├── thumb_fingertip.part
+│   │   │   │       ├── thumb_fingertip.stl
+│   │   │   │       ├── thumb_pip.part
+│   │   │   │       └── thumb_pip.stl
+│   │   │   ├── LICENSE_CAD_NOTICE.md
+│   │   │   └── SOURCE.md
+│   │   └── ur5/
+│   │       ├── config/
+│   │       │   ├── ur5/
+│   │       │   │   ├── default_kinematics.yaml
+│   │       │   │   ├── joint_limits.yaml
+│   │       │   │   ├── physical_parameters.yaml
+│   │       │   │   └── visual_parameters.yaml
+│   │       │   └── initial_positions.yaml
+│   │       ├── doc/
+│   │       │   ├── index.rst
+│   │       │   └── robot_frames.rst
+│   │       ├── generated/
+│   │       │   └── ur5_cb3.urdf
+│   │       ├── meshes/
+│   │       │   └── ur5/
+│   │       │       ├── collision/
+│   │       │       │   ├── base.stl
+│   │       │       │   ├── forearm.stl
+│   │       │       │   ├── shoulder.stl
+│   │       │       │   ├── upperarm.stl
+│   │       │       │   ├── wrist1.stl
+│   │       │       │   ├── wrist2.stl
+│   │       │       │   └── wrist3.stl
+│   │       │       └── visual/
+│   │       │           ├── base.dae
+│   │       │           ├── forearm.dae
+│   │       │           ├── shoulder.dae
+│   │       │           ├── upperarm.dae
+│   │       │           ├── wrist1.dae
+│   │       │           ├── wrist2.dae
+│   │       │           └── wrist3.dae
+│   │       ├── urdf/
+│   │       │   ├── inc/
+│   │       │   │   ├── ur_common.xacro
+│   │       │   │   ├── ur_joint_control.xacro
+│   │       │   │   ├── ur_sensors.xacro
+│   │       │   │   └── ur_transmissions.xacro
+│   │       │   ├── ros2_control_mock_hardware.xacro
+│   │       │   ├── ur.urdf.xacro
+│   │       │   ├── ur_macro.xacro
+│   │       │   └── ur_mocked.urdf.xacro
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       ├── SOURCE.md
+│   │       └── package.xml
+│   ├── references/
+│   │   ├── bodex/
+│   │   │   └── ur5_leap/
+│   │   │       ├── meshes/
+│   │   │       │   ├── leap/
+│   │   │       │   │   ├── dip.stl
+│   │   │       │   │   ├── fingertip.stl
+│   │   │       │   │   ├── mcp_joint.stl
+│   │   │       │   │   ├── palm_lower.stl
+│   │   │       │   │   ├── pip.stl
+│   │   │       │   │   ├── thumb_dip.stl
+│   │   │       │   │   ├── thumb_fingertip.stl
+│   │   │       │   │   └── thumb_pip.stl
+│   │   │       │   ├── leap_simplified/
+│   │   │       │   │   ├── convex_tip.obj
+│   │   │       │   │   ├── convex_tip_thumb.obj
+│   │   │       │   │   ├── dip.stl
+│   │   │       │   │   ├── fingertip.stl
+│   │   │       │   │   ├── mcp_joint.stl
+│   │   │       │   │   ├── palm_lower.stl
+│   │   │       │   │   ├── pip.stl
+│   │   │       │   │   ├── thumb_dip.stl
+│   │   │       │   │   ├── thumb_fingertip.stl
+│   │   │       │   │   └── thumb_pip.stl
+│   │   │       │   ├── ur5/
+│   │   │       │   │   ├── collision/
+│   │   │       │   │   │   ├── base.stl
+│   │   │       │   │   │   ├── forearm.stl
+│   │   │       │   │   │   ├── shoulder.stl
+│   │   │       │   │   │   ├── upperarm.stl
+│   │   │       │   │   │   ├── wrist1.stl
+│   │   │       │   │   │   ├── wrist2.stl
+│   │   │       │   │   │   └── wrist3.stl
+│   │   │       │   │   ├── visual/
+│   │   │       │   │   │   ├── base.dae
+│   │   │       │   │   │   ├── forearm.dae
+│   │   │       │   │   │   ├── shoulder.dae
+│   │   │       │   │   │   ├── upperarm.dae
+│   │   │       │   │   │   ├── wrist1.dae
+│   │   │       │   │   │   ├── wrist2.dae
+│   │   │       │   │   │   └── wrist3.dae
+│   │   │       │   │   └── visual_simplified/
+│   │   │       │   │       ├── base.dae
+│   │   │       │   │       ├── forearm.dae
+│   │   │       │   │       ├── shoulder.dae
+│   │   │       │   │       ├── upperarm.dae
+│   │   │       │   │       ├── wrist1.dae
+│   │   │       │   │       ├── wrist2.dae
+│   │   │       │   │       └── wrist3.dae
+│   │   │       │   ├── ur10e
+│   │   │       │   └── ur5e
+│   │   │       ├── urdf/
+│   │   │       │   ├── leap_hand.urdf
+│   │   │       │   ├── leap_hand_simplified.urdf
+│   │   │       │   ├── ur5_leap.urdf
+│   │   │       │   └── ur5_leap_simplified.urdf
+│   │   │       ├── LICENSE
+│   │   │       ├── LICENSE_ASSETS
+│   │   │       ├── README.md
+│   │   │       └── SOURCE.md
+│   │   └── cordvip/
+│   │       └── ur5_leaphand/
+│   │           ├── leaphand/
+│   │           │   ├── collision/
+│   │           │   │   ├── white_tip.obj
+│   │           │   │   └── white_tip_thumb.obj
+│   │           │   └── visual/
+│   │           │       ├── dip.glb
+│   │           │       ├── dip.mtl
+│   │           │       ├── dip.obj
+│   │           │       ├── fingertip.glb
+│   │           │       ├── fingertip.mtl
+│   │           │       ├── fingertip.obj
+│   │           │       ├── mcp_joint.glb
+│   │           │       ├── mcp_joint.mtl
+│   │           │       ├── mcp_joint.obj
+│   │           │       ├── palm_lower.glb
+│   │           │       ├── palm_lower.mtl
+│   │           │       ├── palm_lower.obj
+│   │           │       ├── palm_lower_left.glb
+│   │           │       ├── palm_lower_left.mtl
+│   │           │       ├── palm_lower_left.obj
+│   │           │       ├── pip.glb
+│   │           │       ├── pip.mtl
+│   │           │       ├── pip.obj
+│   │           │       ├── pip_left.glb
+│   │           │       ├── pip_left.mtl
+│   │           │       ├── pip_left.obj
+│   │           │       ├── thumb_dip.glb
+│   │           │       ├── thumb_dip.mtl
+│   │           │       ├── thumb_dip.obj
+│   │           │       ├── thumb_fingertip.glb
+│   │           │       ├── thumb_fingertip.mtl
+│   │           │       ├── thumb_fingertip.obj
+│   │           │       ├── thumb_pip.glb
+│   │           │       ├── thumb_pip.mtl
+│   │           │       └── thumb_pip.obj
+│   │           ├── ur5/
+│   │           │   ├── collision/
+│   │           │   │   ├── base.stl
+│   │           │   │   ├── forearm.stl
+│   │           │   │   ├── shoulder.stl
+│   │           │   │   ├── upperarm.stl
+│   │           │   │   ├── wrist1.stl
+│   │           │   │   ├── wrist2.stl
+│   │           │   │   └── wrist3.stl
+│   │           │   └── visual/
+│   │           │       ├── base.dae
+│   │           │       ├── forearm.dae
+│   │           │       ├── shoulder.dae
+│   │           │       ├── upperarm.dae
+│   │           │       ├── wrist1.dae
+│   │           │       ├── wrist2.dae
+│   │           │       └── wrist3.dae
+│   │           ├── LICENSE
+│   │           ├── README.md
+│   │           ├── SOURCE.md
+│   │           └── ur5_leaphand.urdf
+│   ├── downloads.json
+│   └── sources.lock.json
+├── docs/
+│   ├── asset_comparison.md
+│   ├── asset_sources.md
+│   ├── directory_tree.txt
+│   ├── download_inventory.md
+│   ├── known_issues.md
+│   ├── large_files.md
+│   ├── validation.json
+│   └── validation.md
+├── scripts/
+│   ├── asset_utils.py
+│   ├── build_combined.py
+│   ├── download_assets.py
+│   ├── inspect_all.py
+│   ├── inspect_combined.py
+│   ├── inspect_leap.py
+│   └── inspect_ur5.py
+├── .gitattributes
+├── .gitignore
+├── README.md
+└── requirements-tools.txt

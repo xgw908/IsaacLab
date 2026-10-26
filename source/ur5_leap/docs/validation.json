@@ -1,0 +1,3329 @@
+{
+  "scope": "Static URDF/resource validation only; no Isaac Sim import or physics stepping",
+  "official_components_preserved": true,
+  "original_downloads_verified": 177,
+  "models": {
+    "ur5_cb3": {
+      "file": "assets/official/ur5/generated/ur5_cb3.urdf",
+      "robot_name": "ur5_cb3",
+      "roots": [
+        "world"
+      ],
+      "links": 13,
+      "movable_joints": 6,
+      "joint_order_xml": [
+        "shoulder_pan_joint",
+        "shoulder_lift_joint",
+        "elbow_joint",
+        "wrist_1_joint",
+        "wrist_2_joint",
+        "wrist_3_joint"
+      ],
+      "joint_order_tree": [
+        "shoulder_pan_joint",
+        "shoulder_lift_joint",
+        "elbow_joint",
+        "wrist_1_joint",
+        "wrist_2_joint",
+        "wrist_3_joint"
+      ],
+      "joints": [
+        {
+          "name": "base_joint",
+          "type": "fixed",
+          "parent": "world",
+          "child": "base_link",
+          "xyz": "0 0 0",
+          "rpy": "0 0 0"
+        },
+        {
+          "name": "base_link-base_link_inertia",
+          "type": "fixed",
+          "parent": "base_link",
+          "child": "base_link_inertia",
+          "xyz": "0 0 0",
+          "rpy": "0 0 3.141592653589793"
+        },
+        {
+          "name": "shoulder_pan_joint",
+          "type": "revolute",
+          "parent": "base_link_inertia",
+          "child": "shoulder_link",
+          "xyz": "0 0 0.089159",
+          "rpy": "0 0 0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.141592653589793"
+          }
+        },
+        {
+          "name": "shoulder_lift_joint",
+          "type": "revolute",
+          "parent": "shoulder_link",
+          "child": "upper_arm_link",
+          "xyz": "0 0 0",
+          "rpy": "1.570796327 0 0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.141592653589793"
+          }
+        },
+        {
+          "name": "elbow_joint",
+          "type": "revolute",
+          "parent": "upper_arm_link",
+          "child": "forearm_link",
+          "xyz": "-0.425 0 0",
+          "rpy": "0 0 0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-3.141592653589793",
+            "upper": "3.141592653589793",
+            "velocity": "3.141592653589793"
+          }
+        },
+        {
+          "name": "wrist_1_joint",
+          "type": "revolute",
+          "parent": "forearm_link",
+          "child": "wrist_1_link",
+          "xyz": "-0.39225 0 0.10915",
+          "rpy": "0 0 0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.141592653589793"
+          }
+        },
+        {
+          "name": "wrist_2_joint",
+          "type": "revolute",
+          "parent": "wrist_1_link",
+          "child": "wrist_2_link",
+          "xyz": "0 -0.09465 -1.941303950897609e-11",
+          "rpy": "1.570796327 0 0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.141592653589793"
+          }
+        },
+        {
+          "name": "wrist_3_joint",
+          "type": "revolute",
+          "parent": "wrist_2_link",
+          "child": "wrist_3_link",
+          "xyz": "0 0.0823 -1.688001216681175e-11",
+          "rpy": "1.570796326589793 3.141592653589793 3.141592653589793",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.141592653589793"
+          }
+        },
+        {
+          "name": "wrist_3_link-ft_frame",
+          "type": "fixed",
+          "parent": "wrist_3_link",
+          "child": "ft_frame",
+          "xyz": "0 0 0",
+          "rpy": "3.141592653589793 0 0"
+        },
+        {
+          "name": "base_link-base_fixed_joint",
+          "type": "fixed",
+          "parent": "base_link",
+          "child": "base",
+          "xyz": "0 0 0",
+          "rpy": "0 0 3.141592653589793"
+        },
+        {
+          "name": "wrist_3-flange",
+          "type": "fixed",
+          "parent": "wrist_3_link",
+          "child": "flange",
+          "xyz": "0 0 0",
+          "rpy": "0 -1.5707963267948966 -1.5707963267948966"
+        },
+        {
+          "name": "flange-tool0",
+          "type": "fixed",
+          "parent": "flange",
+          "child": "tool0",
+          "xyz": "0 0 0",
+          "rpy": "1.5707963267948966 0 1.5707963267948966"
+        }
+      ],
+      "visuals": 7,
+      "collisions": 7,
+      "inertials": 7,
+      "meshes": {
+        "../meshes/ur5/visual/base.dae": "assets/official/ur5/meshes/ur5/visual/base.dae",
+        "../meshes/ur5/collision/base.stl": "assets/official/ur5/meshes/ur5/collision/base.stl",
+        "../meshes/ur5/visual/shoulder.dae": "assets/official/ur5/meshes/ur5/visual/shoulder.dae",
+        "../meshes/ur5/collision/shoulder.stl": "assets/official/ur5/meshes/ur5/collision/shoulder.stl",
+        "../meshes/ur5/visual/upperarm.dae": "assets/official/ur5/meshes/ur5/visual/upperarm.dae",
+        "../meshes/ur5/collision/upperarm.stl": "assets/official/ur5/meshes/ur5/collision/upperarm.stl",
+        "../meshes/ur5/visual/forearm.dae": "assets/official/ur5/meshes/ur5/visual/forearm.dae",
+        "../meshes/ur5/collision/forearm.stl": "assets/official/ur5/meshes/ur5/collision/forearm.stl",
+        "../meshes/ur5/visual/wrist1.dae": "assets/official/ur5/meshes/ur5/visual/wrist1.dae",
+        "../meshes/ur5/collision/wrist1.stl": "assets/official/ur5/meshes/ur5/collision/wrist1.stl",
+        "../meshes/ur5/visual/wrist2.dae": "assets/official/ur5/meshes/ur5/visual/wrist2.dae",
+        "../meshes/ur5/collision/wrist2.stl": "assets/official/ur5/meshes/ur5/collision/wrist2.stl",
+        "../meshes/ur5/visual/wrist3.dae": "assets/official/ur5/meshes/ur5/visual/wrist3.dae",
+        "../meshes/ur5/collision/wrist3.stl": "assets/official/ur5/meshes/ur5/collision/wrist3.stl"
+      },
+      "rendering_dependencies_checked": 14,
+      "rendering_errors": [],
+      "errors": [],
+      "passed": true
+    },
+    "leap_right_website_original": {
+      "file": "assets/official/leap_hand_v1_right/urdf/website_right/robot.urdf",
+      "robot_name": "onshape",
+      "roots": [
+        "palm_lower"
+      ],
+      "links": 17,
+      "movable_joints": 16,
+      "joint_order_xml": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "joint_order_tree": [
+        "1",
+        "0",
+        "2",
+        "3",
+        "5",
+        "4",
+        "6",
+        "7",
+        "9",
+        "8",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "joints": [
+        {
+          "name": "0",
+          "type": "revolute",
+          "parent": "mcp_joint",
+          "child": "pip",
+          "xyz": "-0.012200000000000007713 0.038099999999999994982 0.014500000000000000736",
+          "rpy": "-1.570796326794896558 -1.0065212660796336576e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "1",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint",
+          "xyz": "-0.0070952496528625457958 0.023057756134899472233 -0.01872240357846021927",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "2",
+          "type": "revolute",
+          "parent": "pip",
+          "child": "dip",
+          "xyz": "0.01499999999999996822 0.014299999999999904801 -0.012999999999999824196",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "3",
+          "type": "revolute",
+          "parent": "dip",
+          "child": "fingertip",
+          "xyz": "-4.0880582495572692636e-09 -0.036100004210367367397 0.00020000000000007858714",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463794583e-16 4.4395481053923607589e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "4",
+          "type": "revolute",
+          "parent": "mcp_joint_2",
+          "child": "pip_2",
+          "xyz": "-0.012200000000000019856 0.038099999999999981104 0.01450000000000000594",
+          "rpy": "-1.570796326794896558 -1.0065212760057939085e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "5",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint_2",
+          "xyz": "-0.0070952496528625388569 -0.022392243865100525113 -0.018722403578460229678",
+          "rpy": "1.570796326794896558 1.570796326794896558 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "6",
+          "type": "revolute",
+          "parent": "pip_2",
+          "child": "dip_2",
+          "xyz": "0.014999999999999975159 0.014300000000000000211 -0.013000000000000018485",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "7",
+          "type": "revolute",
+          "parent": "dip_2",
+          "child": "fingertip_2",
+          "xyz": "1.0061396160665481148e-16 -0.036099999999999854428 0.00020000000000007858714",
+          "rpy": "4.5935029425113654229e-17 -2.8730071914463794583e-16 1.4408183216511868558e-31",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "8",
+          "type": "revolute",
+          "parent": "mcp_joint_3",
+          "child": "pip_3",
+          "xyz": "-0.012200000000000004244 0.038100000000000001921 0.014499999999999999001",
+          "rpy": "-1.570796326794896558 -1.0065212660796360242e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "9",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint_3",
+          "xyz": "-0.0070952454426398371343 -0.067842243865100515521 -0.018722407666402932774",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "10",
+          "type": "revolute",
+          "parent": "pip_3",
+          "child": "dip_3",
+          "xyz": "0.014999999999999971689 0.014299999999999951639 -0.012999999999999959505",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "11",
+          "type": "revolute",
+          "parent": "dip_3",
+          "child": "fingertip_3",
+          "xyz": "9.7144514654701197287e-17 -0.036099999999999868305 0.00020000000000007511769",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463799514e-16 1.5565411607615035382e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "12",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "pip_4",
+          "xyz": "-0.069395249652862533996 -0.0012422438651005258004 -0.021622403578460215601",
+          "rpy": "-8.2381766464939424156e-17 1.5707963267948956698 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.349",
+            "upper": "2.094"
+          }
+        },
+        {
+          "name": "13",
+          "type": "revolute",
+          "parent": "pip_4",
+          "child": "thumb_pip",
+          "xyz": "-2.7755575615628913511e-17 0.014300000000000005415 -0.013000000000000011546",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.47",
+            "upper": "2.443"
+          }
+        },
+        {
+          "name": "14",
+          "type": "revolute",
+          "parent": "thumb_pip",
+          "child": "thumb_dip",
+          "xyz": "0 0.014499999999999966041 -0.017000000000000053263",
+          "rpy": "-1.570796326794896558 1.6050198443300131245e-46 -1.9721522630516624601e-31",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.20",
+            "upper": "1.90"
+          }
+        },
+        {
+          "name": "15",
+          "type": "revolute",
+          "parent": "thumb_dip",
+          "child": "thumb_fingertip",
+          "xyz": "-1.249000902703301108e-16 0.046599999999999863753 0.00019999999999997710581",
+          "rpy": "1.5063958491491781023e-44 5.4234187233935260503e-31 3.141592653589793116",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.34",
+            "upper": "1.88"
+          }
+        }
+      ],
+      "visuals": 17,
+      "collisions": 17,
+      "inertials": 17,
+      "meshes": {
+        "package:///palm_lower.stl": "assets/official/leap_hand_v1_right/urdf/website_right/palm_lower.stl",
+        "package:///mcp_joint.stl": "assets/official/leap_hand_v1_right/urdf/website_right/mcp_joint.stl",
+        "package:///pip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/pip.stl",
+        "package:///dip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/dip.stl",
+        "package:///fingertip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/fingertip.stl",
+        "package:///thumb_pip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_pip.stl",
+        "package:///thumb_dip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_dip.stl",
+        "package:///thumb_fingertip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_fingertip.stl"
+      },
+      "rendering_dependencies_checked": 8,
+      "rendering_errors": [],
+      "errors": [],
+      "passed": true
+    },
+    "leap_right_portable": {
+      "file": "assets/official/leap_hand_v1_right/generated/leap_hand_right.urdf",
+      "robot_name": "onshape",
+      "roots": [
+        "palm_lower"
+      ],
+      "links": 17,
+      "movable_joints": 16,
+      "joint_order_xml": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "joint_order_tree": [
+        "1",
+        "0",
+        "2",
+        "3",
+        "5",
+        "4",
+        "6",
+        "7",
+        "9",
+        "8",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "joints": [
+        {
+          "name": "0",
+          "type": "revolute",
+          "parent": "mcp_joint",
+          "child": "pip",
+          "xyz": "-0.012200000000000007713 0.038099999999999994982 0.014500000000000000736",
+          "rpy": "-1.570796326794896558 -1.0065212660796336576e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "1",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint",
+          "xyz": "-0.0070952496528625457958 0.023057756134899472233 -0.01872240357846021927",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "2",
+          "type": "revolute",
+          "parent": "pip",
+          "child": "dip",
+          "xyz": "0.01499999999999996822 0.014299999999999904801 -0.012999999999999824196",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "3",
+          "type": "revolute",
+          "parent": "dip",
+          "child": "fingertip",
+          "xyz": "-4.0880582495572692636e-09 -0.036100004210367367397 0.00020000000000007858714",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463794583e-16 4.4395481053923607589e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "4",
+          "type": "revolute",
+          "parent": "mcp_joint_2",
+          "child": "pip_2",
+          "xyz": "-0.012200000000000019856 0.038099999999999981104 0.01450000000000000594",
+          "rpy": "-1.570796326794896558 -1.0065212760057939085e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "5",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint_2",
+          "xyz": "-0.0070952496528625388569 -0.022392243865100525113 -0.018722403578460229678",
+          "rpy": "1.570796326794896558 1.570796326794896558 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "6",
+          "type": "revolute",
+          "parent": "pip_2",
+          "child": "dip_2",
+          "xyz": "0.014999999999999975159 0.014300000000000000211 -0.013000000000000018485",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "7",
+          "type": "revolute",
+          "parent": "dip_2",
+          "child": "fingertip_2",
+          "xyz": "1.0061396160665481148e-16 -0.036099999999999854428 0.00020000000000007858714",
+          "rpy": "4.5935029425113654229e-17 -2.8730071914463794583e-16 1.4408183216511868558e-31",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "8",
+          "type": "revolute",
+          "parent": "mcp_joint_3",
+          "child": "pip_3",
+          "xyz": "-0.012200000000000004244 0.038100000000000001921 0.014499999999999999001",
+          "rpy": "-1.570796326794896558 -1.0065212660796360242e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "9",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint_3",
+          "xyz": "-0.0070952454426398371343 -0.067842243865100515521 -0.018722407666402932774",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "10",
+          "type": "revolute",
+          "parent": "pip_3",
+          "child": "dip_3",
+          "xyz": "0.014999999999999971689 0.014299999999999951639 -0.012999999999999959505",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "11",
+          "type": "revolute",
+          "parent": "dip_3",
+          "child": "fingertip_3",
+          "xyz": "9.7144514654701197287e-17 -0.036099999999999868305 0.00020000000000007511769",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463799514e-16 1.5565411607615035382e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "12",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "pip_4",
+          "xyz": "-0.069395249652862533996 -0.0012422438651005258004 -0.021622403578460215601",
+          "rpy": "-8.2381766464939424156e-17 1.5707963267948956698 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.349",
+            "upper": "2.094"
+          }
+        },
+        {
+          "name": "13",
+          "type": "revolute",
+          "parent": "pip_4",
+          "child": "thumb_pip",
+          "xyz": "-2.7755575615628913511e-17 0.014300000000000005415 -0.013000000000000011546",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.47",
+            "upper": "2.443"
+          }
+        },
+        {
+          "name": "14",
+          "type": "revolute",
+          "parent": "thumb_pip",
+          "child": "thumb_dip",
+          "xyz": "0 0.014499999999999966041 -0.017000000000000053263",
+          "rpy": "-1.570796326794896558 1.6050198443300131245e-46 -1.9721522630516624601e-31",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.20",
+            "upper": "1.90"
+          }
+        },
+        {
+          "name": "15",
+          "type": "revolute",
+          "parent": "thumb_dip",
+          "child": "thumb_fingertip",
+          "xyz": "-1.249000902703301108e-16 0.046599999999999863753 0.00019999999999997710581",
+          "rpy": "1.5063958491491781023e-44 5.4234187233935260503e-31 3.141592653589793116",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.34",
+            "upper": "1.88"
+          }
+        }
+      ],
+      "visuals": 17,
+      "collisions": 17,
+      "inertials": 17,
+      "meshes": {
+        "../urdf/website_right/palm_lower.stl": "assets/official/leap_hand_v1_right/urdf/website_right/palm_lower.stl",
+        "../urdf/website_right/mcp_joint.stl": "assets/official/leap_hand_v1_right/urdf/website_right/mcp_joint.stl",
+        "../urdf/website_right/pip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/pip.stl",
+        "../urdf/website_right/dip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/dip.stl",
+        "../urdf/website_right/fingertip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/fingertip.stl",
+        "../urdf/website_right/thumb_pip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_pip.stl",
+        "../urdf/website_right/thumb_dip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_dip.stl",
+        "../urdf/website_right/thumb_fingertip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_fingertip.stl"
+      },
+      "rendering_dependencies_checked": 8,
+      "rendering_errors": [],
+      "errors": [],
+      "passed": true
+    },
+    "leap_sim_original": {
+      "file": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/robot.urdf",
+      "robot_name": "onshape",
+      "roots": [
+        "palm_lower"
+      ],
+      "links": 17,
+      "movable_joints": 16,
+      "joint_order_xml": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "joint_order_tree": [
+        "1",
+        "0",
+        "2",
+        "3",
+        "5",
+        "4",
+        "6",
+        "7",
+        "9",
+        "8",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "joints": [
+        {
+          "name": "0",
+          "type": "revolute",
+          "parent": "mcp_joint",
+          "child": "pip",
+          "xyz": "-0.012200000000000007713 0.038099999999999994982 0.014500000000000000736",
+          "rpy": "-1.570796326794896558 -1.0065212660796336576e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "1",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint",
+          "xyz": "-0.0070952496528625457958 0.023057756134899472233 -0.01872240357846021927",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "2",
+          "type": "revolute",
+          "parent": "pip",
+          "child": "dip",
+          "xyz": "0.01499999999999996822 0.014299999999999904801 -0.012999999999999824196",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "3",
+          "type": "revolute",
+          "parent": "dip",
+          "child": "fingertip",
+          "xyz": "-4.0880582495572692636e-09 -0.036100004210367367397 0.00020000000000007858714",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463794583e-16 4.4395481053923607589e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "4",
+          "type": "revolute",
+          "parent": "mcp_joint_2",
+          "child": "pip_2",
+          "xyz": "-0.012200000000000019856 0.038099999999999981104 0.01450000000000000594",
+          "rpy": "-1.570796326794896558 -1.0065212760057939085e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "5",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint_2",
+          "xyz": "-0.0070952496528625388569 -0.022392243865100525113 -0.018722403578460229678",
+          "rpy": "1.570796326794896558 1.570796326794896558 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "6",
+          "type": "revolute",
+          "parent": "pip_2",
+          "child": "dip_2",
+          "xyz": "0.014999999999999975159 0.014300000000000000211 -0.013000000000000018485",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "7",
+          "type": "revolute",
+          "parent": "dip_2",
+          "child": "fingertip_2",
+          "xyz": "1.0061396160665481148e-16 -0.036099999999999854428 0.00020000000000007858714",
+          "rpy": "4.5935029425113654229e-17 -2.8730071914463794583e-16 1.4408183216511868558e-31",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "8",
+          "type": "revolute",
+          "parent": "mcp_joint_3",
+          "child": "pip_3",
+          "xyz": "-0.012200000000000004244 0.038100000000000001921 0.014499999999999999001",
+          "rpy": "-1.570796326794896558 -1.0065212660796360242e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "9",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint_3",
+          "xyz": "-0.0070952454426398371343 -0.067842243865100515521 -0.018722407666402932774",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "10",
+          "type": "revolute",
+          "parent": "pip_3",
+          "child": "dip_3",
+          "xyz": "0.014999999999999971689 0.014299999999999951639 -0.012999999999999959505",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "11",
+          "type": "revolute",
+          "parent": "dip_3",
+          "child": "fingertip_3",
+          "xyz": "9.7144514654701197287e-17 -0.036099999999999868305 0.00020000000000007511769",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463799514e-16 1.5565411607615035382e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "12",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "pip_4",
+          "xyz": "-0.069395249652862533996 -0.0012422438651005258004 -0.021622403578460215601",
+          "rpy": "-8.2381766464939424156e-17 1.5707963267948956698 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.349",
+            "upper": "2.094"
+          }
+        },
+        {
+          "name": "13",
+          "type": "revolute",
+          "parent": "pip_4",
+          "child": "thumb_pip",
+          "xyz": "-2.7755575615628913511e-17 0.014300000000000005415 -0.013000000000000011546",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.47",
+            "upper": "2.443"
+          }
+        },
+        {
+          "name": "14",
+          "type": "revolute",
+          "parent": "thumb_pip",
+          "child": "thumb_dip",
+          "xyz": "0 0.014499999999999966041 -0.017000000000000053263",
+          "rpy": "-1.570796326794896558 1.6050198443300131245e-46 -1.9721522630516624601e-31",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.20",
+            "upper": "1.90"
+          }
+        },
+        {
+          "name": "15",
+          "type": "revolute",
+          "parent": "thumb_dip",
+          "child": "thumb_fingertip",
+          "xyz": "-1.249000902703301108e-16 0.046599999999999863753 0.00019999999999997710581",
+          "rpy": "1.5063958491491781023e-44 5.4234187233935260503e-31 3.141592653589793116",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.34",
+            "upper": "1.88"
+          }
+        }
+      ],
+      "visuals": 17,
+      "collisions": 17,
+      "inertials": 17,
+      "meshes": {
+        "palm_lower.stl": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/palm_lower.stl",
+        "mcp_joint.stl": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/mcp_joint.stl",
+        "pip.stl": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/pip.stl",
+        "dip.stl": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/dip.stl",
+        "fingertip.stl": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/fingertip.stl",
+        "thumb_pip.stl": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_pip.stl",
+        "thumb_dip.stl": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_dip.stl",
+        "thumb_fingertip.stl": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_fingertip.stl"
+      },
+      "rendering_dependencies_checked": 8,
+      "rendering_errors": [],
+      "errors": [],
+      "passed": true
+    },
+    "combined": {
+      "file": "assets/combined/ur5_leap_right/urdf/ur5_leap_right.urdf",
+      "robot_name": "ur5_cb3_leap_v1_right",
+      "roots": [
+        "base_link"
+      ],
+      "links": 30,
+      "movable_joints": 22,
+      "joint_order_xml": [
+        "shoulder_pan_joint",
+        "shoulder_lift_joint",
+        "elbow_joint",
+        "wrist_1_joint",
+        "wrist_2_joint",
+        "wrist_3_joint",
+        "leap_joint_0",
+        "leap_joint_1",
+        "leap_joint_2",
+        "leap_joint_3",
+        "leap_joint_4",
+        "leap_joint_5",
+        "leap_joint_6",
+        "leap_joint_7",
+        "leap_joint_8",
+        "leap_joint_9",
+        "leap_joint_10",
+        "leap_joint_11",
+        "leap_joint_12",
+        "leap_joint_13",
+        "leap_joint_14",
+        "leap_joint_15"
+      ],
+      "joint_order_tree": [
+        "shoulder_pan_joint",
+        "shoulder_lift_joint",
+        "elbow_joint",
+        "wrist_1_joint",
+        "wrist_2_joint",
+        "wrist_3_joint",
+        "leap_joint_1",
+        "leap_joint_0",
+        "leap_joint_2",
+        "leap_joint_3",
+        "leap_joint_5",
+        "leap_joint_4",
+        "leap_joint_6",
+        "leap_joint_7",
+        "leap_joint_9",
+        "leap_joint_8",
+        "leap_joint_10",
+        "leap_joint_11",
+        "leap_joint_12",
+        "leap_joint_13",
+        "leap_joint_14",
+        "leap_joint_15"
+      ],
+      "joints": [
+        {
+          "name": "base_link-base_link_inertia",
+          "type": "fixed",
+          "parent": "base_link",
+          "child": "base_link_inertia",
+          "xyz": "0 0 0",
+          "rpy": "0 0 3.141592653589793"
+        },
+        {
+          "name": "shoulder_pan_joint",
+          "type": "revolute",
+          "parent": "base_link_inertia",
+          "child": "shoulder_link",
+          "xyz": "0 0 0.089159",
+          "rpy": "0 0 0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.141592653589793"
+          }
+        },
+        {
+          "name": "shoulder_lift_joint",
+          "type": "revolute",
+          "parent": "shoulder_link",
+          "child": "upper_arm_link",
+          "xyz": "0 0 0",
+          "rpy": "1.570796327 0 0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.141592653589793"
+          }
+        },
+        {
+          "name": "elbow_joint",
+          "type": "revolute",
+          "parent": "upper_arm_link",
+          "child": "forearm_link",
+          "xyz": "-0.425 0 0",
+          "rpy": "0 0 0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-3.141592653589793",
+            "upper": "3.141592653589793",
+            "velocity": "3.141592653589793"
+          }
+        },
+        {
+          "name": "wrist_1_joint",
+          "type": "revolute",
+          "parent": "forearm_link",
+          "child": "wrist_1_link",
+          "xyz": "-0.39225 0 0.10915",
+          "rpy": "0 0 0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.141592653589793"
+          }
+        },
+        {
+          "name": "wrist_2_joint",
+          "type": "revolute",
+          "parent": "wrist_1_link",
+          "child": "wrist_2_link",
+          "xyz": "0 -0.09465 -1.941303950897609e-11",
+          "rpy": "1.570796327 0 0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.141592653589793"
+          }
+        },
+        {
+          "name": "wrist_3_joint",
+          "type": "revolute",
+          "parent": "wrist_2_link",
+          "child": "wrist_3_link",
+          "xyz": "0 0.0823 -1.688001216681175e-11",
+          "rpy": "1.570796326589793 3.141592653589793 3.141592653589793",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.141592653589793"
+          }
+        },
+        {
+          "name": "wrist_3_link-ft_frame",
+          "type": "fixed",
+          "parent": "wrist_3_link",
+          "child": "ft_frame",
+          "xyz": "0 0 0",
+          "rpy": "3.141592653589793 0 0"
+        },
+        {
+          "name": "base_link-base_fixed_joint",
+          "type": "fixed",
+          "parent": "base_link",
+          "child": "base",
+          "xyz": "0 0 0",
+          "rpy": "0 0 3.141592653589793"
+        },
+        {
+          "name": "wrist_3-flange",
+          "type": "fixed",
+          "parent": "wrist_3_link",
+          "child": "flange",
+          "xyz": "0 0 0",
+          "rpy": "0 -1.5707963267948966 -1.5707963267948966"
+        },
+        {
+          "name": "flange-tool0",
+          "type": "fixed",
+          "parent": "flange",
+          "child": "tool0",
+          "xyz": "0 0 0",
+          "rpy": "1.5707963267948966 0 1.5707963267948966"
+        },
+        {
+          "name": "flange_to_adapter",
+          "type": "fixed",
+          "parent": "flange",
+          "child": "mounting_adapter",
+          "xyz": "0.0 0.0 0.0",
+          "rpy": "0.0 0.0 0.0"
+        },
+        {
+          "name": "adapter_to_palm",
+          "type": "fixed",
+          "parent": "mounting_adapter",
+          "child": "palm_lower",
+          "xyz": "0.0 0.0 0.0",
+          "rpy": "0.0 0.0 0.0"
+        },
+        {
+          "name": "leap_joint_0",
+          "type": "revolute",
+          "parent": "mcp_joint",
+          "child": "pip",
+          "xyz": "-0.012200000000000007713 0.038099999999999994982 0.014500000000000000736",
+          "rpy": "-1.570796326794896558 -1.0065212660796336576e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "leap_joint_1",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint",
+          "xyz": "-0.0070952496528625457958 0.023057756134899472233 -0.01872240357846021927",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "leap_joint_2",
+          "type": "revolute",
+          "parent": "pip",
+          "child": "dip",
+          "xyz": "0.01499999999999996822 0.014299999999999904801 -0.012999999999999824196",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "leap_joint_3",
+          "type": "revolute",
+          "parent": "dip",
+          "child": "fingertip",
+          "xyz": "-4.0880582495572692636e-09 -0.036100004210367367397 0.00020000000000007858714",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463794583e-16 4.4395481053923607589e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "leap_joint_4",
+          "type": "revolute",
+          "parent": "mcp_joint_2",
+          "child": "pip_2",
+          "xyz": "-0.012200000000000019856 0.038099999999999981104 0.01450000000000000594",
+          "rpy": "-1.570796326794896558 -1.0065212760057939085e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "leap_joint_5",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint_2",
+          "xyz": "-0.0070952496528625388569 -0.022392243865100525113 -0.018722403578460229678",
+          "rpy": "1.570796326794896558 1.570796326794896558 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "leap_joint_6",
+          "type": "revolute",
+          "parent": "pip_2",
+          "child": "dip_2",
+          "xyz": "0.014999999999999975159 0.014300000000000000211 -0.013000000000000018485",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "leap_joint_7",
+          "type": "revolute",
+          "parent": "dip_2",
+          "child": "fingertip_2",
+          "xyz": "1.0061396160665481148e-16 -0.036099999999999854428 0.00020000000000007858714",
+          "rpy": "4.5935029425113654229e-17 -2.8730071914463794583e-16 1.4408183216511868558e-31",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "leap_joint_8",
+          "type": "revolute",
+          "parent": "mcp_joint_3",
+          "child": "pip_3",
+          "xyz": "-0.012200000000000004244 0.038100000000000001921 0.014499999999999999001",
+          "rpy": "-1.570796326794896558 -1.0065212660796360242e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "leap_joint_9",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint_3",
+          "xyz": "-0.0070952454426398371343 -0.067842243865100515521 -0.018722407666402932774",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "leap_joint_10",
+          "type": "revolute",
+          "parent": "pip_3",
+          "child": "dip_3",
+          "xyz": "0.014999999999999971689 0.014299999999999951639 -0.012999999999999959505",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "leap_joint_11",
+          "type": "revolute",
+          "parent": "dip_3",
+          "child": "fingertip_3",
+          "xyz": "9.7144514654701197287e-17 -0.036099999999999868305 0.00020000000000007511769",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463799514e-16 1.5565411607615035382e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "leap_joint_12",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "pip_4",
+          "xyz": "-0.069395249652862533996 -0.0012422438651005258004 -0.021622403578460215601",
+          "rpy": "-8.2381766464939424156e-17 1.5707963267948956698 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.349",
+            "upper": "2.094"
+          }
+        },
+        {
+          "name": "leap_joint_13",
+          "type": "revolute",
+          "parent": "pip_4",
+          "child": "thumb_pip",
+          "xyz": "-2.7755575615628913511e-17 0.014300000000000005415 -0.013000000000000011546",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.47",
+            "upper": "2.443"
+          }
+        },
+        {
+          "name": "leap_joint_14",
+          "type": "revolute",
+          "parent": "thumb_pip",
+          "child": "thumb_dip",
+          "xyz": "0 0.014499999999999966041 -0.017000000000000053263",
+          "rpy": "-1.570796326794896558 1.6050198443300131245e-46 -1.9721522630516624601e-31",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.20",
+            "upper": "1.90"
+          }
+        },
+        {
+          "name": "leap_joint_15",
+          "type": "revolute",
+          "parent": "thumb_dip",
+          "child": "thumb_fingertip",
+          "xyz": "-1.249000902703301108e-16 0.046599999999999863753 0.00019999999999997710581",
+          "rpy": "1.5063958491491781023e-44 5.4234187233935260503e-31 3.141592653589793116",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.34",
+            "upper": "1.88"
+          }
+        }
+      ],
+      "visuals": 24,
+      "collisions": 24,
+      "inertials": 24,
+      "meshes": {
+        "../../../official/ur5/meshes/ur5/visual/base.dae": "assets/official/ur5/meshes/ur5/visual/base.dae",
+        "../../../official/ur5/meshes/ur5/collision/base.stl": "assets/official/ur5/meshes/ur5/collision/base.stl",
+        "../../../official/ur5/meshes/ur5/visual/shoulder.dae": "assets/official/ur5/meshes/ur5/visual/shoulder.dae",
+        "../../../official/ur5/meshes/ur5/collision/shoulder.stl": "assets/official/ur5/meshes/ur5/collision/shoulder.stl",
+        "../../../official/ur5/meshes/ur5/visual/upperarm.dae": "assets/official/ur5/meshes/ur5/visual/upperarm.dae",
+        "../../../official/ur5/meshes/ur5/collision/upperarm.stl": "assets/official/ur5/meshes/ur5/collision/upperarm.stl",
+        "../../../official/ur5/meshes/ur5/visual/forearm.dae": "assets/official/ur5/meshes/ur5/visual/forearm.dae",
+        "../../../official/ur5/meshes/ur5/collision/forearm.stl": "assets/official/ur5/meshes/ur5/collision/forearm.stl",
+        "../../../official/ur5/meshes/ur5/visual/wrist1.dae": "assets/official/ur5/meshes/ur5/visual/wrist1.dae",
+        "../../../official/ur5/meshes/ur5/collision/wrist1.stl": "assets/official/ur5/meshes/ur5/collision/wrist1.stl",
+        "../../../official/ur5/meshes/ur5/visual/wrist2.dae": "assets/official/ur5/meshes/ur5/visual/wrist2.dae",
+        "../../../official/ur5/meshes/ur5/collision/wrist2.stl": "assets/official/ur5/meshes/ur5/collision/wrist2.stl",
+        "../../../official/ur5/meshes/ur5/visual/wrist3.dae": "assets/official/ur5/meshes/ur5/visual/wrist3.dae",
+        "../../../official/ur5/meshes/ur5/collision/wrist3.stl": "assets/official/ur5/meshes/ur5/collision/wrist3.stl",
+        "../../../official/leap_hand_v1_right/urdf/website_right/palm_lower.stl": "assets/official/leap_hand_v1_right/urdf/website_right/palm_lower.stl",
+        "../../../official/leap_hand_v1_right/urdf/website_right/mcp_joint.stl": "assets/official/leap_hand_v1_right/urdf/website_right/mcp_joint.stl",
+        "../../../official/leap_hand_v1_right/urdf/website_right/pip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/pip.stl",
+        "../../../official/leap_hand_v1_right/urdf/website_right/dip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/dip.stl",
+        "../../../official/leap_hand_v1_right/urdf/website_right/fingertip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/fingertip.stl",
+        "../../../official/leap_hand_v1_right/urdf/website_right/thumb_pip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_pip.stl",
+        "../../../official/leap_hand_v1_right/urdf/website_right/thumb_dip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_dip.stl",
+        "../../../official/leap_hand_v1_right/urdf/website_right/thumb_fingertip.stl": "assets/official/leap_hand_v1_right/urdf/website_right/thumb_fingertip.stl"
+      },
+      "rendering_dependencies_checked": 22,
+      "rendering_errors": [],
+      "errors": [],
+      "passed": true
+    },
+    "cordvip": {
+      "file": "assets/references/cordvip/ur5_leaphand/ur5_leaphand.urdf",
+      "robot_name": "ur5",
+      "roots": [
+        "base_link"
+      ],
+      "links": 29,
+      "movable_joints": 22,
+      "joint_order_xml": [
+        "shoulder_pan_joint",
+        "shoulder_lift_joint",
+        "elbow_joint",
+        "wrist_1_joint",
+        "wrist_2_joint",
+        "wrist_3_joint",
+        "joint0",
+        "joint1",
+        "joint2",
+        "joint3",
+        "joint4",
+        "joint5",
+        "joint6",
+        "joint7",
+        "joint8",
+        "joint9",
+        "joint10",
+        "joint11",
+        "joint12",
+        "joint13",
+        "joint14",
+        "joint15"
+      ],
+      "joint_order_tree": [
+        "shoulder_pan_joint",
+        "shoulder_lift_joint",
+        "elbow_joint",
+        "wrist_1_joint",
+        "wrist_2_joint",
+        "wrist_3_joint",
+        "joint1",
+        "joint0",
+        "joint2",
+        "joint3",
+        "joint5",
+        "joint4",
+        "joint6",
+        "joint7",
+        "joint9",
+        "joint8",
+        "joint10",
+        "joint11",
+        "joint12",
+        "joint13",
+        "joint14",
+        "joint15"
+      ],
+      "joints": [
+        {
+          "name": "shoulder_pan_joint",
+          "type": "revolute",
+          "parent": "base_link",
+          "child": "shoulder_link",
+          "xyz": "0.0 0.0 0.089159",
+          "rpy": "0.0 0.0 3.14159",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-6.28318530718",
+            "upper": "6.28318530718",
+            "velocity": "3.15"
+          }
+        },
+        {
+          "name": "shoulder_lift_joint",
+          "type": "revolute",
+          "parent": "shoulder_link",
+          "child": "upper_arm_link",
+          "xyz": "0.0 0.13585 0.0",
+          "rpy": "0.0 1.57079632679 0.0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-6.28318530718",
+            "upper": "6.28318530718",
+            "velocity": "3.15"
+          }
+        },
+        {
+          "name": "elbow_joint",
+          "type": "revolute",
+          "parent": "upper_arm_link",
+          "child": "forearm_link",
+          "xyz": "0.0 -0.1197 0.425",
+          "rpy": "0.0 0.0 0.0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-3.14159265359",
+            "upper": "3.14159265359",
+            "velocity": "3.15"
+          }
+        },
+        {
+          "name": "wrist_1_joint",
+          "type": "revolute",
+          "parent": "forearm_link",
+          "child": "wrist_1_link",
+          "xyz": "0.0 0.0 0.39225",
+          "rpy": "0.0 1.57079632679 0.0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.28318530718",
+            "upper": "6.28318530718",
+            "velocity": "3.2"
+          }
+        },
+        {
+          "name": "wrist_2_joint",
+          "type": "revolute",
+          "parent": "wrist_1_link",
+          "child": "wrist_2_link",
+          "xyz": "0.0 0.093 0.0",
+          "rpy": "0.0 0.0 0.0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.28318530718",
+            "upper": "6.28318530718",
+            "velocity": "3.2"
+          }
+        },
+        {
+          "name": "wrist_3_joint",
+          "type": "revolute",
+          "parent": "wrist_2_link",
+          "child": "wrist_3_link",
+          "xyz": "0.0 0.0 0.09465",
+          "rpy": "0.0 0.0 0.0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.28318530718",
+            "upper": "6.28318530718",
+            "velocity": "3.2"
+          }
+        },
+        {
+          "name": "ee_fixed_joint",
+          "type": "fixed",
+          "parent": "wrist_3_link",
+          "child": "ee_link",
+          "xyz": "0.0 0.0823 0.0",
+          "rpy": "0.0 0.0 1.57079632679"
+        },
+        {
+          "name": "mount_joint",
+          "type": "fixed",
+          "parent": "ee_link",
+          "child": "palm_lower",
+          "xyz": "0.0 0.03 0.06",
+          "rpy": "3.14159 -1.57079 3.14159"
+        },
+        {
+          "name": "joint0",
+          "type": "revolute",
+          "parent": "mcp_joint",
+          "child": "pip",
+          "xyz": "-0.0122 0.03810 0.01450",
+          "rpy": "-1.57079 0 1.57079",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "joint1",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint",
+          "xyz": "-0.0070 0.0230 -0.0187",
+          "rpy": "1.57079 1.57079 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "joint2",
+          "type": "revolute",
+          "parent": "pip",
+          "child": "dip",
+          "xyz": "0.015 0.0143 -0.013",
+          "rpy": "1.57079 -1.57079 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "joint3",
+          "type": "revolute",
+          "parent": "dip",
+          "child": "fingertip",
+          "xyz": "0 -0.0361 0.0002",
+          "rpy": "0 0 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "joint4",
+          "type": "revolute",
+          "parent": "mcp_joint_2",
+          "child": "pip_2",
+          "xyz": "-0.0122 0.0381 0.0145",
+          "rpy": "-1.57079 0 1.57079",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "joint5",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint_2",
+          "xyz": "-0.0071 -0.0224 -0.0187",
+          "rpy": "1.57079 1.57079 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "joint6",
+          "type": "revolute",
+          "parent": "pip_2",
+          "child": "dip_2",
+          "xyz": "0.015 0.0143 -0.013",
+          "rpy": "1.57079 -1.57079 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "joint7",
+          "type": "revolute",
+          "parent": "dip_2",
+          "child": "fingertip_2",
+          "xyz": "0 -0.0361 0.0002",
+          "rpy": "0 0 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "joint8",
+          "type": "revolute",
+          "parent": "mcp_joint_3",
+          "child": "pip_3",
+          "xyz": "-0.0122 0.0381 0.0145",
+          "rpy": "-1.57079 0 1.57079",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "joint9",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "mcp_joint_3",
+          "xyz": "-0.00709 -0.0678 -0.0187",
+          "rpy": "1.57079 1.57079 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "joint10",
+          "type": "revolute",
+          "parent": "pip_3",
+          "child": "dip_3",
+          "xyz": "0.015 0.0143 -0.013",
+          "rpy": "1.57079 -1.57079 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "joint11",
+          "type": "revolute",
+          "parent": "dip_3",
+          "child": "fingertip_3",
+          "xyz": "0 -0.03609 0.0002",
+          "rpy": "0 0 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "joint12",
+          "type": "revolute",
+          "parent": "palm_lower",
+          "child": "thumb_temp_base",
+          "xyz": "-0.0693 -0.0012 -0.0216",
+          "rpy": "0 1.57079 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.349",
+            "upper": "2.094"
+          }
+        },
+        {
+          "name": "joint13",
+          "type": "revolute",
+          "parent": "thumb_temp_base",
+          "child": "thumb_pip",
+          "xyz": "0 0.0143 -0.013",
+          "rpy": "1.57079 -1.57079 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.47",
+            "upper": "2.443"
+          }
+        },
+        {
+          "name": "joint14",
+          "type": "revolute",
+          "parent": "thumb_pip",
+          "child": "thumb_dip",
+          "xyz": "0 0.0145 -0.017",
+          "rpy": "-1.57079 0 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.20",
+            "upper": "1.90"
+          }
+        },
+        {
+          "name": "joint15",
+          "type": "revolute",
+          "parent": "thumb_dip",
+          "child": "thumb_fingertip",
+          "xyz": "0 0.0466 0.0002",
+          "rpy": "0 0 3.14159",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.34",
+            "upper": "1.88"
+          }
+        },
+        {
+          "name": "thumb_tip",
+          "type": "fixed",
+          "parent": "thumb_fingertip",
+          "child": "thumb_tip_head",
+          "xyz": "0 -0.06 -0.015",
+          "rpy": "0 0 0"
+        },
+        {
+          "name": "index_tip",
+          "type": "fixed",
+          "parent": "fingertip",
+          "child": "index_tip_head",
+          "xyz": "0 -0.048 0.015",
+          "rpy": "0 0 0"
+        },
+        {
+          "name": "middle_tip",
+          "type": "fixed",
+          "parent": "fingertip_2",
+          "child": "middle_tip_head",
+          "xyz": "0 -0.048 0.015",
+          "rpy": "0 0 0"
+        },
+        {
+          "name": "ring_tip",
+          "type": "fixed",
+          "parent": "fingertip_3",
+          "child": "ring_tip_head",
+          "xyz": "0 -0.048 0.015",
+          "rpy": "0 0 0"
+        }
+      ],
+      "visuals": 24,
+      "collisions": 79,
+      "inertials": 25,
+      "meshes": {
+        "ur5/visual/base.dae": "assets/references/cordvip/ur5_leaphand/ur5/visual/base.dae",
+        "ur5/collision/base.stl": "assets/references/cordvip/ur5_leaphand/ur5/collision/base.stl",
+        "ur5/visual/shoulder.dae": "assets/references/cordvip/ur5_leaphand/ur5/visual/shoulder.dae",
+        "ur5/collision/shoulder.stl": "assets/references/cordvip/ur5_leaphand/ur5/collision/shoulder.stl",
+        "ur5/visual/upperarm.dae": "assets/references/cordvip/ur5_leaphand/ur5/visual/upperarm.dae",
+        "ur5/collision/upperarm.stl": "assets/references/cordvip/ur5_leaphand/ur5/collision/upperarm.stl",
+        "ur5/visual/forearm.dae": "assets/references/cordvip/ur5_leaphand/ur5/visual/forearm.dae",
+        "ur5/collision/forearm.stl": "assets/references/cordvip/ur5_leaphand/ur5/collision/forearm.stl",
+        "ur5/visual/wrist1.dae": "assets/references/cordvip/ur5_leaphand/ur5/visual/wrist1.dae",
+        "ur5/collision/wrist1.stl": "assets/references/cordvip/ur5_leaphand/ur5/collision/wrist1.stl",
+        "ur5/visual/wrist2.dae": "assets/references/cordvip/ur5_leaphand/ur5/visual/wrist2.dae",
+        "ur5/collision/wrist2.stl": "assets/references/cordvip/ur5_leaphand/ur5/collision/wrist2.stl",
+        "ur5/visual/wrist3.dae": "assets/references/cordvip/ur5_leaphand/ur5/visual/wrist3.dae",
+        "ur5/collision/wrist3.stl": "assets/references/cordvip/ur5_leaphand/ur5/collision/wrist3.stl",
+        "leaphand/visual/palm_lower.obj": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower.obj",
+        "leaphand/visual/mcp_joint.obj": "assets/references/cordvip/ur5_leaphand/leaphand/visual/mcp_joint.obj",
+        "leaphand/visual/pip.obj": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip.obj",
+        "leaphand/visual/dip.obj": "assets/references/cordvip/ur5_leaphand/leaphand/visual/dip.obj",
+        "leaphand/visual/fingertip.obj": "assets/references/cordvip/ur5_leaphand/leaphand/visual/fingertip.obj",
+        "leaphand/collision/white_tip.obj": "assets/references/cordvip/ur5_leaphand/leaphand/collision/white_tip.obj",
+        "leaphand/visual/thumb_pip.obj": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_pip.obj",
+        "leaphand/visual/thumb_dip.obj": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_dip.obj",
+        "leaphand/visual/thumb_fingertip.obj": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_fingertip.obj",
+        "leaphand/collision/white_tip_thumb.obj": "assets/references/cordvip/ur5_leaphand/leaphand/collision/white_tip_thumb.obj"
+      },
+      "rendering_dependencies_checked": 32,
+      "rendering_errors": [],
+      "errors": [],
+      "passed": true
+    },
+    "bodex": {
+      "file": "assets/references/bodex/ur5_leap/urdf/ur5_leap.urdf",
+      "robot_name": "ur5",
+      "roots": [
+        "base_link"
+      ],
+      "links": 24,
+      "movable_joints": 22,
+      "joint_order_xml": [
+        "shoulder_pan_joint",
+        "shoulder_lift_joint",
+        "elbow_joint",
+        "wrist_1_joint",
+        "wrist_2_joint",
+        "wrist_3_joint",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j0",
+        "j1",
+        "j2",
+        "j3",
+        "j8",
+        "j9",
+        "j10",
+        "j11",
+        "j4",
+        "j5",
+        "j6",
+        "j7"
+      ],
+      "joint_order_tree": [
+        "shoulder_pan_joint",
+        "shoulder_lift_joint",
+        "elbow_joint",
+        "wrist_1_joint",
+        "wrist_2_joint",
+        "wrist_3_joint",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j1",
+        "j0",
+        "j2",
+        "j3",
+        "j9",
+        "j8",
+        "j10",
+        "j11",
+        "j5",
+        "j4",
+        "j6",
+        "j7"
+      ],
+      "joints": [
+        {
+          "name": "shoulder_pan_joint",
+          "type": "revolute",
+          "parent": "base_link",
+          "child": "shoulder_link",
+          "xyz": "0.0 0.0 0.089159",
+          "rpy": "0.0 0.0 0.0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.15"
+          }
+        },
+        {
+          "name": "shoulder_lift_joint",
+          "type": "revolute",
+          "parent": "shoulder_link",
+          "child": "upper_arm_link",
+          "xyz": "0.0 0.13585 0.0",
+          "rpy": "0.0 1.5707963267948966 0.0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.15"
+          }
+        },
+        {
+          "name": "elbow_joint",
+          "type": "revolute",
+          "parent": "upper_arm_link",
+          "child": "forearm_link",
+          "xyz": "0.0 -0.1197 0.425",
+          "rpy": "0.0 0.0 0.0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-3.141592653589793",
+            "upper": "3.141592653589793",
+            "velocity": "3.15"
+          }
+        },
+        {
+          "name": "wrist_1_joint",
+          "type": "revolute",
+          "parent": "forearm_link",
+          "child": "wrist_1_link",
+          "xyz": "0.0 0.0 0.39225",
+          "rpy": "0.0 1.5707963267948966 0.0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.2"
+          }
+        },
+        {
+          "name": "wrist_2_joint",
+          "type": "revolute",
+          "parent": "wrist_1_link",
+          "child": "wrist_2_link",
+          "xyz": "0.0 0.093 0.0",
+          "rpy": "0.0 0.0 0.0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.2"
+          }
+        },
+        {
+          "name": "wrist_3_joint",
+          "type": "revolute",
+          "parent": "wrist_2_link",
+          "child": "wrist_3_link",
+          "xyz": "0.0 0.0 0.09465",
+          "rpy": "0.0 0.0 0.0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.2"
+          }
+        },
+        {
+          "name": "ee_fixed_joint",
+          "type": "fixed",
+          "parent": "wrist_3_link",
+          "child": "hand_base_link",
+          "xyz": "0.033030643865100524 0.09357759647153979 -0.05747874965286254",
+          "rpy": "1.5707963267948966 1.5707963267948966 0.0"
+        },
+        {
+          "name": "j12",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "pip_4",
+          "xyz": "-0.069395249652862533996 -0.0012422438651005258004 -0.021622403578460215601",
+          "rpy": "0 1.5707963267948956698 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.349",
+            "upper": "2.094"
+          }
+        },
+        {
+          "name": "j13",
+          "type": "revolute",
+          "parent": "pip_4",
+          "child": "thumb_pip",
+          "xyz": "-2.7755575615628913511e-17 0.014300000000000005415 -0.013000000000000011546",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.47",
+            "upper": "2.443"
+          }
+        },
+        {
+          "name": "j14",
+          "type": "revolute",
+          "parent": "thumb_pip",
+          "child": "thumb_dip",
+          "xyz": "0 0.014499999999999966041 -0.017000000000000053263",
+          "rpy": "-1.570796326794896558 0 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.20",
+            "upper": "1.90"
+          }
+        },
+        {
+          "name": "j15",
+          "type": "revolute",
+          "parent": "thumb_dip",
+          "child": "thumb_fingertip",
+          "xyz": "-1.249000902703301108e-16 0.046599999999999863753 0.00019999999999997710581",
+          "rpy": "0 0 3.141592653589793116",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.34",
+            "upper": "1.88"
+          }
+        },
+        {
+          "name": "j0",
+          "type": "revolute",
+          "parent": "mcp_joint",
+          "child": "pip",
+          "xyz": "-0.012200000000000007713 0.038099999999999994982 0.014500000000000000736",
+          "rpy": "-1.570796326794896558 -1.0065212660796336576e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "j1",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "mcp_joint",
+          "xyz": "-0.0070952496528625457958 0.023057756134899472233 -0.01872240357846021927",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "j2",
+          "type": "revolute",
+          "parent": "pip",
+          "child": "dip",
+          "xyz": "0.01499999999999996822 0.014299999999999904801 -0.012999999999999824196",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "j3",
+          "type": "revolute",
+          "parent": "dip",
+          "child": "fingertip",
+          "xyz": "-4.0880582495572692636e-09 -0.036100004210367367397 0.00020000000000007858714",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463794583e-16 4.4395481053923607589e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "j8",
+          "type": "revolute",
+          "parent": "mcp_joint_3",
+          "child": "pip_3",
+          "xyz": "-0.012200000000000004244 0.038100000000000001921 0.014499999999999999001",
+          "rpy": "-1.570796326794896558 -1.0065212660796360242e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "j9",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "mcp_joint_3",
+          "xyz": "-0.0070952454426398371343 -0.067842243865100515521 -0.018722407666402932774",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "j10",
+          "type": "revolute",
+          "parent": "pip_3",
+          "child": "dip_3",
+          "xyz": "0.014999999999999971689 0.014299999999999951639 -0.012999999999999959505",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "j11",
+          "type": "revolute",
+          "parent": "dip_3",
+          "child": "fingertip_3",
+          "xyz": "9.7144514654701197287e-17 -0.036099999999999868305 0.00020000000000007511769",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463799514e-16 1.5565411607615035382e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "j4",
+          "type": "revolute",
+          "parent": "mcp_joint_2",
+          "child": "pip_2",
+          "xyz": "-0.012200000000000019856 0.038099999999999981104 0.01450000000000000594",
+          "rpy": "-1.570796326794896558 -1.0065212760057939085e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "j5",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "mcp_joint_2",
+          "xyz": "-0.0070952496528625388569 -0.022392243865100525113 -0.018722403578460229678",
+          "rpy": "1.570796326794896558 1.570796326794896558 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "j6",
+          "type": "revolute",
+          "parent": "pip_2",
+          "child": "dip_2",
+          "xyz": "0.014999999999999975159 0.014300000000000000211 -0.013000000000000018485",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "j7",
+          "type": "revolute",
+          "parent": "dip_2",
+          "child": "fingertip_2",
+          "xyz": "1.0061396160665481148e-16 -0.036099999999999854428 0.00020000000000007858714",
+          "rpy": "4.5935029425113654229e-17 -2.8730071914463794583e-16 1.4408183216511868558e-31",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        }
+      ],
+      "visuals": 24,
+      "collisions": 33,
+      "inertials": 24,
+      "meshes": {
+        "package://ur_description/meshes/ur5/visual/base.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual/base.dae",
+        "package://ur_description/meshes/ur5/visual/shoulder.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual/shoulder.dae",
+        "package://ur_description/meshes/ur5/visual/upperarm.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual/upperarm.dae",
+        "package://ur_description/meshes/ur5/visual/forearm.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual/forearm.dae",
+        "package://ur_description/meshes/ur5/visual/wrist1.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual/wrist1.dae",
+        "package://ur_description/meshes/ur5/visual/wrist2.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual/wrist2.dae",
+        "package://ur_description/meshes/ur5/visual/wrist3.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual/wrist3.dae",
+        "package://ur_description/meshes/leap/palm_lower.stl": "assets/references/bodex/ur5_leap/meshes/leap/palm_lower.stl",
+        "package://ur_description/meshes/leap/mcp_joint.stl": "assets/references/bodex/ur5_leap/meshes/leap/mcp_joint.stl",
+        "package://ur_description/meshes/leap/pip.stl": "assets/references/bodex/ur5_leap/meshes/leap/pip.stl",
+        "package://ur_description/meshes/leap/dip.stl": "assets/references/bodex/ur5_leap/meshes/leap/dip.stl",
+        "package://ur_description/meshes/leap/fingertip.stl": "assets/references/bodex/ur5_leap/meshes/leap/fingertip.stl",
+        "package://ur_description/meshes/leap/thumb_pip.stl": "assets/references/bodex/ur5_leap/meshes/leap/thumb_pip.stl",
+        "package://ur_description/meshes/leap/thumb_dip.stl": "assets/references/bodex/ur5_leap/meshes/leap/thumb_dip.stl",
+        "package://ur_description/meshes/leap/thumb_fingertip.stl": "assets/references/bodex/ur5_leap/meshes/leap/thumb_fingertip.stl"
+      },
+      "rendering_dependencies_checked": 15,
+      "rendering_errors": [],
+      "errors": [],
+      "passed": true
+    },
+    "bodex_simplified": {
+      "file": "assets/references/bodex/ur5_leap/urdf/ur5_leap_simplified.urdf",
+      "robot_name": "ur5",
+      "roots": [
+        "base_link"
+      ],
+      "links": 24,
+      "movable_joints": 22,
+      "joint_order_xml": [
+        "shoulder_pan_joint",
+        "shoulder_lift_joint",
+        "elbow_joint",
+        "wrist_1_joint",
+        "wrist_2_joint",
+        "wrist_3_joint",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j0",
+        "j1",
+        "j2",
+        "j3",
+        "j8",
+        "j9",
+        "j10",
+        "j11",
+        "j4",
+        "j5",
+        "j6",
+        "j7"
+      ],
+      "joint_order_tree": [
+        "shoulder_pan_joint",
+        "shoulder_lift_joint",
+        "elbow_joint",
+        "wrist_1_joint",
+        "wrist_2_joint",
+        "wrist_3_joint",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j1",
+        "j0",
+        "j2",
+        "j3",
+        "j9",
+        "j8",
+        "j10",
+        "j11",
+        "j5",
+        "j4",
+        "j6",
+        "j7"
+      ],
+      "joints": [
+        {
+          "name": "shoulder_pan_joint",
+          "type": "revolute",
+          "parent": "base_link",
+          "child": "shoulder_link",
+          "xyz": "0.0 0.0 0.089159",
+          "rpy": "0.0 0.0 0.0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.15"
+          }
+        },
+        {
+          "name": "shoulder_lift_joint",
+          "type": "revolute",
+          "parent": "shoulder_link",
+          "child": "upper_arm_link",
+          "xyz": "0.0 0.13585 0.0",
+          "rpy": "0.0 1.5707963267948966 0.0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.15"
+          }
+        },
+        {
+          "name": "elbow_joint",
+          "type": "revolute",
+          "parent": "upper_arm_link",
+          "child": "forearm_link",
+          "xyz": "0.0 -0.1197 0.425",
+          "rpy": "0.0 0.0 0.0",
+          "limits": {
+            "effort": "150.0",
+            "lower": "-3.141592653589793",
+            "upper": "3.141592653589793",
+            "velocity": "3.15"
+          }
+        },
+        {
+          "name": "wrist_1_joint",
+          "type": "revolute",
+          "parent": "forearm_link",
+          "child": "wrist_1_link",
+          "xyz": "0.0 0.0 0.39225",
+          "rpy": "0.0 1.5707963267948966 0.0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.2"
+          }
+        },
+        {
+          "name": "wrist_2_joint",
+          "type": "revolute",
+          "parent": "wrist_1_link",
+          "child": "wrist_2_link",
+          "xyz": "0.0 0.093 0.0",
+          "rpy": "0.0 0.0 0.0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.2"
+          }
+        },
+        {
+          "name": "wrist_3_joint",
+          "type": "revolute",
+          "parent": "wrist_2_link",
+          "child": "wrist_3_link",
+          "xyz": "0.0 0.0 0.09465",
+          "rpy": "0.0 0.0 0.0",
+          "limits": {
+            "effort": "28.0",
+            "lower": "-6.283185307179586",
+            "upper": "6.283185307179586",
+            "velocity": "3.2"
+          }
+        },
+        {
+          "name": "ee_fixed_joint",
+          "type": "fixed",
+          "parent": "wrist_3_link",
+          "child": "hand_base_link",
+          "xyz": "0.033030643865100524 0.09357759647153979 -0.05747874965286254",
+          "rpy": "1.5707963267948966 1.5707963267948966 0.0"
+        },
+        {
+          "name": "j12",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "pip_4",
+          "xyz": "-0.069395249652862533996 -0.0012422438651005258004 -0.021622403578460215601",
+          "rpy": "0 1.5707963267948956698 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.349",
+            "upper": "2.094"
+          }
+        },
+        {
+          "name": "j13",
+          "type": "revolute",
+          "parent": "pip_4",
+          "child": "thumb_pip",
+          "xyz": "-2.7755575615628913511e-17 0.014300000000000005415 -0.013000000000000011546",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.47",
+            "upper": "2.443"
+          }
+        },
+        {
+          "name": "j14",
+          "type": "revolute",
+          "parent": "thumb_pip",
+          "child": "thumb_dip",
+          "xyz": "0 0.014499999999999966041 -0.017000000000000053263",
+          "rpy": "-1.570796326794896558 0 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.20",
+            "upper": "1.90"
+          }
+        },
+        {
+          "name": "j15",
+          "type": "revolute",
+          "parent": "thumb_dip",
+          "child": "thumb_fingertip",
+          "xyz": "-1.249000902703301108e-16 0.046599999999999863753 0.00019999999999997710581",
+          "rpy": "0 0 3.141592653589793116",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.34",
+            "upper": "1.88"
+          }
+        },
+        {
+          "name": "j0",
+          "type": "revolute",
+          "parent": "mcp_joint",
+          "child": "pip",
+          "xyz": "-0.012200000000000007713 0.038099999999999994982 0.014500000000000000736",
+          "rpy": "-1.570796326794896558 -1.0065212660796336576e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "j1",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "mcp_joint",
+          "xyz": "-0.0070952496528625457958 0.023057756134899472233 -0.01872240357846021927",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "j2",
+          "type": "revolute",
+          "parent": "pip",
+          "child": "dip",
+          "xyz": "0.01499999999999996822 0.014299999999999904801 -0.012999999999999824196",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "j3",
+          "type": "revolute",
+          "parent": "dip",
+          "child": "fingertip",
+          "xyz": "-4.0880582495572692636e-09 -0.036100004210367367397 0.00020000000000007858714",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463794583e-16 4.4395481053923607589e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "j8",
+          "type": "revolute",
+          "parent": "mcp_joint_3",
+          "child": "pip_3",
+          "xyz": "-0.012200000000000004244 0.038100000000000001921 0.014499999999999999001",
+          "rpy": "-1.570796326794896558 -1.0065212660796360242e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "j9",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "mcp_joint_3",
+          "xyz": "-0.0070952454426398371343 -0.067842243865100515521 -0.018722407666402932774",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "j10",
+          "type": "revolute",
+          "parent": "pip_3",
+          "child": "dip_3",
+          "xyz": "0.014999999999999971689 0.014299999999999951639 -0.012999999999999959505",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "j11",
+          "type": "revolute",
+          "parent": "dip_3",
+          "child": "fingertip_3",
+          "xyz": "9.7144514654701197287e-17 -0.036099999999999868305 0.00020000000000007511769",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463799514e-16 1.5565411607615035382e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "j4",
+          "type": "revolute",
+          "parent": "mcp_joint_2",
+          "child": "pip_2",
+          "xyz": "-0.012200000000000019856 0.038099999999999981104 0.01450000000000000594",
+          "rpy": "-1.570796326794896558 -1.0065212760057939085e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "j5",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "mcp_joint_2",
+          "xyz": "-0.0070952496528625388569 -0.022392243865100525113 -0.018722403578460229678",
+          "rpy": "1.570796326794896558 1.570796326794896558 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "j6",
+          "type": "revolute",
+          "parent": "pip_2",
+          "child": "dip_2",
+          "xyz": "0.014999999999999975159 0.014300000000000000211 -0.013000000000000018485",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "j7",
+          "type": "revolute",
+          "parent": "dip_2",
+          "child": "fingertip_2",
+          "xyz": "1.0061396160665481148e-16 -0.036099999999999854428 0.00020000000000007858714",
+          "rpy": "4.5935029425113654229e-17 -2.8730071914463794583e-16 1.4408183216511868558e-31",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        }
+      ],
+      "visuals": 24,
+      "collisions": 33,
+      "inertials": 24,
+      "meshes": {
+        "package://ur_description/meshes/ur5/visual_simplified/base.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/base.dae",
+        "package://ur_description/meshes/ur5/visual_simplified/shoulder.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/shoulder.dae",
+        "package://ur_description/meshes/ur5/visual_simplified/upperarm.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/upperarm.dae",
+        "package://ur_description/meshes/ur5/visual_simplified/forearm.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/forearm.dae",
+        "package://ur_description/meshes/ur5/visual_simplified/wrist1.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/wrist1.dae",
+        "package://ur_description/meshes/ur5/visual_simplified/wrist2.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/wrist2.dae",
+        "package://ur_description/meshes/ur5/visual_simplified/wrist3.dae": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/wrist3.dae",
+        "package://ur_description/meshes/leap_simplified/palm_lower.stl": "assets/references/bodex/ur5_leap/meshes/leap_simplified/palm_lower.stl",
+        "package://ur_description/meshes/leap_simplified/mcp_joint.stl": "assets/references/bodex/ur5_leap/meshes/leap_simplified/mcp_joint.stl",
+        "package://ur_description/meshes/leap_simplified/pip.stl": "assets/references/bodex/ur5_leap/meshes/leap_simplified/pip.stl",
+        "package://ur_description/meshes/leap_simplified/dip.stl": "assets/references/bodex/ur5_leap/meshes/leap_simplified/dip.stl",
+        "package://ur_description/meshes/leap_simplified/fingertip.stl": "assets/references/bodex/ur5_leap/meshes/leap_simplified/fingertip.stl",
+        "package://ur_description/meshes/leap_simplified/thumb_pip.stl": "assets/references/bodex/ur5_leap/meshes/leap_simplified/thumb_pip.stl",
+        "package://ur_description/meshes/leap_simplified/thumb_dip.stl": "assets/references/bodex/ur5_leap/meshes/leap_simplified/thumb_dip.stl",
+        "package://ur_description/meshes/leap_simplified/thumb_fingertip.stl": "assets/references/bodex/ur5_leap/meshes/leap_simplified/thumb_fingertip.stl"
+      },
+      "rendering_dependencies_checked": 15,
+      "rendering_errors": [],
+      "errors": [],
+      "passed": true
+    },
+    "bodex_hand": {
+      "file": "assets/references/bodex/ur5_leap/urdf/leap_hand.urdf",
+      "robot_name": "leap",
+      "roots": [
+        "hand_base_link"
+      ],
+      "links": 17,
+      "movable_joints": 16,
+      "joint_order_xml": [
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j0",
+        "j1",
+        "j2",
+        "j3",
+        "j8",
+        "j9",
+        "j10",
+        "j11",
+        "j4",
+        "j5",
+        "j6",
+        "j7"
+      ],
+      "joint_order_tree": [
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j1",
+        "j0",
+        "j2",
+        "j3",
+        "j9",
+        "j8",
+        "j10",
+        "j11",
+        "j5",
+        "j4",
+        "j6",
+        "j7"
+      ],
+      "joints": [
+        {
+          "name": "j12",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "pip_4",
+          "xyz": "-0.069395249652862533996 -0.0012422438651005258004 -0.021622403578460215601",
+          "rpy": "0 1.5707963267948956698 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.349",
+            "upper": "2.094"
+          }
+        },
+        {
+          "name": "j13",
+          "type": "revolute",
+          "parent": "pip_4",
+          "child": "thumb_pip",
+          "xyz": "-2.7755575615628913511e-17 0.014300000000000005415 -0.013000000000000011546",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.47",
+            "upper": "2.443"
+          }
+        },
+        {
+          "name": "j14",
+          "type": "revolute",
+          "parent": "thumb_pip",
+          "child": "thumb_dip",
+          "xyz": "0 0.014499999999999966041 -0.017000000000000053263",
+          "rpy": "-1.570796326794896558 0 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.20",
+            "upper": "1.90"
+          }
+        },
+        {
+          "name": "j15",
+          "type": "revolute",
+          "parent": "thumb_dip",
+          "child": "thumb_fingertip",
+          "xyz": "-1.249000902703301108e-16 0.046599999999999863753 0.00019999999999997710581",
+          "rpy": "0 0 3.141592653589793116",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.34",
+            "upper": "1.88"
+          }
+        },
+        {
+          "name": "j0",
+          "type": "revolute",
+          "parent": "mcp_joint",
+          "child": "pip",
+          "xyz": "-0.012200000000000007713 0.038099999999999994982 0.014500000000000000736",
+          "rpy": "-1.570796326794896558 -1.0065212660796336576e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "j1",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "mcp_joint",
+          "xyz": "-0.0070952496528625457958 0.023057756134899472233 -0.01872240357846021927",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "j2",
+          "type": "revolute",
+          "parent": "pip",
+          "child": "dip",
+          "xyz": "0.01499999999999996822 0.014299999999999904801 -0.012999999999999824196",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "j3",
+          "type": "revolute",
+          "parent": "dip",
+          "child": "fingertip",
+          "xyz": "-4.0880582495572692636e-09 -0.036100004210367367397 0.00020000000000007858714",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463794583e-16 4.4395481053923607589e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "j8",
+          "type": "revolute",
+          "parent": "mcp_joint_3",
+          "child": "pip_3",
+          "xyz": "-0.012200000000000004244 0.038100000000000001921 0.014499999999999999001",
+          "rpy": "-1.570796326794896558 -1.0065212660796360242e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "j9",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "mcp_joint_3",
+          "xyz": "-0.0070952454426398371343 -0.067842243865100515521 -0.018722407666402932774",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "j10",
+          "type": "revolute",
+          "parent": "pip_3",
+          "child": "dip_3",
+          "xyz": "0.014999999999999971689 0.014299999999999951639 -0.012999999999999959505",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "j11",
+          "type": "revolute",
+          "parent": "dip_3",
+          "child": "fingertip_3",
+          "xyz": "9.7144514654701197287e-17 -0.036099999999999868305 0.00020000000000007511769",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463799514e-16 1.5565411607615035382e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "j4",
+          "type": "revolute",
+          "parent": "mcp_joint_2",
+          "child": "pip_2",
+          "xyz": "-0.012200000000000019856 0.038099999999999981104 0.01450000000000000594",
+          "rpy": "-1.570796326794896558 -1.0065212760057939085e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "j5",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "mcp_joint_2",
+          "xyz": "-0.0070952496528625388569 -0.022392243865100525113 -0.018722403578460229678",
+          "rpy": "1.570796326794896558 1.570796326794896558 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "j6",
+          "type": "revolute",
+          "parent": "pip_2",
+          "child": "dip_2",
+          "xyz": "0.014999999999999975159 0.014300000000000000211 -0.013000000000000018485",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "j7",
+          "type": "revolute",
+          "parent": "dip_2",
+          "child": "fingertip_2",
+          "xyz": "1.0061396160665481148e-16 -0.036099999999999854428 0.00020000000000007858714",
+          "rpy": "4.5935029425113654229e-17 -2.8730071914463794583e-16 1.4408183216511868558e-31",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        }
+      ],
+      "visuals": 17,
+      "collisions": 27,
+      "inertials": 17,
+      "meshes": {
+        "package://ur_description/meshes/leap/palm_lower.stl": "assets/references/bodex/ur5_leap/meshes/leap/palm_lower.stl",
+        "package://ur_description/meshes/leap/mcp_joint.stl": "assets/references/bodex/ur5_leap/meshes/leap/mcp_joint.stl",
+        "package://ur_description/meshes/leap/pip.stl": "assets/references/bodex/ur5_leap/meshes/leap/pip.stl",
+        "package://ur_description/meshes/leap/dip.stl": "assets/references/bodex/ur5_leap/meshes/leap/dip.stl",
+        "package://ur_description/meshes/leap/fingertip.stl": "assets/references/bodex/ur5_leap/meshes/leap/fingertip.stl",
+        "package://ur_description/meshes/leap/thumb_pip.stl": "assets/references/bodex/ur5_leap/meshes/leap/thumb_pip.stl",
+        "package://ur_description/meshes/leap/thumb_dip.stl": "assets/references/bodex/ur5_leap/meshes/leap/thumb_dip.stl",
+        "package://ur_description/meshes/leap/thumb_fingertip.stl": "assets/references/bodex/ur5_leap/meshes/leap/thumb_fingertip.stl"
+      },
+      "rendering_dependencies_checked": 8,
+      "rendering_errors": [],
+      "errors": [],
+      "passed": true
+    },
+    "bodex_hand_simplified": {
+      "file": "assets/references/bodex/ur5_leap/urdf/leap_hand_simplified.urdf",
+      "robot_name": "leap",
+      "roots": [
+        "hand_base_link"
+      ],
+      "links": 17,
+      "movable_joints": 16,
+      "joint_order_xml": [
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j0",
+        "j1",
+        "j2",
+        "j3",
+        "j8",
+        "j9",
+        "j10",
+        "j11",
+        "j4",
+        "j5",
+        "j6",
+        "j7"
+      ],
+      "joint_order_tree": [
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j1",
+        "j0",
+        "j2",
+        "j3",
+        "j9",
+        "j8",
+        "j10",
+        "j11",
+        "j5",
+        "j4",
+        "j6",
+        "j7"
+      ],
+      "joints": [
+        {
+          "name": "j12",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "pip_4",
+          "xyz": "-0.069395249652862533996 -0.0012422438651005258004 -0.021622403578460215601",
+          "rpy": "0 1.5707963267948956698 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.349",
+            "upper": "2.094"
+          }
+        },
+        {
+          "name": "j13",
+          "type": "revolute",
+          "parent": "pip_4",
+          "child": "thumb_pip",
+          "xyz": "-2.7755575615628913511e-17 0.014300000000000005415 -0.013000000000000011546",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.47",
+            "upper": "2.443"
+          }
+        },
+        {
+          "name": "j14",
+          "type": "revolute",
+          "parent": "thumb_pip",
+          "child": "thumb_dip",
+          "xyz": "0 0.014499999999999966041 -0.017000000000000053263",
+          "rpy": "-1.570796326794896558 0 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.20",
+            "upper": "1.90"
+          }
+        },
+        {
+          "name": "j15",
+          "type": "revolute",
+          "parent": "thumb_dip",
+          "child": "thumb_fingertip",
+          "xyz": "-1.249000902703301108e-16 0.046599999999999863753 0.00019999999999997710581",
+          "rpy": "0 0 3.141592653589793116",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.34",
+            "upper": "1.88"
+          }
+        },
+        {
+          "name": "j0",
+          "type": "revolute",
+          "parent": "mcp_joint",
+          "child": "pip",
+          "xyz": "-0.012200000000000007713 0.038099999999999994982 0.014500000000000000736",
+          "rpy": "-1.570796326794896558 -1.0065212660796336576e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "j1",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "mcp_joint",
+          "xyz": "-0.0070952496528625457958 0.023057756134899472233 -0.01872240357846021927",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "j2",
+          "type": "revolute",
+          "parent": "pip",
+          "child": "dip",
+          "xyz": "0.01499999999999996822 0.014299999999999904801 -0.012999999999999824196",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "j3",
+          "type": "revolute",
+          "parent": "dip",
+          "child": "fingertip",
+          "xyz": "-4.0880582495572692636e-09 -0.036100004210367367397 0.00020000000000007858714",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463794583e-16 4.4395481053923607589e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "j8",
+          "type": "revolute",
+          "parent": "mcp_joint_3",
+          "child": "pip_3",
+          "xyz": "-0.012200000000000004244 0.038100000000000001921 0.014499999999999999001",
+          "rpy": "-1.570796326794896558 -1.0065212660796360242e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "j9",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "mcp_joint_3",
+          "xyz": "-0.0070952454426398371343 -0.067842243865100515521 -0.018722407666402932774",
+          "rpy": "1.5707963267948950037 1.5707963267948945596 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "j10",
+          "type": "revolute",
+          "parent": "pip_3",
+          "child": "dip_3",
+          "xyz": "0.014999999999999971689 0.014299999999999951639 -0.012999999999999959505",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "j11",
+          "type": "revolute",
+          "parent": "dip_3",
+          "child": "fingertip_3",
+          "xyz": "9.7144514654701197287e-17 -0.036099999999999868305 0.00020000000000007511769",
+          "rpy": "4.5935029425113685044e-17 -2.8730071914463799514e-16 1.5565411607615035382e-32",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        },
+        {
+          "name": "j4",
+          "type": "revolute",
+          "parent": "mcp_joint_2",
+          "child": "pip_2",
+          "xyz": "-0.012200000000000019856 0.038099999999999981104 0.01450000000000000594",
+          "rpy": "-1.570796326794896558 -1.0065212760057939085e-15 1.5707963267948943376",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-1.047",
+            "upper": "1.047"
+          }
+        },
+        {
+          "name": "j5",
+          "type": "revolute",
+          "parent": "hand_base_link",
+          "child": "mcp_joint_2",
+          "xyz": "-0.0070952496528625388569 -0.022392243865100525113 -0.018722403578460229678",
+          "rpy": "1.570796326794896558 1.570796326794896558 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.314",
+            "upper": "2.23"
+          }
+        },
+        {
+          "name": "j6",
+          "type": "revolute",
+          "parent": "pip_2",
+          "child": "dip_2",
+          "xyz": "0.014999999999999975159 0.014300000000000000211 -0.013000000000000018485",
+          "rpy": "1.5707963267948958919 -1.570796326794896336 0",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.506",
+            "upper": "1.885"
+          }
+        },
+        {
+          "name": "j7",
+          "type": "revolute",
+          "parent": "dip_2",
+          "child": "fingertip_2",
+          "xyz": "1.0061396160665481148e-16 -0.036099999999999854428 0.00020000000000007858714",
+          "rpy": "4.5935029425113654229e-17 -2.8730071914463794583e-16 1.4408183216511868558e-31",
+          "limits": {
+            "effort": "0.95",
+            "velocity": "8.48",
+            "lower": "-0.366",
+            "upper": "2.042"
+          }
+        }
+      ],
+      "visuals": 17,
+      "collisions": 27,
+      "inertials": 17,
+      "meshes": {},
+      "rendering_dependencies_checked": 0,
+      "rendering_errors": [],
+      "errors": [
+        "Mesh: meshes/leap_simplified/convex_tip.obj",
+        "Mesh: meshes/leap_simplified/convex_tip_thumb.obj",
+        "Mesh: meshes/leap_simplified/dip.stl",
+        "Mesh: meshes/leap_simplified/mcp_joint.stl",
+        "Mesh: meshes/leap_simplified/palm_lower.stl",
+        "Mesh: meshes/leap_simplified/pip.stl",
+        "Mesh: meshes/leap_simplified/thumb_dip.stl",
+        "Mesh: meshes/leap_simplified/thumb_pip.stl"
+      ],
+      "passed": false
+    }
+  }
+}

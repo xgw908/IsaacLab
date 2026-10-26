@@ -1,0 +1,15 @@
+{
+  "status": "PLACEHOLDER",
+  "calibrated": false,
+  "length_unit": "m",
+  "angle_unit": "rad",
+  "flange_to_adapter": {
+    "xyz": [0.0, 0.0, 0.0],
+    "rpy": [0.0, 0.0, 0.0]
+  },
+  "adapter_to_palm": {
+    "xyz": [0.0, 0.0, 0.0],
+    "rpy": [0.0, 0.0, 0.0]
+  },
+  "note": "TODO: replace with measured lab UR5 flange → LEAP palm transform. Identity transforms only establish connectivity; no physical adapter geometry, mass or thickness is asserted."
+}

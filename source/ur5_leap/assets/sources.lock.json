@@ -1,0 +1,1141 @@
+{
+  "schema_version": 1,
+  "retrieval_date": "2026-10-26",
+  "git_max_file_bytes": 2048000,
+  "sources": [
+    {
+      "id": "ur",
+      "repository": "UniversalRobots/Universal_Robots_ROS2_Description",
+      "branch": "rolling",
+      "commit": "81f7c9fe003c2f0e02eec5a7253f1b262ad38b61",
+      "source_url": "https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61",
+      "files": [
+        {
+          "path": "LICENSE",
+          "destination": "assets/official/ur5/LICENSE",
+          "git_blob_sha1": "574ef07902908574cba9a471d7e5eb0b684691e4",
+          "size": 1459,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "destination": "assets/official/ur5/README.md",
+          "git_blob_sha1": "47f2f46206f0553071a389c42fd97f5ab00ee154",
+          "size": 4306,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/README.md"
+        },
+        {
+          "path": "config/ur5/default_kinematics.yaml",
+          "destination": "assets/official/ur5/config/ur5/default_kinematics.yaml",
+          "git_blob_sha1": "0db61890ab834d78e15811a9b13ba99b7c1b299e",
+          "size": 639,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/config/ur5/default_kinematics.yaml"
+        },
+        {
+          "path": "config/ur5/joint_limits.yaml",
+          "destination": "assets/official/ur5/config/ur5/joint_limits.yaml",
+          "git_blob_sha1": "e6093ea65bb0ab5d4ab2bc69f1b8bf585dd9f03c",
+          "size": 2867,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/config/ur5/joint_limits.yaml"
+        },
+        {
+          "path": "config/ur5/physical_parameters.yaml",
+          "destination": "assets/official/ur5/config/ur5/physical_parameters.yaml",
+          "git_blob_sha1": "3de9184f232525dadd6c98e76f10d8517be29c28",
+          "size": 2435,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/config/ur5/physical_parameters.yaml"
+        },
+        {
+          "path": "config/ur5/visual_parameters.yaml",
+          "destination": "assets/official/ur5/config/ur5/visual_parameters.yaml",
+          "git_blob_sha1": "a299833d9c4917cd55e46f1f4037f968c22fc847",
+          "size": 2377,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/config/ur5/visual_parameters.yaml"
+        },
+        {
+          "path": "meshes/ur5/collision/base.stl",
+          "destination": "assets/official/ur5/meshes/ur5/collision/base.stl",
+          "git_blob_sha1": "21c8a11937c4f19944e33049c6450b8a15e7e360",
+          "size": 11834,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/base.stl"
+        },
+        {
+          "path": "meshes/ur5/collision/forearm.stl",
+          "destination": "assets/official/ur5/meshes/ur5/collision/forearm.stl",
+          "git_blob_sha1": "ffbed4536ef7c23c7691736124e161a226546bb9",
+          "size": 52584,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/forearm.stl"
+        },
+        {
+          "path": "meshes/ur5/collision/shoulder.stl",
+          "destination": "assets/official/ur5/meshes/ur5/collision/shoulder.stl",
+          "git_blob_sha1": "5088831c10deb4656b129feee4bd533824e7c152",
+          "size": 33784,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/shoulder.stl"
+        },
+        {
+          "path": "meshes/ur5/collision/upperarm.stl",
+          "destination": "assets/official/ur5/meshes/ur5/collision/upperarm.stl",
+          "git_blob_sha1": "734386e871f9114d9be2567a68c66179ea8f16b5",
+          "size": 58884,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/upperarm.stl"
+        },
+        {
+          "path": "meshes/ur5/collision/wrist1.stl",
+          "destination": "assets/official/ur5/meshes/ur5/collision/wrist1.stl",
+          "git_blob_sha1": "a960c0c571ba7366ed2a72e94ee733bcaf034485",
+          "size": 35184,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/wrist1.stl"
+        },
+        {
+          "path": "meshes/ur5/collision/wrist2.stl",
+          "destination": "assets/official/ur5/meshes/ur5/collision/wrist2.stl",
+          "git_blob_sha1": "9b089de4c6077cc743130865040b934248cc5b4d",
+          "size": 35184,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/wrist2.stl"
+        },
+        {
+          "path": "meshes/ur5/collision/wrist3.stl",
+          "destination": "assets/official/ur5/meshes/ur5/collision/wrist3.stl",
+          "git_blob_sha1": "96c71f0413dfe4311bd253a8747824f29982aed4",
+          "size": 22384,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/collision/wrist3.stl"
+        },
+        {
+          "path": "meshes/ur5/visual/base.dae",
+          "destination": "assets/official/ur5/meshes/ur5/visual/base.dae",
+          "git_blob_sha1": "8c23e57744c050d913de310817c0d366ab0105eb",
+          "size": 157910,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/base.dae"
+        },
+        {
+          "path": "meshes/ur5/visual/forearm.dae",
+          "destination": "assets/official/ur5/meshes/ur5/visual/forearm.dae",
+          "git_blob_sha1": "920b3dfec87dee02c416d59b0f9bbbc77100d59d",
+          "size": 1469403,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/forearm.dae"
+        },
+        {
+          "path": "meshes/ur5/visual/shoulder.dae",
+          "destination": "assets/official/ur5/meshes/ur5/visual/shoulder.dae",
+          "git_blob_sha1": "325a7156f9a61fc3df6ea5be429fc710c1fdd52b",
+          "size": 1007765,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/shoulder.dae"
+        },
+        {
+          "path": "meshes/ur5/visual/upperarm.dae",
+          "destination": "assets/official/ur5/meshes/ur5/visual/upperarm.dae",
+          "git_blob_sha1": "852afbcaad6e400a7fdce56aead30d05c34ffd3a",
+          "size": 2004987,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/upperarm.dae"
+        },
+        {
+          "path": "meshes/ur5/visual/wrist1.dae",
+          "destination": "assets/official/ur5/meshes/ur5/visual/wrist1.dae",
+          "git_blob_sha1": "892ba632240e19a379d7a8bda86aee38fa21b6ab",
+          "size": 948689,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/wrist1.dae"
+        },
+        {
+          "path": "meshes/ur5/visual/wrist2.dae",
+          "destination": "assets/official/ur5/meshes/ur5/visual/wrist2.dae",
+          "git_blob_sha1": "bd32a7a35090615b6cba750694d4eb27dc637624",
+          "size": 947502,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/wrist2.dae"
+        },
+        {
+          "path": "meshes/ur5/visual/wrist3.dae",
+          "destination": "assets/official/ur5/meshes/ur5/visual/wrist3.dae",
+          "git_blob_sha1": "9a2096da904ea00b2440695a8e752971b0a96ec7",
+          "size": 123930,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/meshes/ur5/visual/wrist3.dae"
+        },
+        {
+          "path": "package.xml",
+          "destination": "assets/official/ur5/package.xml",
+          "git_blob_sha1": "cbbae2d47a4fabd635cbfca25b37137363cb3646",
+          "size": 4341,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/package.xml"
+        },
+        {
+          "path": "urdf/inc/ur_common.xacro",
+          "destination": "assets/official/ur5/urdf/inc/ur_common.xacro",
+          "git_blob_sha1": "9ae3e1fd10f8e7353b4f3af82c0c7c2079df62a1",
+          "size": 20150,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/inc/ur_common.xacro"
+        },
+        {
+          "path": "urdf/inc/ur_joint_control.xacro",
+          "destination": "assets/official/ur5/urdf/inc/ur_joint_control.xacro",
+          "git_blob_sha1": "abbd089dddd23229a7dac7a65c7137cfda351008",
+          "size": 4099,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/inc/ur_joint_control.xacro"
+        },
+        {
+          "path": "urdf/inc/ur_sensors.xacro",
+          "destination": "assets/official/ur5/urdf/inc/ur_sensors.xacro",
+          "git_blob_sha1": "cf8c876de6827a66fe58eb1a123d9e1c0d66d1d3",
+          "size": 825,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/inc/ur_sensors.xacro"
+        },
+        {
+          "path": "urdf/inc/ur_transmissions.xacro",
+          "destination": "assets/official/ur5/urdf/inc/ur_transmissions.xacro",
+          "git_blob_sha1": "18a86c355d7fc463b0d87696fce134bf1e298b1a",
+          "size": 2669,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/inc/ur_transmissions.xacro"
+        },
+        {
+          "path": "urdf/ros2_control_mock_hardware.xacro",
+          "destination": "assets/official/ur5/urdf/ros2_control_mock_hardware.xacro",
+          "git_blob_sha1": "9e4e846854dc5dbb9ff6c693245d97c04c4dc54a",
+          "size": 1075,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/ros2_control_mock_hardware.xacro"
+        },
+        {
+          "path": "urdf/ur.urdf.xacro",
+          "destination": "assets/official/ur5/urdf/ur.urdf.xacro",
+          "git_blob_sha1": "42360ef526f8c74a0b2bd98c1172fc72740744fc",
+          "size": 2362,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/ur.urdf.xacro"
+        },
+        {
+          "path": "urdf/ur_macro.xacro",
+          "destination": "assets/official/ur5/urdf/ur_macro.xacro",
+          "git_blob_sha1": "c9405cea45386e5b70b1feae710e1f08df6a7990",
+          "size": 21122,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/ur_macro.xacro"
+        },
+        {
+          "path": "urdf/ur_mocked.urdf.xacro",
+          "destination": "assets/official/ur5/urdf/ur_mocked.urdf.xacro",
+          "git_blob_sha1": "1df57212515f93b0d2e76c3d30ecacc459d9add8",
+          "size": 3057,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/urdf/ur_mocked.urdf.xacro"
+        },
+        {
+          "path": "config/initial_positions.yaml",
+          "destination": "assets/official/ur5/config/initial_positions.yaml",
+          "git_blob_sha1": "f74bbbd9c2eafacaa7a638fb963766611a4b2135",
+          "size": 127,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/config/initial_positions.yaml"
+        },
+        {
+          "path": "doc/index.rst",
+          "destination": "assets/official/ur5/doc/index.rst",
+          "git_blob_sha1": "a014004ad63961075e271c1ef28a92ea39c9c506",
+          "size": 4815,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/doc/index.rst"
+        },
+        {
+          "path": "doc/robot_frames.rst",
+          "destination": "assets/official/ur5/doc/robot_frames.rst",
+          "git_blob_sha1": "6573b352ca0769e0cbc448e073eda31da2a838b9",
+          "size": 3022,
+          "url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Description/81f7c9fe003c2f0e02eec5a7253f1b262ad38b61/doc/robot_frames.rst"
+        }
+      ]
+    },
+    {
+      "id": "sim",
+      "repository": "leap-hand/LEAP_Hand_Sim",
+      "branch": "master",
+      "commit": "150bc3d4b61fd6619193ba5a8ef209f3609ced89",
+      "source_url": "https://github.com/leap-hand/LEAP_Hand_Sim/tree/150bc3d4b61fd6619193ba5a8ef209f3609ced89",
+      "files": [
+        {
+          "path": "assets/leap_hand/dip.part",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/dip.part",
+          "git_blob_sha1": "2d4eedc6918a6093f238a479cd445662a309c44e",
+          "size": 420,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/dip.part"
+        },
+        {
+          "path": "assets/leap_hand/dip.stl",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/dip.stl",
+          "git_blob_sha1": "e2944a9d8b3a343ed0b660866c85c7a7bb0e06dd",
+          "size": 1538284,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/dip.stl"
+        },
+        {
+          "path": "assets/leap_hand/fingertip.part",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/fingertip.part",
+          "git_blob_sha1": "bd17c6177fbc53adb3d42b49b48b4acc17eea343",
+          "size": 426,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/fingertip.part"
+        },
+        {
+          "path": "assets/leap_hand/fingertip.stl",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/fingertip.stl",
+          "git_blob_sha1": "c7393370758780539f72b58a2d4b30afd3d380d5",
+          "size": 562684,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/fingertip.stl"
+        },
+        {
+          "path": "assets/leap_hand/mcp_joint.part",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/mcp_joint.part",
+          "git_blob_sha1": "cb32e5fa9bb34e619dd17c3c885a04d8fc6e3de5",
+          "size": 426,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/mcp_joint.part"
+        },
+        {
+          "path": "assets/leap_hand/mcp_joint.stl",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/mcp_joint.stl",
+          "git_blob_sha1": "c5ff5f553230e9c667775a61f6018cdb68d7871b",
+          "size": 1608784,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/mcp_joint.stl"
+        },
+        {
+          "path": "assets/leap_hand/palm_lower.part",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/palm_lower.part",
+          "git_blob_sha1": "5b26a1ae55c057397d62c9b4fef287aad8c34ed3",
+          "size": 427,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/palm_lower.part"
+        },
+        {
+          "path": "assets/leap_hand/palm_lower.stl",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/palm_lower.stl",
+          "git_blob_sha1": "1f92c6d87d9bbfd0c88411d85c518793b7459bed",
+          "size": 4347184,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/palm_lower.stl"
+        },
+        {
+          "path": "assets/leap_hand/pip.part",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/pip.part",
+          "git_blob_sha1": "bd9a851f25e17ec3cd98c84524fdfbc33b735787",
+          "size": 420,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/pip.part"
+        },
+        {
+          "path": "assets/leap_hand/pip.stl",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/pip.stl",
+          "git_blob_sha1": "dcfecd6b9b33c15e2e5f3c98ac6791523440dcd1",
+          "size": 1051084,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/pip.stl"
+        },
+        {
+          "path": "assets/leap_hand/robot.urdf",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/robot.urdf",
+          "git_blob_sha1": "733154242051570521b6453f088529a834fa3bc7",
+          "size": 20448,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/robot.urdf"
+        },
+        {
+          "path": "assets/leap_hand/thumb_dip.part",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_dip.part",
+          "git_blob_sha1": "e3ee80452e9120dfbdab27843d72325681454508",
+          "size": 426,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_dip.part"
+        },
+        {
+          "path": "assets/leap_hand/thumb_dip.stl",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_dip.stl",
+          "git_blob_sha1": "9abae54668d48576e589b635387a54758c1eb49b",
+          "size": 1451484,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_dip.stl"
+        },
+        {
+          "path": "assets/leap_hand/thumb_fingertip.part",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_fingertip.part",
+          "git_blob_sha1": "feedbd18b580d4025ae76f01e7d424914e81bb3c",
+          "size": 432,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_fingertip.part"
+        },
+        {
+          "path": "assets/leap_hand/thumb_fingertip.stl",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_fingertip.stl",
+          "git_blob_sha1": "eac757a4d9adf76069b198fc8c8a744f269a7315",
+          "size": 1111984,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_fingertip.stl"
+        },
+        {
+          "path": "assets/leap_hand/thumb_pip.part",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_pip.part",
+          "git_blob_sha1": "e69f6148706c168780c576ae18073e68c8cc6770",
+          "size": 426,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_pip.part"
+        },
+        {
+          "path": "assets/leap_hand/thumb_pip.stl",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/leap_hand/thumb_pip.stl",
+          "git_blob_sha1": "fee67668f9e2c139973a95336b209854e04b0ead",
+          "size": 468884,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_pip.stl"
+        },
+        {
+          "path": "LICENSE.txt",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/LICENSE.txt",
+          "git_blob_sha1": "8017908f3c54f4560cf5ce9995d2ccc27bebfa7b",
+          "size": 1062,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/LICENSE.txt"
+        },
+        {
+          "path": "README.md",
+          "destination": "assets/official/leap_hand_v1_right/sim_reference/README.md",
+          "git_blob_sha1": "4e7b52cdfdcebbb57781c3e412bc154222c5e335",
+          "size": 3625,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Sim/150bc3d4b61fd6619193ba5a8ef209f3609ced89/README.md"
+        }
+      ]
+    },
+    {
+      "id": "lab",
+      "repository": "leap-hand/LEAP_Hand_Isaac_Lab",
+      "branch": "main",
+      "commit": "c576e6a83183ba504aef8f57015f2899b799db1a",
+      "source_url": "https://github.com/leap-hand/LEAP_Hand_Isaac_Lab/tree/c576e6a83183ba504aef8f57015f2899b799db1a",
+      "files": [
+        {
+          "path": "source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap.py",
+          "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/leap.py",
+          "git_blob_sha1": "b39f50613212a8d96c1af8d2ff685c481983dba0",
+          "size": 1919,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap.py"
+        },
+        {
+          "path": "source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/configuration/leap_hand_right_base.usd",
+          "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/leap_hand_v1_right/configuration/leap_hand_right_base.usd",
+          "git_blob_sha1": "febf194f40e9c2becce98a2d246565e3fca9f2e4",
+          "size": 2724719,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/configuration/leap_hand_right_base.usd"
+        },
+        {
+          "path": "source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/configuration/leap_hand_right_physics.usd",
+          "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/leap_hand_v1_right/configuration/leap_hand_right_physics.usd",
+          "git_blob_sha1": "47a495a25e58fe1bdcc83f35caab7858d8519bc8",
+          "size": 6444,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/configuration/leap_hand_right_physics.usd"
+        },
+        {
+          "path": "source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/configuration/leap_hand_right_sensor.usd",
+          "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/leap_hand_v1_right/configuration/leap_hand_right_sensor.usd",
+          "git_blob_sha1": "4425a0c7f6a85b8e53f6e004b96f71953677bc6c",
+          "size": 650,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/configuration/leap_hand_right_sensor.usd"
+        },
+        {
+          "path": "source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/leap_hand_right.usd",
+          "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/leap_hand_v1_right/leap_hand_right.usd",
+          "git_blob_sha1": "4290ac8f37b3953e2b5dfdb5374acaae809ccfd1",
+          "size": 1605,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/leap_hand_right.usd"
+        },
+        {
+          "path": "source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/use_yuzhe_dex-urdf.txt",
+          "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/leap_hand_v1_right/use_yuzhe_dex-urdf.txt",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "size": 0,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/source/LEAP_Isaaclab/LEAP_Isaaclab/assets/leap_hand_v1_right/use_yuzhe_dex-urdf.txt"
+        },
+        {
+          "path": "README.md",
+          "destination": "assets/official/leap_hand_v1_right/isaac_lab_reference/README.md",
+          "git_blob_sha1": "0d5e564be06c5216931f9f60d592a4fcb158796a",
+          "size": 5191,
+          "url": "https://raw.githubusercontent.com/leap-hand/LEAP_Hand_Isaac_Lab/c576e6a83183ba504aef8f57015f2899b799db1a/README.md"
+        }
+      ]
+    },
+    {
+      "id": "cord",
+      "repository": "xuanxuanzzzii/cordvip",
+      "branch": "main",
+      "commit": "ad6d441abe7b0480cf79b0311db266965c1313b6",
+      "source_url": "https://github.com/xuanxuanzzzii/cordvip/tree/ad6d441abe7b0480cf79b0311db266965c1313b6",
+      "files": [
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/collision/white_tip.obj",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/collision/white_tip.obj",
+          "git_blob_sha1": "d020eddc4d9ed57b6b093aedcc6355ac0eaa6d62",
+          "size": 640739,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/collision/white_tip.obj"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/collision/white_tip_thumb.obj",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/collision/white_tip_thumb.obj",
+          "git_blob_sha1": "149be011db4e2fca35ea965de3e2c326bcd66a2b",
+          "size": 402712,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/collision/white_tip_thumb.obj"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/dip.glb",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/dip.glb",
+          "git_blob_sha1": "9dce33103af2f7c1823f5d2d071e389723dbb8b9",
+          "size": 1485152,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/dip.glb"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/dip.mtl",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/dip.mtl",
+          "git_blob_sha1": "667bb086aea4f67992554b43925f0947daeb8327",
+          "size": 253,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/dip.mtl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/dip.obj",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/dip.obj",
+          "git_blob_sha1": "6427894ea17c9705750aaa7a0634dd95fe4507fd",
+          "size": 1013886,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/dip.obj"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/fingertip.glb",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/fingertip.glb",
+          "git_blob_sha1": "9e8c483683a5904e7d366d03530babaa0583c057",
+          "size": 544612,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/fingertip.glb"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/fingertip.mtl",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/fingertip.mtl",
+          "git_blob_sha1": "e77c3f0cb8b7f88db1a3168f1b91fad36340629e",
+          "size": 436,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/fingertip.mtl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/fingertip.obj",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/fingertip.obj",
+          "git_blob_sha1": "574658fcfb36722fa155396cb362c9b3b08dc482",
+          "size": 359831,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/fingertip.obj"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/mcp_joint.glb",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/mcp_joint.glb",
+          "git_blob_sha1": "efd80b2143e9f15d8f61dfb0b3c18e0bb59fff62",
+          "size": 1557804,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/mcp_joint.glb"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/mcp_joint.mtl",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/mcp_joint.mtl",
+          "git_blob_sha1": "667bb086aea4f67992554b43925f0947daeb8327",
+          "size": 253,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/mcp_joint.mtl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/mcp_joint.obj",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/mcp_joint.obj",
+          "git_blob_sha1": "09b7fb891846897c8ce9acf42c0218cee1212baa",
+          "size": 1065471,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/mcp_joint.obj"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower.glb",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower.glb",
+          "git_blob_sha1": "07d4ccf03628c2df37ee3582e7b5d88147c4c5f2",
+          "size": 5045588,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower.glb"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower.mtl",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower.mtl",
+          "git_blob_sha1": "667bb086aea4f67992554b43925f0947daeb8327",
+          "size": 253,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower.mtl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower.obj",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower.obj",
+          "git_blob_sha1": "a020f6f70b338e6f2e386c18a4d41597278e7ca9",
+          "size": 2978219,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower.obj"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower_left.glb",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower_left.glb",
+          "git_blob_sha1": "0eb5968c555302d7b84addad54e5ca270be80801",
+          "size": 5338144,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower_left.glb"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower_left.mtl",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower_left.mtl",
+          "git_blob_sha1": "4173f910f59d1d162f607f9456ad2799faa7648d",
+          "size": 236,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower_left.mtl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower_left.obj",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/palm_lower_left.obj",
+          "git_blob_sha1": "0f9875ef905d830fd39df1a48e39c1ef14d5403d",
+          "size": 4514064,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/palm_lower_left.obj"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/pip.glb",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip.glb",
+          "git_blob_sha1": "84eb649090ef7927bbbd9e40301d2db1c71d8041",
+          "size": 1036400,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/pip.glb"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/pip.mtl",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip.mtl",
+          "git_blob_sha1": "667bb086aea4f67992554b43925f0947daeb8327",
+          "size": 253,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/pip.mtl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/pip.obj",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip.obj",
+          "git_blob_sha1": "80d38cefcc278f6725b353ddfc32d0e52545fd6f",
+          "size": 673869,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/pip.obj"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/pip_left.glb",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip_left.glb",
+          "git_blob_sha1": "eadd3eef7538a158760f9965f80d84c570aa5bea",
+          "size": 1076996,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/pip_left.glb"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/pip_left.mtl",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip_left.mtl",
+          "git_blob_sha1": "4173f910f59d1d162f607f9456ad2799faa7648d",
+          "size": 236,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/pip_left.mtl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/pip_left.obj",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/pip_left.obj",
+          "git_blob_sha1": "bd52bffaa1d56b7704a8ac45dbfb980b286f6145",
+          "size": 1115403,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/pip_left.obj"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_dip.glb",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_dip.glb",
+          "git_blob_sha1": "285a2fb97f4f52963eb5df6bb58d13e4b763e365",
+          "size": 1452096,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_dip.glb"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_dip.mtl",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_dip.mtl",
+          "git_blob_sha1": "667bb086aea4f67992554b43925f0947daeb8327",
+          "size": 253,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_dip.mtl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_dip.obj",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_dip.obj",
+          "git_blob_sha1": "274710cffa39f108def635429c0cb77cc11b803b",
+          "size": 968312,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_dip.obj"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_fingertip.glb",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_fingertip.glb",
+          "git_blob_sha1": "11da47fd68b76c929db5e5c3bb3b03211f432bd0",
+          "size": 1263544,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_fingertip.glb"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_fingertip.mtl",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_fingertip.mtl",
+          "git_blob_sha1": "e77c3f0cb8b7f88db1a3168f1b91fad36340629e",
+          "size": 436,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_fingertip.mtl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_fingertip.obj",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_fingertip.obj",
+          "git_blob_sha1": "f6ffd1fa46f48b3cfe536bf3e4988f709f993a0c",
+          "size": 734609,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_fingertip.obj"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_pip.glb",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_pip.glb",
+          "git_blob_sha1": "c4a96e1ba2cec78d91d1605ea9e3a50201915e7c",
+          "size": 402568,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_pip.glb"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_pip.mtl",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_pip.mtl",
+          "git_blob_sha1": "667bb086aea4f67992554b43925f0947daeb8327",
+          "size": 253,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_pip.mtl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_pip.obj",
+          "destination": "assets/references/cordvip/ur5_leaphand/leaphand/visual/thumb_pip.obj",
+          "git_blob_sha1": "848d28d67d0df396f0649f2bdc3d025043c0ad84",
+          "size": 294575,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/leaphand/visual/thumb_pip.obj"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/collision/base.stl",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/base.stl",
+          "git_blob_sha1": "4eb2f7eb38493e36b16587650cd65c516ea27766",
+          "size": 28984,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/base.stl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/collision/forearm.stl",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/forearm.stl",
+          "git_blob_sha1": "ffbed4536ef7c23c7691736124e161a226546bb9",
+          "size": 52584,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/forearm.stl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/collision/shoulder.stl",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/shoulder.stl",
+          "git_blob_sha1": "5088831c10deb4656b129feee4bd533824e7c152",
+          "size": 33784,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/shoulder.stl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/collision/upperarm.stl",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/upperarm.stl",
+          "git_blob_sha1": "734386e871f9114d9be2567a68c66179ea8f16b5",
+          "size": 58884,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/upperarm.stl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/collision/wrist1.stl",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/wrist1.stl",
+          "git_blob_sha1": "a960c0c571ba7366ed2a72e94ee733bcaf034485",
+          "size": 35184,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/wrist1.stl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/collision/wrist2.stl",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/wrist2.stl",
+          "git_blob_sha1": "9b089de4c6077cc743130865040b934248cc5b4d",
+          "size": 35184,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/wrist2.stl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/collision/wrist3.stl",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/collision/wrist3.stl",
+          "git_blob_sha1": "96c71f0413dfe4311bd253a8747824f29982aed4",
+          "size": 22384,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/collision/wrist3.stl"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/visual/base.dae",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/base.dae",
+          "git_blob_sha1": "7723588fbe45b75886ba74014ba490a600425da6",
+          "size": 153711,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/base.dae"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/visual/forearm.dae",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/forearm.dae",
+          "git_blob_sha1": "aabb4a231e5677d3d021ce2ecd801c55422c21f0",
+          "size": 1470273,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/forearm.dae"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/visual/shoulder.dae",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/shoulder.dae",
+          "git_blob_sha1": "db966c69b35a184178f03d0c506b1f1eb4732b43",
+          "size": 1008635,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/shoulder.dae"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/visual/upperarm.dae",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/upperarm.dae",
+          "git_blob_sha1": "2522ef1ab6a6724dd34e00d3135b64a2909685e5",
+          "size": 2005857,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/upperarm.dae"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/visual/wrist1.dae",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/wrist1.dae",
+          "git_blob_sha1": "dd9125c450f36b8ce210c2a40715fe75a027d1a7",
+          "size": 949559,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/wrist1.dae"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/visual/wrist2.dae",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/wrist2.dae",
+          "git_blob_sha1": "9ee8b014e231aa86db065bcc539c5c77e222c846",
+          "size": 948372,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/wrist2.dae"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5/visual/wrist3.dae",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5/visual/wrist3.dae",
+          "git_blob_sha1": "155b811516d88f3a26836728f5340c1fdbd80426",
+          "size": 124800,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5/visual/wrist3.dae"
+        },
+        {
+          "path": "generate_pc/assets/ur5_leaphand/ur5_leaphand.urdf",
+          "destination": "assets/references/cordvip/ur5_leaphand/ur5_leaphand.urdf",
+          "git_blob_sha1": "ef5d459d22ef27aa5cb68bf0f7e53e2c3398c2db",
+          "size": 33792,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/generate_pc/assets/ur5_leaphand/ur5_leaphand.urdf"
+        },
+        {
+          "path": "LICENSE",
+          "destination": "assets/references/cordvip/ur5_leaphand/LICENSE",
+          "git_blob_sha1": "c6c3e7d3e54e5f85077f7e5be218ed56626dd0fa",
+          "size": 1064,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "destination": "assets/references/cordvip/ur5_leaphand/README.md",
+          "git_blob_sha1": "e60184e9f86afa02dfb9e94bdc24628a38281a3e",
+          "size": 16443,
+          "url": "https://raw.githubusercontent.com/xuanxuanzzzii/cordvip/ad6d441abe7b0480cf79b0311db266965c1313b6/README.md"
+        }
+      ]
+    },
+    {
+      "id": "bodex",
+      "repository": "JYChen18/BODex",
+      "branch": "main",
+      "commit": "06b9a3c90870d33bde9d6c665d4ed2819471407e",
+      "source_url": "https://github.com/JYChen18/BODex/tree/06b9a3c90870d33bde9d6c665d4ed2819471407e",
+      "files": [
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap/dip.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap/dip.stl",
+          "git_blob_sha1": "8f55dce1c5d2f4d4df84a6da5923d42995bb4ef2",
+          "size": 132,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/dip.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap/fingertip.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap/fingertip.stl",
+          "git_blob_sha1": "65c0bc4fd27d89ee3c9bb67c83052f2ff274b7a2",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/fingertip.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap/mcp_joint.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap/mcp_joint.stl",
+          "git_blob_sha1": "09298da9dfb0f51148709e3623b33c150ff8609e",
+          "size": 132,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/mcp_joint.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap/palm_lower.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap/palm_lower.stl",
+          "git_blob_sha1": "f9d9eadcb53039719c7a10830afde2bd1bf831db",
+          "size": 132,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/palm_lower.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap/pip.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap/pip.stl",
+          "git_blob_sha1": "e3ccbf1dd882d1555f125f10d3a499387b5539c7",
+          "size": 132,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/pip.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_dip.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap/thumb_dip.stl",
+          "git_blob_sha1": "3836d7697dbb82d120caf8001e5071dcffc512f3",
+          "size": 132,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_dip.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_fingertip.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap/thumb_fingertip.stl",
+          "git_blob_sha1": "6fba34f43603b74d43bfdf6cfbb042d3e0bfaa0d",
+          "size": 132,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_fingertip.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_pip.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap/thumb_pip.stl",
+          "git_blob_sha1": "4eca2cde344881ca9b18eade08619a212825f978",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap/thumb_pip.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/convex_tip.obj",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/convex_tip.obj",
+          "git_blob_sha1": "5940261cf95a198d5cfda5e76c746b66dd247be1",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/convex_tip.obj"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/convex_tip_thumb.obj",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/convex_tip_thumb.obj",
+          "git_blob_sha1": "5549d50a019272a072e508e2d8d7d9e0b3f7479b",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/convex_tip_thumb.obj"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/dip.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/dip.stl",
+          "git_blob_sha1": "6954e2d3c3fcd523e41dedd8d979723c31ed9d49",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/dip.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/fingertip.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/fingertip.stl",
+          "git_blob_sha1": "5250403bf643454a9e0bdffe0336e2befe384a16",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/fingertip.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/mcp_joint.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/mcp_joint.stl",
+          "git_blob_sha1": "77621b83de5963ebf6d8a96d7d44192bd745e45a",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/mcp_joint.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/palm_lower.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/palm_lower.stl",
+          "git_blob_sha1": "a342936c806c148ff868116127698447eb3c1a49",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/palm_lower.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/pip.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/pip.stl",
+          "git_blob_sha1": "fc027dcbd084f3be2627e13b4a415c73ea831ced",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/pip.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_dip.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/thumb_dip.stl",
+          "git_blob_sha1": "cb08e6468891ab987d2c9777a8e843db03a0ba4f",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_dip.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_fingertip.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/thumb_fingertip.stl",
+          "git_blob_sha1": "6c20c570864a42af5f280b5038a59f512807e660",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_fingertip.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_pip.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/leap_simplified/thumb_pip.stl",
+          "git_blob_sha1": "e9db60f54f8b1b65e44280e78d01814ab4a451a6",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/leap_simplified/thumb_pip.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur10e",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur10e",
+          "git_mode": "120000",
+          "materialization": "symlink-target-text",
+          "git_blob_sha1": "14d7010fa12ec311e813d6589749721e3e8df92d",
+          "size": 33,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur10e"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/base.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/base.stl",
+          "git_blob_sha1": "339a8164007954c38541f204af1354c8b991828e",
+          "size": 130,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/base.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/forearm.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/forearm.stl",
+          "git_blob_sha1": "5ab694eba4c13bad33e513a31f4fa594aed1e8f6",
+          "size": 130,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/forearm.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/shoulder.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/shoulder.stl",
+          "git_blob_sha1": "d10054cd74b1e1e00509dcbdcb11599fdbd7decb",
+          "size": 130,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/shoulder.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/upperarm.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/upperarm.stl",
+          "git_blob_sha1": "a445b087e1dadad4ea0f3cd289cf25c8383281e3",
+          "size": 130,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/upperarm.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist1.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/wrist1.stl",
+          "git_blob_sha1": "9b73783ed4086f61809fd5883380296e1b5344a7",
+          "size": 130,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist1.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist2.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/wrist2.stl",
+          "git_blob_sha1": "fa66a3e3e4e719832c9fadc9b240f59a9ff77b31",
+          "size": 130,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist2.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist3.stl",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/collision/wrist3.stl",
+          "git_blob_sha1": "c7bed14cb60de2bc786c7871733ae16e8ae2ee65",
+          "size": 130,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/collision/wrist3.stl"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/base.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/base.dae",
+          "git_blob_sha1": "72bdff5c05e973fd3eef86630e95e5f725a18282",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/base.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/forearm.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/forearm.dae",
+          "git_blob_sha1": "a506337aadf38f11adfe3a8829f23afd3c422239",
+          "size": 132,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/forearm.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/shoulder.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/shoulder.dae",
+          "git_blob_sha1": "e00afe422447e69bfd30df65e91e4bcfa6bb4c81",
+          "size": 132,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/shoulder.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/upperarm.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/upperarm.dae",
+          "git_blob_sha1": "8ef55604a87dede7849a9fcbb76eb523405ce128",
+          "size": 132,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/upperarm.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist1.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/wrist1.dae",
+          "git_blob_sha1": "2c04cdfc41e6e8003b3406f4f4e12afa48c9cc69",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist1.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist2.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/wrist2.dae",
+          "git_blob_sha1": "ad356f1a50e6db6fe13f4f4f015353c6b76289d2",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist2.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist3.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual/wrist3.dae",
+          "git_blob_sha1": "2d76b44d047b58bd6a6ee9c1bd7ab2fa588e5231",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual/wrist3.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/base.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/base.dae",
+          "git_blob_sha1": "052918901611da902e9a43b25f7250370704ec46",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/base.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/forearm.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/forearm.dae",
+          "git_blob_sha1": "5084e55d613dc4f5edf55d4195340de14797faba",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/forearm.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/shoulder.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/shoulder.dae",
+          "git_blob_sha1": "872d0dac3522723ef877c37979498c2ec56b0e06",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/shoulder.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/upperarm.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/upperarm.dae",
+          "git_blob_sha1": "060c448f6629b7de8db6bf9bca5f5e8bc00dea39",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/upperarm.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist1.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/wrist1.dae",
+          "git_blob_sha1": "ed920a3571f7d896af2ca463e6f81433ae8b2e8e",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist1.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist2.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/wrist2.dae",
+          "git_blob_sha1": "549f038319bc487962c8b6346b585a02e1ec02d5",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist2.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist3.dae",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5/visual_simplified/wrist3.dae",
+          "git_blob_sha1": "870dc71028436bbf366e8e1bf6cb53e1156692d2",
+          "size": 131,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5/visual_simplified/wrist3.dae"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/meshes/ur5e",
+          "destination": "assets/references/bodex/ur5_leap/meshes/ur5e",
+          "git_mode": "120000",
+          "materialization": "symlink-target-text",
+          "git_blob_sha1": "22e4f50e35c4bb9ace162141f8abfb8852f823f3",
+          "size": 32,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/meshes/ur5e"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/urdf/leap_hand.urdf",
+          "destination": "assets/references/bodex/ur5_leap/urdf/leap_hand.urdf",
+          "git_blob_sha1": "f4ceeda25a639d3dbc51fb5a85a6749bd773faf1",
+          "size": 25422,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/urdf/leap_hand.urdf"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/urdf/leap_hand_simplified.urdf",
+          "destination": "assets/references/bodex/ur5_leap/urdf/leap_hand_simplified.urdf",
+          "git_blob_sha1": "2069db463dd77afe53e1a1a960e0cf0bee2a2b24",
+          "size": 25188,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/urdf/leap_hand_simplified.urdf"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/urdf/ur5_leap.urdf",
+          "destination": "assets/references/bodex/ur5_leap/urdf/ur5_leap.urdf",
+          "git_blob_sha1": "b65719ef0e2ec24595488c4ac0ab701a109cd0d8",
+          "size": 38121,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/urdf/ur5_leap.urdf"
+        },
+        {
+          "path": "src/curobo/content/assets/robot/leap_description/urdf/ur5_leap_simplified.urdf",
+          "destination": "assets/references/bodex/ur5_leap/urdf/ur5_leap_simplified.urdf",
+          "git_blob_sha1": "3aaa1cccc893811857e9b11973ecde25fe87e90d",
+          "size": 38385,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/src/curobo/content/assets/robot/leap_description/urdf/ur5_leap_simplified.urdf"
+        },
+        {
+          "path": "LICENSE",
+          "destination": "assets/references/bodex/ur5_leap/LICENSE",
+          "git_blob_sha1": "8f6fe577e1029793d597a9b530eb38a7f9370612",
+          "size": 4396,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/LICENSE"
+        },
+        {
+          "path": "LICENSE_ASSETS",
+          "destination": "assets/references/bodex/ur5_leap/LICENSE_ASSETS",
+          "git_blob_sha1": "c34ce50e3e59f117d01c74096352ff40554b49bd",
+          "size": 21428,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/LICENSE_ASSETS"
+        },
+        {
+          "path": "README.md",
+          "destination": "assets/references/bodex/ur5_leap/README.md",
+          "git_blob_sha1": "61f29736f6ef3551d96066f2b3a0f422b2d4bff1",
+          "size": 5507,
+          "url": "https://raw.githubusercontent.com/JYChen18/BODex/06b9a3c90870d33bde9d6c665d4ed2819471407e/README.md"
+        }
+      ]
+    }
+  ]
+}
