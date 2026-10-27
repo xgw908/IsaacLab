@@ -120,7 +120,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
 
         # Feedback gains
         k_theta = -600.0
-        k_theta_d = -100.0
+        k_theta_d = 0
         k_x = 0.0
         k_x_d = 0.0
 
@@ -132,14 +132,14 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict[str, Articula
             + k_x_d * cart_vel
         )
 
-        print(
-        "angle:",
-        pole_angle[0].item(),
-        "vel:",
-        pole_vel[0].item(),
-        "force:",
-        force[0].item(),
-    )
+        # print(
+        # "angle:",
+        # pole_angle[0].item(),
+        # "vel:",
+        # pole_vel[0].item(),
+        # "force:",
+        # force[0].item(),
+        # )
 
         # Limit maximum force
         force = torch.clamp(force, -100.0,100.0)
