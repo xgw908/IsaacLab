@@ -1,0 +1,1165 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.3.2"
+    }
+    defaultPrim = "ur5"
+    doc = """Generated from Composed Stage of root layer /workspace/isaaclab/source/ur5_leap/assets/references/bodex/generated/usd/bodex_ur5_leap.usd/ur5_leap/payloads/base.usd
+"""
+    endTimeCode = 1000000
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = 0
+    subLayers = [
+        @./robot.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "ur5" (
+    prepend apiSchemas = ["GeomModelAPI", "IsaacRobotAPI"]
+    assetInfo = {
+        string name = "ur5"
+    }
+    kind = "component"
+)
+{
+    float3[] extentsHint = [(-0.0733658, -0.11, -0.048907526), (0.8850616, 0.24165, 0.18359248), (3.4028235e38, 3.4028235e38, 3.4028235e38), (-3.4028235e38, -3.4028235e38, -3.4028235e38), (3.4028235e38, 3.4028235e38, 3.4028235e38), (-3.4028235e38, -3.4028235e38, -3.4028235e38), (-0.059404016, -0.059746366, -0.04890753), (0.8850616, 0.24165, 0.18359248)]
+    custom rel isaac:physics:robotJoints
+    custom rel isaac:physics:robotLinks
+    custom token isaac:robotType = "Default"
+
+    def Scope "Materials"
+    {
+    }
+
+    def Scope "Geometry"
+    {
+        def Xform "base_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+            def Xform "base" (
+                instanceable = true
+                prepend references = @./instances.usda@</Instances/base>
+            )
+            {
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Xform "shoulder_link" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                quatf xformOp:orient = (1, 0, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0.089159)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Xform "shoulder" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </ur5/Materials/LightGrey>
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def Xform "tn__ActorShape0_0Mesh023_xTe0" (
+                        displayName = "ActorShape0_0-Mesh.023"
+                        instanceable = true
+                        prepend references = @./instances.usda@</Instances/tn__ActorShape0_0Mesh023_xTe0>
+                    )
+                    {
+                        quatd xformOp:orient = (1, 0, 0, 0)
+                        double3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0, -1.564999934e-7, -1.564999934e-7)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                    }
+
+                    def Xform "tn__ActorShape1_0Mesh017_xTe0" (
+                        displayName = "ActorShape1_0-Mesh.017"
+                        instanceable = true
+                        prepend references = @./instances.usda@</Instances/tn__ActorShape1_0Mesh017_xTe0>
+                    )
+                    {
+                        quatd xformOp:orient = (1, 0, 0, 0)
+                        double3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0, -1.564999934e-7, 1.564999934e-7)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                    }
+                }
+
+                def Xform "upper_arm_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    quatf xformOp:orient = (0.70710677, 0, 0.70710677, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0.13585, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def Xform "upperarm" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </ur5/Materials/LightGrey>
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def Xform "tn__ActorShape0_0Mesh024_xTe0" (
+                            displayName = "ActorShape0_0-Mesh.024"
+                            instanceable = true
+                            prepend references = @./instances.usda@</Instances/tn__ActorShape0_0Mesh024_xTe0>
+                        )
+                        {
+                            quatd xformOp:orient = (1, 0, 0, 0)
+                            double3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                        }
+
+                        def Xform "tn__ActorShape1_0Mesh018_xTe0" (
+                            displayName = "ActorShape1_0-Mesh.018"
+                            instanceable = true
+                            prepend references = @./instances.usda@</Instances/tn__ActorShape1_0Mesh018_xTe0>
+                        )
+                        {
+                            quatd xformOp:orient = (1, 0, 0, 0)
+                            double3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                        }
+
+                        def Xform "tn__ActorShape2_0Mesh011_xTe0" (
+                            displayName = "ActorShape2_0-Mesh.011"
+                            instanceable = true
+                            prepend references = @./instances.usda@</Instances/tn__ActorShape2_0Mesh011_xTe0>
+                        )
+                        {
+                            quatd xformOp:orient = (1, 0, 0, 0)
+                            double3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                        }
+
+                        def Xform "tn__ActorShape3_0Mesh011_xTe0" (
+                            displayName = "ActorShape3_0-Mesh.011"
+                            instanceable = true
+                            prepend references = @./instances.usda@</Instances/tn__ActorShape3_0Mesh011_xTe0>
+                        )
+                        {
+                            quatd xformOp:orient = (1, 0, 0, 0)
+                            double3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                        }
+
+                        def Xform "tn__ActorShape4_0Mesh004_xTe0" (
+                            displayName = "ActorShape4_0-Mesh.004"
+                            instanceable = true
+                            prepend references = @./instances.usda@</Instances/tn__ActorShape4_0Mesh004_xTe0>
+                        )
+                        {
+                            quatd xformOp:orient = (1, 0, 0, 0)
+                            double3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                        }
+                    }
+
+                    def Xform "forearm_link" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0, -0.1197, 0.425)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def Xform "forearm" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </ur5/Materials/LightGrey>
+                            quatf xformOp:orient = (1, 0, 0, 0)
+                            float3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            def Xform "tn__ActorShape0_0Mesh029_xTe0" (
+                                displayName = "ActorShape0_0-Mesh.029"
+                                instanceable = true
+                                prepend references = @./instances.usda@</Instances/tn__ActorShape0_0Mesh029_xTe0>
+                            )
+                            {
+                                quatd xformOp:orient = (1, 0, 0, 0)
+                                double3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                            }
+
+                            def Xform "tn__ActorShape1_0Mesh021_xTe0" (
+                                displayName = "ActorShape1_0-Mesh.021"
+                                instanceable = true
+                                prepend references = @./instances.usda@</Instances/tn__ActorShape1_0Mesh021_xTe0>
+                            )
+                            {
+                                quatd xformOp:orient = (1, 0, 0, 0)
+                                double3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                            }
+
+                            def Xform "tn__ActorShape2_0Mesh012_xTe0" (
+                                displayName = "ActorShape2_0-Mesh.012"
+                                instanceable = true
+                                prepend references = @./instances.usda@</Instances/tn__ActorShape2_0Mesh012_xTe0>
+                            )
+                            {
+                                quatd xformOp:orient = (1, 0, 0, 0)
+                                double3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                            }
+
+                            def Xform "tn__ActorShape3_0Mesh012_xTe0" (
+                                displayName = "ActorShape3_0-Mesh.012"
+                                instanceable = true
+                                prepend references = @./instances.usda@</Instances/tn__ActorShape3_0Mesh012_xTe0>
+                            )
+                            {
+                                quatd xformOp:orient = (1, 0, 0, 0)
+                                double3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                            }
+                        }
+
+                        def Xform "wrist_1_link" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            quatf xformOp:orient = (0.70710677, 0, 0.70710677, 0)
+                            float3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0.39225)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            def Xform "wrist1" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </ur5/Materials/LightGrey>
+                                quatf xformOp:orient = (1, 0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                def Xform "tn__ActorShape0_0Mesh025_xTe0" (
+                                    displayName = "ActorShape0_0-Mesh.025"
+                                    instanceable = true
+                                    prepend references = @./instances.usda@</Instances/tn__ActorShape0_0Mesh025_xTe0>
+                                )
+                                {
+                                    quatd xformOp:orient = (1, 0, 0, 0)
+                                    double3 xformOp:scale = (1, 1, 0.9999998808)
+                                    double3 xformOp:translate = (0, 0, 0)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                def Xform "tn__ActorShape1_0Mesh019_xTe0" (
+                                    displayName = "ActorShape1_0-Mesh.019"
+                                    instanceable = true
+                                    prepend references = @./instances.usda@</Instances/tn__ActorShape1_0Mesh019_xTe0>
+                                )
+                                {
+                                    quatd xformOp:orient = (1, 0, 0, 0)
+                                    double3 xformOp:scale = (1, 1, 0.9999998808)
+                                    double3 xformOp:translate = (0, 0, 0)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+                            }
+
+                            def Xform "wrist_2_link" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                                quatf xformOp:orient = (1, 0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0.093, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                def Xform "wrist2" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
+                                )
+                                {
+                                    rel material:binding = </ur5/Materials/LightGrey>
+                                    quatf xformOp:orient = (1, 0, 0, 0)
+                                    float3 xformOp:scale = (1, 1, 1)
+                                    double3 xformOp:translate = (0, 0, 0)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                    def Xform "tn__ActorShape0_0Mesh026_xTe0" (
+                                        displayName = "ActorShape0_0-Mesh.026"
+                                        instanceable = true
+                                        prepend references = @./instances.usda@</Instances/tn__ActorShape0_0Mesh026_xTe0>
+                                    )
+                                    {
+                                        quatd xformOp:orient = (1, 0, 0, 0)
+                                        double3 xformOp:scale = (1, 1, 1)
+                                        double3 xformOp:translate = (0, 0, 0)
+                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                    }
+
+                                    def Xform "tn__ActorShape1_0Mesh020_xTe0" (
+                                        displayName = "ActorShape1_0-Mesh.020"
+                                        instanceable = true
+                                        prepend references = @./instances.usda@</Instances/tn__ActorShape1_0Mesh020_xTe0>
+                                    )
+                                    {
+                                        quatd xformOp:orient = (1, 0, 0, 0)
+                                        double3 xformOp:scale = (1, 1, 1)
+                                        double3 xformOp:translate = (0, 0, 0)
+                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                    }
+                                }
+
+                                def Xform "wrist_3_link" (
+                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                )
+                                {
+                                    quatf xformOp:orient = (1, 0, 0, 0)
+                                    float3 xformOp:scale = (1, 1, 1)
+                                    double3 xformOp:translate = (0, 0, 0.09465)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                    def Xform "wrist3" (
+                                        instanceable = true
+                                        prepend references = @./instances.usda@</Instances/wrist3>
+                                    )
+                                    {
+                                        quatd xformOp:orient = (1, 0, 0, 0)
+                                        double3 xformOp:scale = (1, 1, 1)
+                                        double3 xformOp:translate = (0, 0, 0)
+                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                    }
+
+                                    def Xform "hand_base_link" (
+                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                    )
+                                    {
+                                        quatf xformOp:orient = (-0.5, -0.5, -0.5, 0.5)
+                                        float3 xformOp:scale = (1, 1, 1)
+                                        double3 xformOp:translate = (0.033030643865100524, 0.09357759647153979, -0.05747874965286254)
+                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                        def Xform "palm_lower" (
+                                            instanceable = true
+                                            prepend references = @./instances.usda@</Instances/palm_lower>
+                                        )
+                                        {
+                                            quatd xformOp:orient = (1, 0, 0, 0)
+                                            double3 xformOp:scale = (1, 1, 1)
+                                            double3 xformOp:translate = (-0.02009524965, 0.02575775613, -0.03472240358)
+                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                        }
+
+                                        def Xform "pip_4" (
+                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                        )
+                                        {
+                                            quatf xformOp:orient = (0.70710677, 0, 0.70710677, 0)
+                                            float3 xformOp:scale = (1, 1, 1)
+                                            double3 xformOp:translate = (-0.06939524965286253, -0.0012422438651005258, -0.021622403578460216)
+                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                            def Xform "pip" (
+                                                instanceable = true
+                                                prepend references = @./instances.usda@</Instances/pip>
+                                            )
+                                            {
+                                                quatd xformOp:orient = (0.5, -0.5, -0.5, -0.5)
+                                                double3 xformOp:scale = (1, 1, 1)
+                                                double3 xformOp:translate = (-0.005356636908, 0.0003, 0.0007840340104)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                            }
+
+                                            def Xform "thumb_pip" (
+                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                            )
+                                            {
+                                                quatf xformOp:orient = (-0.5, -0.5, 0.5, -0.5)
+                                                float3 xformOp:scale = (1, 1, 1)
+                                                double3 xformOp:translate = (-2.7755575615628914e-17, 0.014300000000000005, -0.013000000000000012)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                                def Xform "thumb_pip" (
+                                                    instanceable = true
+                                                    prepend references = @./instances.usda@</Instances/thumb_pip>
+                                                )
+                                                {
+                                                    quatd xformOp:orient = (0.7071067691, 0.7071067691, 0, 0)
+                                                    double3 xformOp:scale = (1, 1, 1)
+                                                    double3 xformOp:translate = (0.01196192077, -5.308253836e-16, -0.01585264896)
+                                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                }
+
+                                                def Xform "thumb_dip" (
+                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                )
+                                                {
+                                                    quatf xformOp:orient = (-0.70710677, 0.70710677, 0, 0)
+                                                    float3 xformOp:scale = (1, 1, 1)
+                                                    double3 xformOp:translate = (0, 0.014499999999999966, -0.017000000000000053)
+                                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                                    def Xform "thumb_dip" (
+                                                        instanceable = true
+                                                        prepend references = @./instances.usda@</Instances/thumb_dip>
+                                                    )
+                                                    {
+                                                        quatd xformOp:orient = (1, 0, 0, 0)
+                                                        double3 xformOp:scale = (1, 1, 1)
+                                                        double3 xformOp:translate = (0.04396871571, 0.05795295297, -0.008628676449)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                    }
+
+                                                    def Xform "thumb_fingertip" (
+                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                    )
+                                                    {
+                                                        quatf xformOp:orient = (6.123234e-17, 0, 0, 1)
+                                                        float3 xformOp:scale = (1, 1, 1)
+                                                        double3 xformOp:translate = (-1.249000902703301e-16, 0.046599999999999864, 0.0001999999999999771)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                                        def Xform "thumb_fingertip" (
+                                                            instanceable = true
+                                                            prepend references = @./instances.usda@</Instances/thumb_fingertip>
+                                                        )
+                                                        {
+                                                            quatd xformOp:orient = (1, 0, 0, 0)
+                                                            double3 xformOp:scale = (1, 1, 1)
+                                                            double3 xformOp:translate = (0.06255953846, 0.07845968291, 0.04899291181)
+                                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                        }
+
+                                                        def Cube "box" (
+                                                            prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                        )
+                                                        {
+                                                            float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                            uniform token purpose = "guide"
+                                                            double size = 1
+                                                            quatf xformOp:orient = (1, 0, 0, 0)
+                                                            float3 xformOp:scale = (0.0285, 0.0391, 0.033)
+                                                            double3 xformOp:translate = (0.0042499984626673815, -0.010049997088603019, -0.014299998192667779)
+                                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                        }
+
+                                                        def Cube "box_1" (
+                                                            prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                            displayName = "box"
+                                                        )
+                                                        {
+                                                            float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                            uniform token purpose = "guide"
+                                                            double size = 1
+                                                            quatf xformOp:orient = (1, 0, 0, 0)
+                                                            float3 xformOp:scale = (0.02059811, 0.03200001, 0.02400001)
+                                                            double3 xformOp:translate = (-0.0007990565373326153, -0.046100002088603015, -0.01430000319266779)
+                                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                        }
+                                                    }
+
+                                                    def Cube "box" (
+                                                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                    )
+                                                    {
+                                                        float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                        uniform token purpose = "guide"
+                                                        double size = 1
+                                                        quatf xformOp:orient = (1, 0, 0, 0)
+                                                        float3 xformOp:scale = (0.0285, 0.06403652, 0.0346)
+                                                        double3 xformOp:translate = (-0.004250004292760824, 0.0225182629737092, -0.014299996449369475)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                    }
+                                                }
+
+                                                def Cube "box" (
+                                                    prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                )
+                                                {
+                                                    float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                    uniform token purpose = "guide"
+                                                    double size = 1
+                                                    quatf xformOp:orient = (0.70710677, 0.70710677, 0, 0)
+                                                    float3 xformOp:scale = (0.02, 0.02493652, 0.0346)
+                                                    double3 xformOp:translate = (7.706111877087141e-10, -5.306181495298747e-16, -0.0124682589566642)
+                                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                }
+                                            }
+
+                                            def Cube "box" (
+                                                prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                            )
+                                            {
+                                                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                uniform token purpose = "guide"
+                                                double size = 1
+                                                quatf xformOp:orient = (-0.5, 0.5, 0.5, 0.5)
+                                                float3 xformOp:scale = (0.023, 0.034, 0.0295309)
+                                                double3 xformOp:translate = (-0.007499996907728673, 0.0002999999999999998, -0.011499995989582623)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                            }
+                                        }
+
+                                        def Xform "mcp_joint" (
+                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                        )
+                                        {
+                                            quatf xformOp:orient = (-0.5, -0.5, -0.5, 0.5)
+                                            float3 xformOp:scale = (1, 1, 1)
+                                            double3 xformOp:translate = (-0.007095249652862546, 0.023057756134899472, -0.01872240357846022)
+                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                            def Xform "mcp_joint" (
+                                                instanceable = true
+                                                prepend references = @./instances.usda@</Instances/mcp_joint>
+                                            )
+                                            {
+                                                quatd xformOp:orient = (1, 0, 0, 0)
+                                                double3 xformOp:scale = (1, 1, 1)
+                                                double3 xformOp:translate = (0.008406902261, 0.00776624386, 0.01465735499)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                            }
+
+                                            def Xform "pip" (
+                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                            )
+                                            {
+                                                quatf xformOp:orient = (-0.5, 0.5, 0.5, -0.5)
+                                                float3 xformOp:scale = (1, 1, 1)
+                                                double3 xformOp:translate = (-0.012200000000000008, 0.038099999999999995, 0.0145)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                                def Xform "pip" (
+                                                    instanceable = true
+                                                    prepend references = @./instances.usda@</Instances/pip>
+                                                )
+                                                {
+                                                    quatd xformOp:orient = (0.5, -0.5, -0.5, -0.5)
+                                                    double3 xformOp:scale = (1, 1, 1)
+                                                    double3 xformOp:translate = (0.009643363092, 0.0003, 0.0007840340104)
+                                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                }
+
+                                                def Xform "dip" (
+                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                )
+                                                {
+                                                    quatf xformOp:orient = (-0.5, -0.5, 0.5, -0.5)
+                                                    float3 xformOp:scale = (1, 1, 1)
+                                                    double3 xformOp:translate = (0.014999999999999968, 0.014299999999999905, -0.012999999999999824)
+                                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                                    def Xform "dip" (
+                                                        instanceable = true
+                                                        prepend references = @./instances.usda@</Instances/dip>
+                                                    )
+                                                    {
+                                                        quatd xformOp:orient = (0, 1, 0, 0)
+                                                        double3 xformOp:scale = (1, 1, 1)
+                                                        double3 xformOp:translate = (0.0211333529, -0.008432119147, 0.009785088162)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                    }
+
+                                                    def Xform "fingertip" (
+                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                    )
+                                                    {
+                                                        quatf xformOp:orient = (1, 0, 0, 0)
+                                                        float3 xformOp:scale = (1, 1, 1)
+                                                        double3 xformOp:translate = (-4.088058249557269e-9, -0.03610000421036737, 0.0002000000000000786)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                                        def Xform "fingertip" (
+                                                            instanceable = true
+                                                            prepend references = @./instances.usda@</Instances/fingertip>
+                                                        )
+                                                        {
+                                                            quatd xformOp:orient = (0, 1, 0, 0)
+                                                            double3 xformOp:scale = (1, 1, 1)
+                                                            double3 xformOp:translate = (0.01328642411, -0.006114238387, 0.0145)
+                                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                        }
+
+                                                        def Cube "box" (
+                                                            prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                        )
+                                                        {
+                                                            float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                            uniform token purpose = "guide"
+                                                            double size = 1
+                                                            quatf xformOp:orient = (6.123234e-17, 1, 2.219774e-32, -5.996559e-34)
+                                                            float3 xformOp:scale = (0.02059812, 0.02936731, 0.024)
+                                                            double3 xformOp:translate = (-0.000799055891466496, -0.03481634338654199, 0.014499999999999501)
+                                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                        }
+
+                                                        def Cube "box_1" (
+                                                            prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                            displayName = "box"
+                                                        )
+                                                        {
+                                                            float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                            uniform token purpose = "guide"
+                                                            double size = 1
+                                                            quatf xformOp:orient = (6.123234e-17, 1, 2.219774e-32, -5.996559e-34)
+                                                            float3 xformOp:scale = (0.02043187, 0.02805076, 0.0346)
+                                                            double3 xformOp:translate = (-0.00021593089146649744, -0.006088858386541987, 0.014499999999999498)
+                                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                        }
+                                                    }
+
+                                                    def Cube "box" (
+                                                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                    )
+                                                    {
+                                                        float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                        uniform token purpose = "guide"
+                                                        double size = 1
+                                                        quatf xformOp:orient = (-1.6081226e-16, 1, 1.943599e-32, -2.4651903e-32)
+                                                        float3 xformOp:scale = (0.034, 0.023, 0.02953089)
+                                                        double3 xformOp:translate = (0.007500002895225002, -0.03459999914670488, 0.014200003162095238)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                    }
+
+                                                    def Cube "box_1" (
+                                                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                        displayName = "box"
+                                                    )
+                                                    {
+                                                        float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                        uniform token purpose = "guide"
+                                                        double size = 1
+                                                        quatf xformOp:orient = (-1.6081226e-16, 1, 1.943599e-32, -2.4651903e-32)
+                                                        float3 xformOp:scale = (0.02, 0.03106864, 0.0346)
+                                                        double3 xformOp:translate = (2.8952250007152625e-9, -0.00759779914670488, 0.01449999816209524)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                    }
+                                                }
+
+                                                def Cube "box" (
+                                                    prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                )
+                                                {
+                                                    float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                    uniform token purpose = "guide"
+                                                    double size = 1
+                                                    quatf xformOp:orient = (-0.5, 0.5, 0.5, 0.5)
+                                                    float3 xformOp:scale = (0.023, 0.034, 0.0295309)
+                                                    double3 xformOp:translate = (0.007500003092271327, 0.0002999999999999894, -0.011499995989582625)
+                                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                }
+                                            }
+
+                                            def Cube "box" (
+                                                prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                            )
+                                            {
+                                                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                uniform token purpose = "guide"
+                                                double size = 1
+                                                quatf xformOp:orient = (1, 0, 0, 0)
+                                                float3 xformOp:scale = (0.03156545, 0.04559999, 0.02850001)
+                                                double3 xformOp:translate = (-0.027217272738825505, 0.039799998859716995, 0.018749999985032913)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                            }
+
+                                            def Cube "box_1" (
+                                                prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                displayName = "box"
+                                            )
+                                            {
+                                                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                uniform token purpose = "guide"
+                                                double size = 1
+                                                quatf xformOp:orient = (1, 0, 0, 0)
+                                                float3 xformOp:scale = (0.02, 0.02893652, 0.03459999)
+                                                double3 xformOp:translate = (0, 0.006531743859716996, 0.014499999985032912)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                            }
+                                        }
+
+                                        def Xform "mcp_joint_3" (
+                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                        )
+                                        {
+                                            quatf xformOp:orient = (-0.5, -0.5, -0.5, 0.5)
+                                            float3 xformOp:scale = (1, 1, 1)
+                                            double3 xformOp:translate = (-0.007095245442639837, -0.06784224386510052, -0.018722407666402933)
+                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                            def Xform "mcp_joint" (
+                                                instanceable = true
+                                                prepend references = @./instances.usda@</Instances/mcp_joint>
+                                            )
+                                            {
+                                                quatd xformOp:orient = (1, 0, 0, 0)
+                                                double3 xformOp:scale = (1, 1, 1)
+                                                double3 xformOp:translate = (0.008406902261, 0.00776624386, 0.01465735499)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                            }
+
+                                            def Xform "pip_3" (
+                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                            )
+                                            {
+                                                quatf xformOp:orient = (-0.5, 0.5, 0.5, -0.5)
+                                                float3 xformOp:scale = (1, 1, 1)
+                                                double3 xformOp:translate = (-0.012200000000000004, 0.0381, 0.014499999999999999)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                                def Xform "pip" (
+                                                    instanceable = true
+                                                    prepend references = @./instances.usda@</Instances/pip>
+                                                )
+                                                {
+                                                    quatd xformOp:orient = (0.5, -0.5, -0.5, -0.5)
+                                                    double3 xformOp:scale = (1, 1, 1)
+                                                    double3 xformOp:translate = (0.009643363092, 0.0003, 0.0007840340104)
+                                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                }
+
+                                                def Xform "dip_3" (
+                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                )
+                                                {
+                                                    quatf xformOp:orient = (-0.5, -0.5, 0.5, -0.5)
+                                                    float3 xformOp:scale = (1, 1, 1)
+                                                    double3 xformOp:translate = (0.014999999999999972, 0.014299999999999952, -0.01299999999999996)
+                                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                                    def Xform "dip" (
+                                                        instanceable = true
+                                                        prepend references = @./instances.usda@</Instances/dip>
+                                                    )
+                                                    {
+                                                        quatd xformOp:orient = (0, 1, 0, 0)
+                                                        double3 xformOp:scale = (1, 1, 1)
+                                                        double3 xformOp:translate = (0.0211333529, -0.008432119147, 0.009785088162)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                    }
+
+                                                    def Xform "fingertip_3" (
+                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                    )
+                                                    {
+                                                        quatf xformOp:orient = (1, 0, 0, 0)
+                                                        float3 xformOp:scale = (1, 1, 1)
+                                                        double3 xformOp:translate = (9.71445146547012e-17, -0.03609999999999987, 0.00020000000000007512)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                                        def Xform "fingertip" (
+                                                            instanceable = true
+                                                            prepend references = @./instances.usda@</Instances/fingertip>
+                                                        )
+                                                        {
+                                                            quatd xformOp:orient = (0, 1, 0, 0)
+                                                            double3 xformOp:scale = (1, 1, 1)
+                                                            double3 xformOp:translate = (0.01328642411, -0.006114238387, 0.0145)
+                                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                        }
+
+                                                        def Cube "box" (
+                                                            prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                        )
+                                                        {
+                                                            float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                            uniform token purpose = "guide"
+                                                            double size = 1
+                                                            quatf xformOp:orient = (6.123234e-17, 1, 2.219774e-32, -5.996559e-34)
+                                                            float3 xformOp:scale = (0.02059812, 0.02936731, 0.024)
+                                                            double3 xformOp:translate = (-0.000799055891466496, -0.03481634338654199, 0.014499999999999501)
+                                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                        }
+
+                                                        def Cube "box_1" (
+                                                            prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                            displayName = "box"
+                                                        )
+                                                        {
+                                                            float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                            uniform token purpose = "guide"
+                                                            double size = 1
+                                                            quatf xformOp:orient = (6.123234e-17, 1, 2.219774e-32, -5.996559e-34)
+                                                            float3 xformOp:scale = (0.02043187, 0.02805076, 0.0346)
+                                                            double3 xformOp:translate = (-0.00021593089146649744, -0.006088858386541987, 0.014499999999999498)
+                                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                        }
+                                                    }
+
+                                                    def Cube "box" (
+                                                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                    )
+                                                    {
+                                                        float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                        uniform token purpose = "guide"
+                                                        double size = 1
+                                                        quatf xformOp:orient = (-1.6081226e-16, 1, 1.943599e-32, -2.4651903e-32)
+                                                        float3 xformOp:scale = (0.034, 0.023, 0.02953089)
+                                                        double3 xformOp:translate = (0.007500002895225002, -0.03459999914670488, 0.014200003162095238)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                    }
+
+                                                    def Cube "box_1" (
+                                                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                        displayName = "box"
+                                                    )
+                                                    {
+                                                        float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                        uniform token purpose = "guide"
+                                                        double size = 1
+                                                        quatf xformOp:orient = (-1.6081226e-16, 1, 1.943599e-32, -2.4651903e-32)
+                                                        float3 xformOp:scale = (0.02, 0.03106864, 0.0346)
+                                                        double3 xformOp:translate = (2.8952250007152625e-9, -0.00759779914670488, 0.01449999816209524)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                    }
+                                                }
+
+                                                def Cube "box" (
+                                                    prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                )
+                                                {
+                                                    float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                    uniform token purpose = "guide"
+                                                    double size = 1
+                                                    quatf xformOp:orient = (-0.5, 0.5, 0.5, 0.5)
+                                                    float3 xformOp:scale = (0.023, 0.034, 0.0295309)
+                                                    double3 xformOp:translate = (0.007500003092271327, 0.0002999999999999894, -0.011499995989582625)
+                                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                }
+                                            }
+
+                                            def Cube "box" (
+                                                prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                            )
+                                            {
+                                                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                uniform token purpose = "guide"
+                                                double size = 1
+                                                quatf xformOp:orient = (1, 0, 0, 0)
+                                                float3 xformOp:scale = (0.03156545, 0.04559999, 0.02850001)
+                                                double3 xformOp:translate = (-0.027217272738825505, 0.039799998859716995, 0.018749999985032913)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                            }
+
+                                            def Cube "box_1" (
+                                                prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                displayName = "box"
+                                            )
+                                            {
+                                                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                uniform token purpose = "guide"
+                                                double size = 1
+                                                quatf xformOp:orient = (1, 0, 0, 0)
+                                                float3 xformOp:scale = (0.02, 0.02893652, 0.03459999)
+                                                double3 xformOp:translate = (0, 0.006531743859716996, 0.014499999985032912)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                            }
+                                        }
+
+                                        def Xform "mcp_joint_2" (
+                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                        )
+                                        {
+                                            quatf xformOp:orient = (-0.5, -0.5, -0.5, 0.5)
+                                            float3 xformOp:scale = (1, 1, 1)
+                                            double3 xformOp:translate = (-0.007095249652862539, -0.022392243865100525, -0.01872240357846023)
+                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                            def Xform "mcp_joint" (
+                                                instanceable = true
+                                                prepend references = @./instances.usda@</Instances/mcp_joint>
+                                            )
+                                            {
+                                                quatd xformOp:orient = (1, 0, 0, 0)
+                                                double3 xformOp:scale = (1, 1, 1)
+                                                double3 xformOp:translate = (0.008406902261, 0.00776624386, 0.01465735499)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                            }
+
+                                            def Xform "pip_2" (
+                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                            )
+                                            {
+                                                quatf xformOp:orient = (-0.5, 0.5, 0.5, -0.5)
+                                                float3 xformOp:scale = (1, 1, 1)
+                                                double3 xformOp:translate = (-0.01220000000000002, 0.03809999999999998, 0.014500000000000006)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                                def Xform "pip" (
+                                                    instanceable = true
+                                                    prepend references = @./instances.usda@</Instances/pip>
+                                                )
+                                                {
+                                                    quatd xformOp:orient = (0.5, -0.5, -0.5, -0.5)
+                                                    double3 xformOp:scale = (1, 1, 1)
+                                                    double3 xformOp:translate = (0.009643363092, 0.0003, 0.0007840340104)
+                                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                }
+
+                                                def Xform "dip_2" (
+                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                )
+                                                {
+                                                    quatf xformOp:orient = (-0.5, -0.5, 0.5, -0.5)
+                                                    float3 xformOp:scale = (1, 1, 1)
+                                                    double3 xformOp:translate = (0.014999999999999975, 0.0143, -0.013000000000000018)
+                                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                                    def Xform "dip" (
+                                                        instanceable = true
+                                                        prepend references = @./instances.usda@</Instances/dip>
+                                                    )
+                                                    {
+                                                        quatd xformOp:orient = (0, 1, 0, 0)
+                                                        double3 xformOp:scale = (1, 1, 1)
+                                                        double3 xformOp:translate = (0.0211333529, -0.008432119147, 0.009785088162)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                    }
+
+                                                    def Xform "fingertip_2" (
+                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                    )
+                                                    {
+                                                        quatf xformOp:orient = (1, 0, 0, 0)
+                                                        float3 xformOp:scale = (1, 1, 1)
+                                                        double3 xformOp:translate = (1.0061396160665481e-16, -0.036099999999999854, 0.0002000000000000786)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                                        def Xform "fingertip" (
+                                                            instanceable = true
+                                                            prepend references = @./instances.usda@</Instances/fingertip>
+                                                        )
+                                                        {
+                                                            quatd xformOp:orient = (0, 1, 0, 0)
+                                                            double3 xformOp:scale = (1, 1, 1)
+                                                            double3 xformOp:translate = (0.01328642411, -0.006114238387, 0.0145)
+                                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                        }
+
+                                                        def Cube "box" (
+                                                            prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                        )
+                                                        {
+                                                            float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                            uniform token purpose = "guide"
+                                                            double size = 1
+                                                            quatf xformOp:orient = (6.123234e-17, 1, 2.219774e-32, -5.996559e-34)
+                                                            float3 xformOp:scale = (0.02059812, 0.02936731, 0.024)
+                                                            double3 xformOp:translate = (-0.000799055891466496, -0.03481634338654199, 0.014499999999999501)
+                                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                        }
+
+                                                        def Cube "box_1" (
+                                                            prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                            displayName = "box"
+                                                        )
+                                                        {
+                                                            float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                            uniform token purpose = "guide"
+                                                            double size = 1
+                                                            quatf xformOp:orient = (6.123234e-17, 1, 2.219774e-32, -5.996559e-34)
+                                                            float3 xformOp:scale = (0.02043187, 0.02805076, 0.0346)
+                                                            double3 xformOp:translate = (-0.00021593089146649744, -0.006088858386541987, 0.014499999999999498)
+                                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                        }
+                                                    }
+
+                                                    def Cube "box" (
+                                                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                    )
+                                                    {
+                                                        float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                        uniform token purpose = "guide"
+                                                        double size = 1
+                                                        quatf xformOp:orient = (-1.6081226e-16, 1, 1.943599e-32, -2.4651903e-32)
+                                                        float3 xformOp:scale = (0.034, 0.023, 0.02953089)
+                                                        double3 xformOp:translate = (0.007500002895225002, -0.03459999914670488, 0.014200003162095238)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                    }
+
+                                                    def Cube "box_1" (
+                                                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                        displayName = "box"
+                                                    )
+                                                    {
+                                                        float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                        uniform token purpose = "guide"
+                                                        double size = 1
+                                                        quatf xformOp:orient = (-1.6081226e-16, 1, 1.943599e-32, -2.4651903e-32)
+                                                        float3 xformOp:scale = (0.02, 0.03106864, 0.0346)
+                                                        double3 xformOp:translate = (2.8952250007152625e-9, -0.00759779914670488, 0.01449999816209524)
+                                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                    }
+                                                }
+
+                                                def Cube "box" (
+                                                    prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                )
+                                                {
+                                                    float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                    uniform token purpose = "guide"
+                                                    double size = 1
+                                                    quatf xformOp:orient = (-0.5, 0.5, 0.5, 0.5)
+                                                    float3 xformOp:scale = (0.023, 0.034, 0.0295309)
+                                                    double3 xformOp:translate = (0.007500003092271327, 0.0002999999999999894, -0.011499995989582625)
+                                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                                }
+                                            }
+
+                                            def Cube "box" (
+                                                prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                            )
+                                            {
+                                                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                uniform token purpose = "guide"
+                                                double size = 1
+                                                quatf xformOp:orient = (1, 0, 0, 0)
+                                                float3 xformOp:scale = (0.03156545, 0.04559999, 0.02850001)
+                                                double3 xformOp:translate = (-0.027217272738825505, 0.039799998859716995, 0.018749999985032913)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                            }
+
+                                            def Cube "box_1" (
+                                                prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                                displayName = "box"
+                                            )
+                                            {
+                                                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                                uniform token purpose = "guide"
+                                                double size = 1
+                                                quatf xformOp:orient = (1, 0, 0, 0)
+                                                float3 xformOp:scale = (0.02, 0.02893652, 0.03459999)
+                                                double3 xformOp:translate = (0, 0.006531743859716996, 0.014499999985032912)
+                                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                            }
+                                        }
+
+                                        def Cube "box" (
+                                            prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                        )
+                                        {
+                                            float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                            uniform token purpose = "guide"
+                                            double size = 1
+                                            quatf xformOp:orient = (1, 0, 0, 0)
+                                            float3 xformOp:scale = (0.103, 0.12572937, 0.046)
+                                            double3 xformOp:translate = (-0.04859524965286255, -0.03710692886510053, -0.011722403528460216)
+                                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                        }
+                                    }
+
+                                    def Cube "box" (
+                                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                    )
+                                    {
+                                        float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                        uniform token purpose = "guide"
+                                        double size = 1
+                                        quatf xformOp:orient = (1, 0, 0, 0)
+                                        float3 xformOp:scale = (0.07503142, 0.03450031, 0.08051565)
+                                        double3 xformOp:translate = (8e-9, 0.064574899, 0.0027421605)
+                                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                    }
+                                }
+
+                                def Cube "box" (
+                                    prepend apiSchemas = ["PhysicsCollisionAPI"]
+                                )
+                                {
+                                    float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                    uniform token purpose = "guide"
+                                    double size = 1
+                                    quatf xformOp:orient = (1, 0, 0, 0)
+                                    float3 xformOp:scale = (0.07, 0.1046881, 0.07)
+                                    double3 xformOp:translate = (-0.000097668, -0.004844061, 0.0912662)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+                            }
+
+                            def Cube "box" (
+                                prepend apiSchemas = ["PhysicsCollisionAPI"]
+                            )
+                            {
+                                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                                uniform token purpose = "guide"
+                                double size = 1
+                                quatf xformOp:orient = (1, 0, 0, 0)
+                                float3 xformOp:scale = (0.07748986, 0.08500088, 0.10467606)
+                                double3 xformOp:translate = (0.00014485, 0.08999984, -0.00483808)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                            }
+                        }
+
+                        def Cube "box" (
+                            prepend apiSchemas = ["PhysicsCollisionAPI"]
+                        )
+                        {
+                            float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                            uniform token purpose = "guide"
+                            double size = 1
+                            quatf xformOp:orient = (1, 0, 0, 0)
+                            float3 xformOp:scale = (0.07, 0.07, 0.48926497)
+                            double3 xformOp:translate = (0.00031088, -0.00133271, 0.18664694)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                        }
+                    }
+
+                    def Cube "box" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                        uniform token purpose = "guide"
+                        double size = 1
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (0.11937238, 0.13379732, 0.344645)
+                        double3 xformOp:translate = (-0.0002062515, 0.001698672, 0.31257635)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                    }
+                }
+
+                def Cube "box" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI"]
+                )
+                {
+                    float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                    uniform token purpose = "guide"
+                    double size = 1
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (0.11890417, 0.13024767, 0.13365984)
+                    double3 xformOp:translate = (0.000048071, 0.005377469, 0.00162976)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+            }
+        }
+    }
+
+    def Scope "Physics"
+    {
+    }
+
+    def Scope "VisualMaterials"
+    {
+    }
+}
+
