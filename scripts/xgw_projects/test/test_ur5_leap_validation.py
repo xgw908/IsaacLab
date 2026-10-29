@@ -3,10 +3,6 @@ import math
 
 from isaaclab.app import AppLauncher
 
-# -----------------------------------------------------------------------------
-# CLI
-# -----------------------------------------------------------------------------
-
 parser = argparse.ArgumentParser(description="Validate UR5 + LEAP 22-DoF models.")
 parser.add_argument(
     "--model",
@@ -22,11 +18,8 @@ args_cli = parser.parse_args()
 app_launcher = AppLauncher(args_cli)
 simulation_app = app_launcher.app
 
-# -----------------------------------------------------------------------------
-# Isaac Lab
-# -----------------------------------------------------------------------------
 
-from ur5_leap.robots.ur5_leap import (
+from ur5_leap import (
     LEAP_JOINT_NAMES,
     UR5_JOINT_NAMES,
     UR5_LEAP_CFG,
@@ -37,10 +30,6 @@ import isaaclab.sim as sim_utils
 from isaaclab.assets import Articulation
 from isaaclab.sim import SimulationCfg, SimulationContext
 
-# -----------------------------------------------------------------------------
-# Model
-# -----------------------------------------------------------------------------
-
 if args_cli.model == "full":
     robot_cfg = UR5_LEAP_CFG.replace(prim_path="/World/UR5Leap")
 else:
@@ -49,39 +38,7 @@ else:
 EXPECTED_NAMES = UR5_JOINT_NAMES + LEAP_JOINT_NAMES
 
 
-def step_robot(sim, robot, target, steps):
-    """Hold the given target for N simulation steps."""
-    dt = sim.get_physics_dt()
-
-    for _ in range(steps):
-        robot.set_joint_position_target(target)
-        robot.write_data_to_sim()
-
-        sim.step()
-        robot.update(dt)
-
-
-def smooth_move(sim, robot, start, goal, duration):
-    """Linear interpolation between two joint targets."""
-    dt = sim.get_physics_dt()
-    steps = max(1, int(duration / dt))
-
-    for i in range(steps):
-        alpha = (i + 1) / steps
-        target = start + alpha * (goal - start)
-
-        robot.set_joint_position_target(target)
-        robot.write_data_to_sim()
-
-        sim.step()
-        robot.update(dt)
-
-
 def main():
-    # -------------------------------------------------------------------------
-    # Simulator
-    # -------------------------------------------------------------------------
-
     sim_cfg = SimulationCfg(
         dt=1.0 / 120.0,
         device=args_cli.device,
@@ -94,18 +51,15 @@ def main():
         target=(0.0, 0.0, 0.45),
     )
 
-    # Ground
     ground_cfg = sim_utils.GroundPlaneCfg()
     ground_cfg.func("/World/GroundPlane", ground_cfg)
 
-    # Light
     light_cfg = sim_utils.DomeLightCfg(
         intensity=3000.0,
         color=(0.75, 0.75, 0.75),
     )
     light_cfg.func("/World/Light", light_cfg)
 
-    # Robot
     robot = Articulation(robot_cfg)
 
     sim.reset()
@@ -116,10 +70,6 @@ def main():
         robot.write_data_to_sim()
         sim.step()
         robot.update(sim.get_physics_dt())
-
-    # -------------------------------------------------------------------------
-    # Joint recognition
-    # -------------------------------------------------------------------------
 
     joint_names = list(robot.joint_names)
 
@@ -163,7 +113,6 @@ def main():
             for name in unexpected:
                 print("  ", name)
 
-        simulation_app.close()
         return
 
     print("=" * 72)
@@ -172,15 +121,8 @@ def main():
     # Always map by JOINT NAME, never assume tensor index.
     idx = {name: joint_names.index(name) for name in EXPECTED_NAMES}
 
-    # -------------------------------------------------------------------------
-    # Combined UR5 + LEAP continuous motion
-    # -------------------------------------------------------------------------
-
     # UR5 sinusoidal motion:
     # q = center + amplitude * sin(omega * t + phase)
-    #
-    # Same motion style as the previous standalone
-    # test_ur5_articulation.py.
 
     arm_center = {
         "shoulder_pan_joint": 0.0,
@@ -255,21 +197,12 @@ def main():
         while simulation_app.is_running():
             target = robot.data.joint_pos.clone()
 
-            # -------------------------------------------------------------
             # UR5: six joints move sinusoidally around the working pose.
-            # -------------------------------------------------------------
             for name in UR5_JOINT_NAMES:
                 value = arm_center[name] + arm_amplitudes[name] * math.sin(omega * t + arm_phases[name])
                 target[:, idx[name]] = value
 
-            # -------------------------------------------------------------
             # LEAP: continuously open -> close -> open.
-            #
-            # alpha:
-            # t = 0 s   -> 0.0  open
-            # t = 1 s   -> 1.0  closed
-            # t = 2 s   -> 0.0  open
-            # -------------------------------------------------------------
             alpha = 0.5 * (1.0 - math.cos(omega * t))
 
             # Print only fully open / fully closed states.
