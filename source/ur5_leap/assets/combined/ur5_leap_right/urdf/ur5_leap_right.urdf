@@ -211,18 +211,19 @@
     <parent link="flange" />
     <child link="tool0" />
   </joint>
-  <!-- PLACEHOLDER: TODO: replace with measured lab UR5 flange → LEAP palm transform. -->
-  <!-- mounting_adapter is an empty frame; no measured adapter mesh, mass or inertia is asserted. -->
-  <link name="mounting_adapter" />
-  <joint name="flange_to_adapter" type="fixed">
-    <parent link="flange" />
-    <child link="mounting_adapter" />
-    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  <!-- LEAP Hand mount based on the validated CordViP UR5 + LEAP configuration. -->
+  <link name="ee_link" />
+
+  <joint name="ee_fixed_joint" type="fixed">
+    <parent link="wrist_3_link" />
+    <child link="ee_link" />
+    <origin xyz="0.0 0.0823 0.0" rpy="0.0 0.0 1.57079632679" />
   </joint>
-  <joint name="adapter_to_palm" type="fixed">
-    <parent link="mounting_adapter" />
+
+  <joint name="mount_joint" type="fixed">
+    <parent link="ee_link" />
     <child link="palm_lower" />
-    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+    <origin xyz="0.0 0.03 0.06" rpy="3.14159 -1.57079 3.14159" />
   </joint>
   <link name="palm_lower">
     <visual>
