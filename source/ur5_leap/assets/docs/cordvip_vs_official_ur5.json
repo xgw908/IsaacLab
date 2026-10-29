@@ -1,0 +1,7114 @@
+{
+  "date": "2026-10-28",
+  "decision": "NOT_EQUIVALENT",
+  "dynamics_equal": false,
+  "source_urdf_sha256": {
+    "official": "4f531238172e6b5e45c1921977bd55742569b9398e8ffae45cd9d4ab60ffd99b",
+    "cordvip": "1ea131081012544a772bcd4e111456de966523304d3a8efb81e7edf42151ba24"
+  },
+  "joint_records": {
+    "shoulder_pan_joint": {
+      "official": {
+        "type": "revolute",
+        "parent": "base_link_inertia",
+        "child": "shoulder_link",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.089159
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limits": {
+          "lower": -6.283185307179586,
+          "upper": 6.283185307179586,
+          "velocity": 3.141592653589793,
+          "effort": 150.0
+        }
+      },
+      "cordvip": {
+        "type": "revolute",
+        "parent": "base_link",
+        "child": "shoulder_link",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.089159
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            3.14159
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limits": {
+          "lower": -6.28318530718,
+          "upper": 6.28318530718,
+          "velocity": 3.15,
+          "effort": 150.0
+        }
+      }
+    },
+    "shoulder_lift_joint": {
+      "official": {
+        "type": "revolute",
+        "parent": "shoulder_link",
+        "child": "upper_arm_link",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            1.570796327,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limits": {
+          "lower": -6.283185307179586,
+          "upper": 6.283185307179586,
+          "velocity": 3.141592653589793,
+          "effort": 150.0
+        }
+      },
+      "cordvip": {
+        "type": "revolute",
+        "parent": "shoulder_link",
+        "child": "upper_arm_link",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.13585,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            1.57079632679,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "limits": {
+          "lower": -6.28318530718,
+          "upper": 6.28318530718,
+          "velocity": 3.15,
+          "effort": 150.0
+        }
+      }
+    },
+    "elbow_joint": {
+      "official": {
+        "type": "revolute",
+        "parent": "upper_arm_link",
+        "child": "forearm_link",
+        "origin": {
+          "xyz": [
+            -0.425,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limits": {
+          "lower": -3.141592653589793,
+          "upper": 3.141592653589793,
+          "velocity": 3.141592653589793,
+          "effort": 150.0
+        }
+      },
+      "cordvip": {
+        "type": "revolute",
+        "parent": "upper_arm_link",
+        "child": "forearm_link",
+        "origin": {
+          "xyz": [
+            0.0,
+            -0.1197,
+            0.425
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "limits": {
+          "lower": -3.14159265359,
+          "upper": 3.14159265359,
+          "velocity": 3.15,
+          "effort": 150.0
+        }
+      }
+    },
+    "wrist_1_joint": {
+      "official": {
+        "type": "revolute",
+        "parent": "forearm_link",
+        "child": "wrist_1_link",
+        "origin": {
+          "xyz": [
+            -0.39225,
+            0.0,
+            0.10915
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limits": {
+          "lower": -6.283185307179586,
+          "upper": 6.283185307179586,
+          "velocity": 3.141592653589793,
+          "effort": 28.0
+        }
+      },
+      "cordvip": {
+        "type": "revolute",
+        "parent": "forearm_link",
+        "child": "wrist_1_link",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.39225
+          ],
+          "rpy": [
+            0.0,
+            1.57079632679,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "limits": {
+          "lower": -6.28318530718,
+          "upper": 6.28318530718,
+          "velocity": 3.2,
+          "effort": 28.0
+        }
+      }
+    },
+    "wrist_2_joint": {
+      "official": {
+        "type": "revolute",
+        "parent": "wrist_1_link",
+        "child": "wrist_2_link",
+        "origin": {
+          "xyz": [
+            0.0,
+            -0.09465,
+            -1.941303950897609e-11
+          ],
+          "rpy": [
+            1.570796327,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limits": {
+          "lower": -6.283185307179586,
+          "upper": 6.283185307179586,
+          "velocity": 3.141592653589793,
+          "effort": 28.0
+        }
+      },
+      "cordvip": {
+        "type": "revolute",
+        "parent": "wrist_1_link",
+        "child": "wrist_2_link",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.093,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limits": {
+          "lower": -6.28318530718,
+          "upper": 6.28318530718,
+          "velocity": 3.2,
+          "effort": 28.0
+        }
+      }
+    },
+    "wrist_3_joint": {
+      "official": {
+        "type": "revolute",
+        "parent": "wrist_2_link",
+        "child": "wrist_3_link",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0823,
+            -1.688001216681175e-11
+          ],
+          "rpy": [
+            1.570796326589793,
+            3.141592653589793,
+            3.141592653589793
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limits": {
+          "lower": -6.283185307179586,
+          "upper": 6.283185307179586,
+          "velocity": 3.141592653589793,
+          "effort": 28.0
+        }
+      },
+      "cordvip": {
+        "type": "revolute",
+        "parent": "wrist_2_link",
+        "child": "wrist_3_link",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.09465
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "limits": {
+          "lower": -6.28318530718,
+          "upper": 6.28318530718,
+          "velocity": 3.2,
+          "effort": 28.0
+        }
+      }
+    }
+  },
+  "joint_types_verified": true,
+  "kinematics": {
+    "base_alignment_yaw_rad": -3.1415900000000003,
+    "base_alignment_matrix": [
+      [
+        -0.9999999999964793,
+        2.6535897929086407e-06,
+        0.0,
+        0.0
+      ],
+      [
+        -2.6535897929086407e-06,
+        -0.9999999999964793,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "axis_line_checks_at_zero": {
+      "shoulder_pan_joint": {
+        "direction_error": 0.0,
+        "screw_moment_error_m": 0.0
+      },
+      "shoulder_lift_joint": {
+        "direction_error": 2.0510342851558331e-10,
+        "screw_moment_error_m": 2.8675705803206613e-17
+      },
+      "elbow_joint": {
+        "direction_error": 2.0510342851558331e-10,
+        "screw_moment_error_m": 8.719376599685515e-11
+      },
+      "wrist_1_joint": {
+        "direction_error": 2.0510342851558331e-10,
+        "screw_moment_error_m": 1.6766850954321978e-10
+      },
+      "wrist_2_joint": {
+        "direction_error": 4.103237403378404e-10,
+        "screw_moment_error_m": 3.361691828300955e-10
+      },
+      "wrist_3_joint": {
+        "direction_error": 2.05103306051132e-10,
+        "screw_moment_error_m": 1.6767100324075538e-10
+      }
+    },
+    "constant_child_frame_offsets": {
+      "base_link": [
+        [
+          -0.9999999999964793,
+          2.6535897929086407e-06,
+          0.0,
+          0.0
+        ],
+        [
+          -2.6535897929086407e-06,
+          -0.9999999999964793,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "shoulder_link": [
+        [
+          -1.0,
+          -3.2162416364770005e-16,
+          0.0,
+          0.0
+        ],
+        [
+          3.2162451495734483e-16,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "upper_arm_link": [
+        [
+          -4.8965888601467475e-12,
+          -3.2162416364770005e-16,
+          -1.0,
+          -4.369266036476609e-17
+        ],
+        [
+          -1.0,
+          2.0510342851533118e-10,
+          4.896588860146681e-12,
+          2.786329500459317e-11
+        ],
+        [
+          2.0510342851533115e-10,
+          1.0,
+          -3.216255192645081e-16,
+          0.13585000000000003
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "forearm_link": [
+        [
+          -4.8965888601467475e-12,
+          -3.2162416364770005e-16,
+          -1.0,
+          -5.551115123125783e-17
+        ],
+        [
+          -1.0,
+          2.0510342851533118e-10,
+          4.896588860146681e-12,
+          5.3934634536290105e-12
+        ],
+        [
+          2.0510342851533115e-10,
+          1.0,
+          -3.216255192645081e-16,
+          0.016149999999999862
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "wrist_1_link": [
+        [
+          1.0,
+          -3.2162416364770005e-16,
+          -9.793177720293495e-12,
+          0.0
+        ],
+        [
+          -9.793177720293429e-12,
+          2.0510342851533118e-10,
+          -1.0,
+          7.314149286230531e-12
+        ],
+        [
+          3.2162652357167133e-16,
+          1.0,
+          2.0510342851533115e-10,
+          -0.09300000000000026
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "wrist_2_link": [
+        [
+          1.0,
+          -3.2162416364770005e-16,
+          -9.793177720293495e-12,
+          0.0
+        ],
+        [
+          3.216285321859978e-16,
+          1.0,
+          4.102068570306623e-10,
+          -2.498001805406602e-16
+        ],
+        [
+          9.793177720293362e-12,
+          -4.1020685703066236e-10,
+          1.0,
+          -0.09465000002638876
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "wrist_3_link": [
+        [
+          1.0,
+          -4.440890341942429e-16,
+          -9.79330018497346e-12,
+          -9.269252032595432e-13
+        ],
+        [
+          -9.793300184973369e-12,
+          2.0510330605065124e-10,
+          -1.0,
+          2.638877658056593e-11
+        ],
+        [
+          4.44091394117446e-16,
+          1.0,
+          2.0510330605065122e-10,
+          -0.08229999996117415
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "sample_count": 258,
+    "seed": 20261028,
+    "maximum_translation_error_m": 2.260343928813656e-10,
+    "maximum_rotation_error_rad": 8.154690681241843e-10,
+    "same_generalized_joint_coordinates": true
+  },
+  "inertia_records": [
+    {
+      "link": "base_link",
+      "official_link": "base_link_inertia",
+      "official": {
+        "mass": 4.0,
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.00443333156,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.00443333156,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0072
+          ]
+        ],
+        "principal_moments": [
+          0.00443333156,
+          0.00443333156,
+          0.0072
+        ],
+        "trace": 0.016066663119999998
+      },
+      "cordvip": {
+        "mass": 4.0,
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.00443333156,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.00443333156,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0072
+          ]
+        ],
+        "principal_moments": [
+          0.00443333156,
+          0.00443333156,
+          0.0072
+        ],
+        "trace": 0.016066663119999998
+      },
+      "com_world_difference_after_base_alignment_m": 0.0
+    },
+    {
+      "link": "shoulder_link",
+      "official_link": "shoulder_link",
+      "official": {
+        "mass": 3.7,
+        "origin": {
+          "xyz": [
+            0.0,
+            -0.00193,
+            -0.02561
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.014972358333333331,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.014972358333333331,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.01040625
+          ]
+        ],
+        "principal_moments": [
+          0.01040625,
+          0.014972358333333331,
+          0.014972358333333331
+        ],
+        "trace": 0.04035096666666666
+      },
+      "cordvip": {
+        "mass": 3.7,
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.010267495893,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.010267495893,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.00666
+          ]
+        ],
+        "principal_moments": [
+          0.00666,
+          0.010267495893,
+          0.010267495893
+        ],
+        "trace": 0.027194991786
+      },
+      "com_world_difference_after_base_alignment_m": 0.025682620582798795
+    },
+    {
+      "link": "upper_arm_link",
+      "official_link": "upper_arm_link",
+      "official": {
+        "mass": 8.393,
+        "origin": {
+          "xyz": [
+            -0.2125,
+            0.0,
+            0.11336
+          ],
+          "rpy": [
+            0.0,
+            1.570796326794897,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.13388583541666665,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.13388583541666665,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0151074
+          ]
+        ],
+        "principal_moments": [
+          0.0151074,
+          0.13388583541666665,
+          0.13388583541666665
+        ],
+        "trace": 0.2828790708333333
+      },
+      "cordvip": {
+        "mass": 8.393,
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.28
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.22689067591,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.22689067591,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0151074
+          ]
+        ],
+        "principal_moments": [
+          0.0151074,
+          0.22689067591,
+          0.22689067591
+        ],
+        "trace": 0.46888875182
+      },
+      "com_world_difference_after_base_alignment_m": 0.07114808570861204
+    },
+    {
+      "link": "forearm_link",
+      "official_link": "forearm_link",
+      "official": {
+        "mass": 2.33,
+        "origin": {
+          "xyz": [
+            -0.24225,
+            0.0,
+            0.0265
+          ],
+          "rpy": [
+            0.0,
+            1.570796326794897,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.031216803515624995,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.031216803515624995,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.004095
+          ]
+        ],
+        "principal_moments": [
+          0.004095,
+          0.031216803515624995,
+          0.031216803515624995
+        ],
+        "trace": 0.06652860703124999
+      },
+      "cordvip": {
+        "mass": 2.275,
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.25
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.049443313556,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.049443313556,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.004095
+          ]
+        ],
+        "principal_moments": [
+          0.004095,
+          0.049443313556,
+          0.049443313556
+        ],
+        "trace": 0.102981627112
+      },
+      "com_world_difference_after_base_alignment_m": 0.012930003866975641
+    },
+    {
+      "link": "wrist_1_link",
+      "official_link": "wrist_1_link",
+      "official": {
+        "mass": 1.219,
+        "origin": {
+          "xyz": [
+            0.0,
+            -0.01634,
+            -0.0018
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.002013889583333333,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.002013889583333333,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0021942
+          ]
+        ],
+        "principal_moments": [
+          0.002013889583333333,
+          0.002013889583333333,
+          0.0021942
+        ],
+        "trace": 0.006221979166666666
+      },
+      "cordvip": {
+        "mass": 1.219,
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.111172755531,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.111172755531,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.21942
+          ]
+        ],
+        "principal_moments": [
+          0.111172755531,
+          0.111172755531,
+          0.21942
+        ],
+        "trace": 0.441765511062
+      },
+      "com_world_difference_after_base_alignment_m": 0.09265222933226742
+    },
+    {
+      "link": "wrist_2_link",
+      "official_link": "wrist_2_link",
+      "official": {
+        "mass": 1.219,
+        "origin": {
+          "xyz": [
+            0.0,
+            0.01634,
+            -0.0018
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.0018310395833333333,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0018310395833333333,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0021942
+          ]
+        ],
+        "principal_moments": [
+          0.0018310395833333333,
+          0.0018310395833333333,
+          0.0021942
+        ],
+        "trace": 0.005856279166666666
+      },
+      "cordvip": {
+        "mass": 1.219,
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.111172755531,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.111172755531,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.21942
+          ]
+        ],
+        "principal_moments": [
+          0.111172755531,
+          0.111172755531,
+          0.21942
+        ],
+        "trace": 0.441765511062
+      },
+      "com_world_difference_after_base_alignment_m": 0.09427681637019995
+    },
+    {
+      "link": "wrist_3_link",
+      "official_link": "wrist_3_link",
+      "official": {
+        "mass": 0.1879,
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            -0.001159
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            8.062475833333332e-05,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            8.062475833333332e-05,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0001321171875
+          ]
+        ],
+        "principal_moments": [
+          8.062475833333332e-05,
+          8.062475833333332e-05,
+          0.0001321171875
+        ],
+        "trace": 0.00029336670416666664
+      },
+      "cordvip": {
+        "mass": 0.1879,
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix": [
+          [
+            0.0171364731454,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0171364731454,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.033822
+          ]
+        ],
+        "principal_moments": [
+          0.0171364731454,
+          0.0171364731454,
+          0.033822
+        ],
+        "trace": 0.0680949462908
+      },
+      "com_world_difference_after_base_alignment_m": 0.08114099996117417
+    }
+  ],
+  "meshes": [
+    {
+      "link": "base_link",
+      "kind": "visual",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/visual/base.dae",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/visual/base.dae",
+      "official_sha256": "366e6cb99a2bf5027dae92d2bd428d27224b0a5af96ca9f1e68f5b92860c2011",
+      "cordvip_sha256": "2059aec60ceea5793181d52ecd07a25bac2a88f90182b96c4cf66f07cfb78de7",
+      "bytes_equal": false,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          3.141592653589793
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": "<material name=\"LightGrey\">\n        <color rgba=\"0.7 0.7 0.7 1.0\" />\n      </material>\n    ",
+      "official_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 5721,
+            "sha256": "0aa77259b02f20320ddfd5450ebe91a5ae714e6092415c69a78730d51806141c"
+          },
+          {
+            "tag": "float_array",
+            "count": 4890,
+            "sha256": "23c7152064239c04375581d0f90553394cecc8f180558b88f227417340638bde"
+          },
+          {
+            "tag": "p",
+            "count": 10770,
+            "sha256": "92639c66ffedc7a0cd75c2b0bd62a28f75db94671772f986131dbaef23014b4a"
+          },
+          {
+            "tag": "p",
+            "count": 822,
+            "sha256": "2afe9c1e6c2618f8c611f68e89101408e620f70b5b4c118ffaa2d01a54514486"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_021-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 1907,
+        "position_bounds_min": [
+          -0.0733658,
+          -0.11,
+          0.0
+        ],
+        "position_bounds_max": [
+          0.07336586,
+          0.0733658,
+          0.02399975
+        ],
+        "geometry_canonical_sha256": "6616d07531041c9136974351526d148bca1b6fc53a08e140c5111b7087ea5f0b",
+        "materials_canonical_sha256": "7d371f5270d3e9003122c88f08a264a5c3ad6de7268bfd3f1720380bb4a879f4",
+        "effects_canonical_sha256": "f73c2133fd82447274bfd0f1db6eca5b3aa0c5e41faec7ec0e6e078183690b64",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "cordvip_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 5721,
+            "sha256": "84714143f61c70063f2d86934625d4c5a4aea42a1f454564d7c2ce4bede1ef96"
+          },
+          {
+            "tag": "float_array",
+            "count": 3966,
+            "sha256": "a1cadd3fd36b32cee5679b3a3a33082c222655ba2d5f25f9740f21ebbc10de1f"
+          },
+          {
+            "tag": "p",
+            "count": 10770,
+            "sha256": "80877755b30de063c89ac18bec86f781594f67be95f58b97a199533fa8949eb6"
+          },
+          {
+            "tag": "p",
+            "count": 822,
+            "sha256": "41284b92d5cb26609ab4eb0f494ed7351e579aa111af9c5581f00b331a6f44f3"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              0.6859207,
+              -0.3240135,
+              0.6515582,
+              7.481132,
+              0.7276763,
+              0.3054208,
+              -0.6141704,
+              -6.50764,
+              0.0,
+              0.8953956,
+              0.4452714,
+              5.343665,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_021-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 1907,
+        "position_bounds_min": [
+          -0.0733658,
+          -0.11,
+          -0.002999961
+        ],
+        "position_bounds_max": [
+          0.07336586,
+          0.0733658,
+          0.02099978
+        ],
+        "geometry_canonical_sha256": "b0cabce4eef38ac4956b3b7e04176d1918441fed8b169d960e51aa19b2366346",
+        "materials_canonical_sha256": "7d371f5270d3e9003122c88f08a264a5c3ad6de7268bfd3f1720380bb4a879f4",
+        "effects_canonical_sha256": "586fe3c9fd5d987340b9b9b0f1e5966475d54c7a6e68809d0852ebcf284d3415",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "numeric_geometry_equal": false,
+      "canonical_geometry_equal": false,
+      "geometry_instance_transforms_equal": true,
+      "materials_equal": true,
+      "effects_equal": false
+    },
+    {
+      "link": "base_link",
+      "kind": "collision",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/collision/base.stl",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/collision/base.stl",
+      "official_sha256": "81c2ad265f7140313c305d9bfdf98d5b00f5978e9b01acbf12243602dc4dd151",
+      "cordvip_sha256": "c7af57d109de6a73f57943613bb000346518df06bb5ae119a2e80cf00bcbebde",
+      "bytes_equal": false,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          3.141592653589793
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": null,
+      "official_geometry": {
+        "triangles": 235,
+        "bounds_min": [
+          -0.07357943803071976,
+          -0.1100001111626625,
+          -2.3993197828531265e-06
+        ],
+        "bounds_max": [
+          0.07363327592611313,
+          0.07355142384767532,
+          0.024000296369194984
+        ]
+      },
+      "cordvip_geometry": {
+        "triangles": 578,
+        "bounds_min": [
+          -0.07357943803071976,
+          -0.1100001111626625,
+          -0.003002399345859885
+        ],
+        "bounds_max": [
+          0.07363327592611313,
+          0.07355142384767532,
+          0.021000295877456665
+        ]
+      }
+    },
+    {
+      "link": "shoulder_link",
+      "kind": "visual",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/visual/shoulder.dae",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/visual/shoulder.dae",
+      "official_sha256": "fd15be6d2edbc6403e00f4f6e00bd3970491d3d53cc77eeb55c98bcd8f6b49ca",
+      "cordvip_sha256": "2bfa801f928dd92ec8a83826f84aa30ad511d53f4760f5f83c7385a1bc924aa1",
+      "bytes_equal": false,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          3.141592653589793
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": "<material name=\"LightGrey\">\n        <color rgba=\"0.7 0.7 0.7 1.0\" />\n      </material>\n    ",
+      "official_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 7791,
+            "sha256": "85d22af3f0352f4a6bb39348939557f8d931a78ae9f6b4e361b20401d0a7bef8"
+          },
+          {
+            "tag": "float_array",
+            "count": 7533,
+            "sha256": "472a14563bf97698f905e7ffad4d2ac20fb579147246e9a17b3ee80dc58c4962"
+          },
+          {
+            "tag": "p",
+            "count": 24324,
+            "sha256": "37a1698f9c33644ffe3b2097a28b9d7c3796b54f2f8c2f72830f7e0be4cff439"
+          },
+          {
+            "tag": "p",
+            "count": 816,
+            "sha256": "d96a0698edd5ae8a9548b26773ca20b0fa757b8d5ee1894e789296e75998eeba"
+          },
+          {
+            "tag": "float_array",
+            "count": 20286,
+            "sha256": "24d21839aef17a3fff8bbd35de45e6bedfdde0df8adb16c802b01a36204829aa"
+          },
+          {
+            "tag": "float_array",
+            "count": 21135,
+            "sha256": "a262c22a975d7ebee56a0579ab75be2baff4895fd9e4695dddf0e6a58c9da67a"
+          },
+          {
+            "tag": "p",
+            "count": 55812,
+            "sha256": "62607bf204d2781fee24803eb9cad69ac4c23e113f36362236f977bc14a3e2fc"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.565e-07,
+              0.0,
+              0.0,
+              1.0,
+              -1.565e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.565e-07,
+              0.0,
+              0.0,
+              1.0,
+              1.565e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_023-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                -1.565e-07
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -1.565e-07
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape1_0-Mesh_017-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                -1.565e-07
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                1.565e-07
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 9359,
+        "position_bounds_min": [
+          -0.0594998,
+          -0.0594998,
+          -0.06519997
+        ],
+        "position_bounds_max": [
+          0.0594998,
+          0.07049995,
+          0.06851059
+        ],
+        "geometry_canonical_sha256": "e86822da9b127699130992d2f6dfd192c86ceec762ded5029f92e1624ad81697",
+        "materials_canonical_sha256": "0248cf6a124a64985bb17e69ae08b78a09d5173f38731c8a5d6069a231a3b0a0",
+        "effects_canonical_sha256": "3a514ca7681740dafe2620acd0137d28d1308db21da3104ec48b4e386008504d",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "cordvip_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 7791,
+            "sha256": "85d22af3f0352f4a6bb39348939557f8d931a78ae9f6b4e361b20401d0a7bef8"
+          },
+          {
+            "tag": "float_array",
+            "count": 7533,
+            "sha256": "472a14563bf97698f905e7ffad4d2ac20fb579147246e9a17b3ee80dc58c4962"
+          },
+          {
+            "tag": "p",
+            "count": 24324,
+            "sha256": "37a1698f9c33644ffe3b2097a28b9d7c3796b54f2f8c2f72830f7e0be4cff439"
+          },
+          {
+            "tag": "p",
+            "count": 816,
+            "sha256": "d96a0698edd5ae8a9548b26773ca20b0fa757b8d5ee1894e789296e75998eeba"
+          },
+          {
+            "tag": "float_array",
+            "count": 20286,
+            "sha256": "24d21839aef17a3fff8bbd35de45e6bedfdde0df8adb16c802b01a36204829aa"
+          },
+          {
+            "tag": "float_array",
+            "count": 21135,
+            "sha256": "a262c22a975d7ebee56a0579ab75be2baff4895fd9e4695dddf0e6a58c9da67a"
+          },
+          {
+            "tag": "p",
+            "count": 55812,
+            "sha256": "62607bf204d2781fee24803eb9cad69ac4c23e113f36362236f977bc14a3e2fc"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              0.6859207,
+              -0.3240135,
+              0.6515582,
+              7.481132,
+              0.7276763,
+              0.3054208,
+              -0.6141704,
+              -6.50764,
+              0.0,
+              0.8953956,
+              0.4452714,
+              5.343665,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.565e-07,
+              0.0,
+              0.0,
+              1.0,
+              -1.565e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.565e-07,
+              0.0,
+              0.0,
+              1.0,
+              1.565e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_023-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                -1.565e-07
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -1.565e-07
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape1_0-Mesh_017-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                -1.565e-07
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                1.565e-07
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 9359,
+        "position_bounds_min": [
+          -0.0594998,
+          -0.0594998,
+          -0.06519997
+        ],
+        "position_bounds_max": [
+          0.0594998,
+          0.07049995,
+          0.06851059
+        ],
+        "geometry_canonical_sha256": "e86822da9b127699130992d2f6dfd192c86ceec762ded5029f92e1624ad81697",
+        "materials_canonical_sha256": "0248cf6a124a64985bb17e69ae08b78a09d5173f38731c8a5d6069a231a3b0a0",
+        "effects_canonical_sha256": "3a514ca7681740dafe2620acd0137d28d1308db21da3104ec48b4e386008504d",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "numeric_geometry_equal": true,
+      "canonical_geometry_equal": true,
+      "geometry_instance_transforms_equal": true,
+      "materials_equal": true,
+      "effects_equal": true
+    },
+    {
+      "link": "shoulder_link",
+      "kind": "collision",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/collision/shoulder.stl",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/collision/shoulder.stl",
+      "official_sha256": "1d62e23a8c3ff9e6334fb157c805e6202037bcfca65bc6a36c5c9ae866751b3b",
+      "cordvip_sha256": "1d62e23a8c3ff9e6334fb157c805e6202037bcfca65bc6a36c5c9ae866751b3b",
+      "bytes_equal": true,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          3.141592653589793
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": null,
+      "official_geometry": {
+        "triangles": 674,
+        "bounds_min": [
+          -0.05940401554107666,
+          -0.05974636226892471,
+          -0.06520015746355057
+        ],
+        "bounds_max": [
+          0.059500157833099365,
+          0.07050129771232605,
+          0.06845968216657639
+        ]
+      },
+      "cordvip_geometry": {
+        "triangles": 674,
+        "bounds_min": [
+          -0.05940401554107666,
+          -0.05974636226892471,
+          -0.06520015746355057
+        ],
+        "bounds_max": [
+          0.059500157833099365,
+          0.07050129771232605,
+          0.06845968216657639
+        ]
+      }
+    },
+    {
+      "link": "upper_arm_link",
+      "kind": "visual",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/visual/upperarm.dae",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/visual/upperarm.dae",
+      "official_sha256": "06b46dce3dadb55a71dc55dc710a3a6206006a902e507f05267dde6ffe4c9c8c",
+      "cordvip_sha256": "0577221909b0b76445c4dd21c02aca97f04b5185fef7b33f5a484db679e3de34",
+      "bytes_equal": false,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.13585
+        ],
+        "rpy": [
+          1.5707963267948966,
+          0.0,
+          -1.5707963267948966
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": "<material name=\"LightGrey\">\n        <color rgba=\"0.7 0.7 0.7 1.0\" />\n      </material>\n    ",
+      "official_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 7797,
+            "sha256": "5c94ae6b3187bf990acbb0174cf630d425e3c738d2eb91e462059c2751605bf8"
+          },
+          {
+            "tag": "float_array",
+            "count": 7506,
+            "sha256": "1b77d952d7f2574dc79e30f056f4683ccffa58ee6e953b661632152d30411436"
+          },
+          {
+            "tag": "p",
+            "count": 24324,
+            "sha256": "2f0505095bf05fc7fd84cc4055dc42952bf6f6fbb3bebd019fa0a56ea95462f5"
+          },
+          {
+            "tag": "p",
+            "count": 816,
+            "sha256": "2a2be20382253cf9bd9c602176177b332f5d1423a32d83eee86ca5cf1640823e"
+          },
+          {
+            "tag": "float_array",
+            "count": 16953,
+            "sha256": "3e8407b8c3336178b6f6e112814364cff35323ec13a2b124698074722a6b8f70"
+          },
+          {
+            "tag": "float_array",
+            "count": 18060,
+            "sha256": "4a6f8db2ad0df581e9357c884a04f8a7b4504ddb343371f4fb31f6c42d2e0246"
+          },
+          {
+            "tag": "p",
+            "count": 55812,
+            "sha256": "28c315ce871f82d54c600184e5efb2179f4fd1e256277957fee7bd47cd3e1bd8"
+          },
+          {
+            "tag": "float_array",
+            "count": 7779,
+            "sha256": "061ee33271c161233c5903999df531d105fe26312d4f3ec4b2cfe70efbbc3f73"
+          },
+          {
+            "tag": "float_array",
+            "count": 7476,
+            "sha256": "31a5ade094595efbdf7abc7c781cc266c76dfee7935b78aa29e0254fd6651445"
+          },
+          {
+            "tag": "p",
+            "count": 24324,
+            "sha256": "efc3bce6963615497f97614145cdc0d7e7fa2edc53599880b43ec06a7275c4ed"
+          },
+          {
+            "tag": "p",
+            "count": 816,
+            "sha256": "198171c8b954fa92acdbe947d5cead18b1023f5fea32841a15d5f946f036d5aa"
+          },
+          {
+            "tag": "float_array",
+            "count": 3912,
+            "sha256": "09f437ef3f22393d691eabb34bb68b155f4df9daa30093e25c6f086784024b54"
+          },
+          {
+            "tag": "float_array",
+            "count": 3885,
+            "sha256": "7c6d1f14770894215846440dfb3ff8fa7596f3c1329c346d085e49746424e79a"
+          },
+          {
+            "tag": "p",
+            "count": 14712,
+            "sha256": "4abf6c3e7bd7f46c457699d9be274906ad420f82e95b0c2fcc378ca4b094c7ce"
+          },
+          {
+            "tag": "float_array",
+            "count": 16959,
+            "sha256": "12ff17ddd68fb779545b2f50386be8b37ec00a56146ea17af5af6579f890322e"
+          },
+          {
+            "tag": "float_array",
+            "count": 18081,
+            "sha256": "1db03fd22569c33179f113c63e4518c4e7742240514142b071e0f28e5cf216dc"
+          },
+          {
+            "tag": "p",
+            "count": 55812,
+            "sha256": "614a9a4dfceb7ed7bcf8b376d8237b89aa0cd0f990bc6e941b71f5376042563e"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_024-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape1_0-Mesh_018-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape2_0-Mesh_011-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape3_0-Mesh_011-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape4_0-Mesh_004-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 17800,
+        "position_bounds_min": [
+          -0.05949974,
+          -0.06519997,
+          -0.0594998
+        ],
+        "position_bounds_max": [
+          0.0594998,
+          0.06851094,
+          0.4844999
+        ],
+        "geometry_canonical_sha256": "1916180fc9a2b98118628be8f4521f0a0c778e6ae48fbc1682536f541eeac4f5",
+        "materials_canonical_sha256": "ebf95d6bc48b2b02f06e08d1b3d05590077a52c608c17b804c3b4481d6e109b1",
+        "effects_canonical_sha256": "74a47a4825cf366ab16b01726a59352037b1c8e1f927e1c4234a7ed02b8ac407",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "cordvip_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 7797,
+            "sha256": "5c94ae6b3187bf990acbb0174cf630d425e3c738d2eb91e462059c2751605bf8"
+          },
+          {
+            "tag": "float_array",
+            "count": 7506,
+            "sha256": "1b77d952d7f2574dc79e30f056f4683ccffa58ee6e953b661632152d30411436"
+          },
+          {
+            "tag": "p",
+            "count": 24324,
+            "sha256": "2f0505095bf05fc7fd84cc4055dc42952bf6f6fbb3bebd019fa0a56ea95462f5"
+          },
+          {
+            "tag": "p",
+            "count": 816,
+            "sha256": "2a2be20382253cf9bd9c602176177b332f5d1423a32d83eee86ca5cf1640823e"
+          },
+          {
+            "tag": "float_array",
+            "count": 16953,
+            "sha256": "3e8407b8c3336178b6f6e112814364cff35323ec13a2b124698074722a6b8f70"
+          },
+          {
+            "tag": "float_array",
+            "count": 18060,
+            "sha256": "4a6f8db2ad0df581e9357c884a04f8a7b4504ddb343371f4fb31f6c42d2e0246"
+          },
+          {
+            "tag": "p",
+            "count": 55812,
+            "sha256": "28c315ce871f82d54c600184e5efb2179f4fd1e256277957fee7bd47cd3e1bd8"
+          },
+          {
+            "tag": "float_array",
+            "count": 7779,
+            "sha256": "061ee33271c161233c5903999df531d105fe26312d4f3ec4b2cfe70efbbc3f73"
+          },
+          {
+            "tag": "float_array",
+            "count": 7476,
+            "sha256": "31a5ade094595efbdf7abc7c781cc266c76dfee7935b78aa29e0254fd6651445"
+          },
+          {
+            "tag": "p",
+            "count": 24324,
+            "sha256": "efc3bce6963615497f97614145cdc0d7e7fa2edc53599880b43ec06a7275c4ed"
+          },
+          {
+            "tag": "p",
+            "count": 816,
+            "sha256": "198171c8b954fa92acdbe947d5cead18b1023f5fea32841a15d5f946f036d5aa"
+          },
+          {
+            "tag": "float_array",
+            "count": 3912,
+            "sha256": "09f437ef3f22393d691eabb34bb68b155f4df9daa30093e25c6f086784024b54"
+          },
+          {
+            "tag": "float_array",
+            "count": 3885,
+            "sha256": "7c6d1f14770894215846440dfb3ff8fa7596f3c1329c346d085e49746424e79a"
+          },
+          {
+            "tag": "p",
+            "count": 14712,
+            "sha256": "4abf6c3e7bd7f46c457699d9be274906ad420f82e95b0c2fcc378ca4b094c7ce"
+          },
+          {
+            "tag": "float_array",
+            "count": 16959,
+            "sha256": "12ff17ddd68fb779545b2f50386be8b37ec00a56146ea17af5af6579f890322e"
+          },
+          {
+            "tag": "float_array",
+            "count": 18081,
+            "sha256": "1db03fd22569c33179f113c63e4518c4e7742240514142b071e0f28e5cf216dc"
+          },
+          {
+            "tag": "p",
+            "count": 55812,
+            "sha256": "614a9a4dfceb7ed7bcf8b376d8237b89aa0cd0f990bc6e941b71f5376042563e"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              0.6859207,
+              -0.3240135,
+              0.6515582,
+              7.481132,
+              0.7276763,
+              0.3054208,
+              -0.6141704,
+              -6.50764,
+              0.0,
+              0.8953956,
+              0.4452714,
+              5.343665,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_024-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape1_0-Mesh_018-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape2_0-Mesh_011-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape3_0-Mesh_011-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape4_0-Mesh_004-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 17800,
+        "position_bounds_min": [
+          -0.05949974,
+          -0.06519997,
+          -0.0594998
+        ],
+        "position_bounds_max": [
+          0.0594998,
+          0.06851094,
+          0.4844999
+        ],
+        "geometry_canonical_sha256": "1916180fc9a2b98118628be8f4521f0a0c778e6ae48fbc1682536f541eeac4f5",
+        "materials_canonical_sha256": "ebf95d6bc48b2b02f06e08d1b3d05590077a52c608c17b804c3b4481d6e109b1",
+        "effects_canonical_sha256": "74a47a4825cf366ab16b01726a59352037b1c8e1f927e1c4234a7ed02b8ac407",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "numeric_geometry_equal": true,
+      "canonical_geometry_equal": true,
+      "geometry_instance_transforms_equal": true,
+      "materials_equal": true,
+      "effects_equal": true
+    },
+    {
+      "link": "upper_arm_link",
+      "kind": "collision",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/collision/upperarm.stl",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/collision/upperarm.stl",
+      "official_sha256": "55c11ac0ad1e144f230849b2033532e8b140b2e818ea497296d08dfb88757440",
+      "cordvip_sha256": "55c11ac0ad1e144f230849b2033532e8b140b2e818ea497296d08dfb88757440",
+      "bytes_equal": true,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.13585
+        ],
+        "rpy": [
+          1.5707963267948966,
+          0.0,
+          -1.5707963267948966
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": null,
+      "official_geometry": {
+        "triangles": 1176,
+        "bounds_min": [
+          -0.059892438352108,
+          -0.06519998610019684,
+          -0.059746138751506805
+        ],
+        "bounds_max": [
+          0.059479936957359314,
+          0.06859733164310455,
+          0.4848988354206085
+        ]
+      },
+      "cordvip_geometry": {
+        "triangles": 1176,
+        "bounds_min": [
+          -0.059892438352108,
+          -0.06519998610019684,
+          -0.059746138751506805
+        ],
+        "bounds_max": [
+          0.059479936957359314,
+          0.06859733164310455,
+          0.4848988354206085
+        ]
+      }
+    },
+    {
+      "link": "forearm_link",
+      "kind": "visual",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/visual/forearm.dae",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/visual/forearm.dae",
+      "official_sha256": "2fabc6738b33365b5c54b59304f128907c5e214d25d5e4cc40487b67718a3dbe",
+      "cordvip_sha256": "d7b40d794f81ba1658a442be9e7f193d445053564444a29f952b6bf7028706a2",
+      "bytes_equal": false,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0165
+        ],
+        "rpy": [
+          1.5707963267948966,
+          0.0,
+          -1.5707963267948966
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": "<material name=\"LightGrey\">\n        <color rgba=\"0.7 0.7 0.7 1.0\" />\n      </material>\n    ",
+      "official_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 21474,
+            "sha256": "19cc96c2ed32d441c0dba2288e583bdcdf821fee6f23e7b289cc5bafa4168a15"
+          },
+          {
+            "tag": "float_array",
+            "count": 22698,
+            "sha256": "1a5c13674987606a8936ac5d1bf2ba18234aec09e0d0ed825979fcd0b709e8f9"
+          },
+          {
+            "tag": "p",
+            "count": 64164,
+            "sha256": "5729c8a884f5f9eef44734e4205f5a999537a4e71e02053ff41f6ef1385a0945"
+          },
+          {
+            "tag": "float_array",
+            "count": 384,
+            "sha256": "49878387b2624108a9659d91d4dd67b6939d84252b963d3b544510252f8602ff"
+          },
+          {
+            "tag": "float_array",
+            "count": 219,
+            "sha256": "588040a22042a6198f9bebe00825154c8da6bc4edd64303f7a65b52e148714cf"
+          },
+          {
+            "tag": "p",
+            "count": 744,
+            "sha256": "047ab58353a6f2ba1521bbea471e3310bc48dc0088449e0d25e48336bbc6c0cf"
+          },
+          {
+            "tag": "float_array",
+            "count": 6186,
+            "sha256": "fb0645775f6c38ec9cb7fc095e75d56b1b6f9f24942a4cfa643167363ce48dbe"
+          },
+          {
+            "tag": "float_array",
+            "count": 5913,
+            "sha256": "6da18f2ed3926f70bdfab8d17769c78d85f52198854405d46727e8698dca287a"
+          },
+          {
+            "tag": "p",
+            "count": 20280,
+            "sha256": "341406daf75c166c4aceb1c836a320dc196cd70aa816e1e13844389c1a0c85a7"
+          },
+          {
+            "tag": "float_array",
+            "count": 11427,
+            "sha256": "d14bad2be38f67f464aa7a6d181cd00dd568f253b8c08cd4e8f704c45b1686c5"
+          },
+          {
+            "tag": "float_array",
+            "count": 11532,
+            "sha256": "bc6debd8f8018e093c747e6a25caabfea3176098f95c7e1da32a2ebbfd3193e6"
+          },
+          {
+            "tag": "p",
+            "count": 40980,
+            "sha256": "c5779baf9f214a92edee78f3407ffcb60294716450692396aaf6922711391659"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_029-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape1_0-Mesh_021-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape2_0-Mesh_012-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape3_0-Mesh_012-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 13157,
+        "position_bounds_min": [
+          -0.05799978,
+          -0.05719995,
+          -0.05799973
+        ],
+        "position_bounds_max": [
+          0.05799973,
+          0.05449998,
+          0.43118
+        ],
+        "geometry_canonical_sha256": "2a8f4e92b0dff221953cdc4e4f98eb11d2fed11fb1c7bb8e02ed3b69002a859e",
+        "materials_canonical_sha256": "2a2c9c7cbfc26664f0c948cd5b3fb0dab6fc8a67cf28225893e920642f89cd56",
+        "effects_canonical_sha256": "843029bd672a7cc111af90e7f091f313ddafced24937a554138e9b307a8fdc53",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "cordvip_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 21474,
+            "sha256": "19cc96c2ed32d441c0dba2288e583bdcdf821fee6f23e7b289cc5bafa4168a15"
+          },
+          {
+            "tag": "float_array",
+            "count": 22698,
+            "sha256": "1a5c13674987606a8936ac5d1bf2ba18234aec09e0d0ed825979fcd0b709e8f9"
+          },
+          {
+            "tag": "p",
+            "count": 64164,
+            "sha256": "5729c8a884f5f9eef44734e4205f5a999537a4e71e02053ff41f6ef1385a0945"
+          },
+          {
+            "tag": "float_array",
+            "count": 384,
+            "sha256": "49878387b2624108a9659d91d4dd67b6939d84252b963d3b544510252f8602ff"
+          },
+          {
+            "tag": "float_array",
+            "count": 219,
+            "sha256": "588040a22042a6198f9bebe00825154c8da6bc4edd64303f7a65b52e148714cf"
+          },
+          {
+            "tag": "p",
+            "count": 744,
+            "sha256": "047ab58353a6f2ba1521bbea471e3310bc48dc0088449e0d25e48336bbc6c0cf"
+          },
+          {
+            "tag": "float_array",
+            "count": 6186,
+            "sha256": "fb0645775f6c38ec9cb7fc095e75d56b1b6f9f24942a4cfa643167363ce48dbe"
+          },
+          {
+            "tag": "float_array",
+            "count": 5913,
+            "sha256": "6da18f2ed3926f70bdfab8d17769c78d85f52198854405d46727e8698dca287a"
+          },
+          {
+            "tag": "p",
+            "count": 20280,
+            "sha256": "341406daf75c166c4aceb1c836a320dc196cd70aa816e1e13844389c1a0c85a7"
+          },
+          {
+            "tag": "float_array",
+            "count": 11427,
+            "sha256": "d14bad2be38f67f464aa7a6d181cd00dd568f253b8c08cd4e8f704c45b1686c5"
+          },
+          {
+            "tag": "float_array",
+            "count": 11532,
+            "sha256": "bc6debd8f8018e093c747e6a25caabfea3176098f95c7e1da32a2ebbfd3193e6"
+          },
+          {
+            "tag": "p",
+            "count": 40980,
+            "sha256": "c5779baf9f214a92edee78f3407ffcb60294716450692396aaf6922711391659"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              0.6859207,
+              -0.3240135,
+              0.6515582,
+              7.481132,
+              0.7276763,
+              0.3054208,
+              -0.6141704,
+              -6.50764,
+              0.0,
+              0.8953956,
+              0.4452714,
+              5.343665,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_029-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape1_0-Mesh_021-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape2_0-Mesh_012-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape3_0-Mesh_012-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 13157,
+        "position_bounds_min": [
+          -0.05799978,
+          -0.05719995,
+          -0.05799973
+        ],
+        "position_bounds_max": [
+          0.05799973,
+          0.05449998,
+          0.43118
+        ],
+        "geometry_canonical_sha256": "2a8f4e92b0dff221953cdc4e4f98eb11d2fed11fb1c7bb8e02ed3b69002a859e",
+        "materials_canonical_sha256": "2a2c9c7cbfc26664f0c948cd5b3fb0dab6fc8a67cf28225893e920642f89cd56",
+        "effects_canonical_sha256": "843029bd672a7cc111af90e7f091f313ddafced24937a554138e9b307a8fdc53",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "numeric_geometry_equal": true,
+      "canonical_geometry_equal": true,
+      "geometry_instance_transforms_equal": true,
+      "materials_equal": true,
+      "effects_equal": true
+    },
+    {
+      "link": "forearm_link",
+      "kind": "collision",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/collision/forearm.stl",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/collision/forearm.stl",
+      "official_sha256": "8e79aa80a532494ba5320c30b40363ff63d228e3d59e2904703dca341dcba2ac",
+      "cordvip_sha256": "8e79aa80a532494ba5320c30b40363ff63d228e3d59e2904703dca341dcba2ac",
+      "bytes_equal": true,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0165
+        ],
+        "rpy": [
+          1.5707963267948966,
+          0.0,
+          -1.5707963267948966
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": null,
+      "official_geometry": {
+        "triangles": 1050,
+        "bounds_min": [
+          -0.057912249118089676,
+          -0.057176098227500916,
+          -0.05798553675413132
+        ],
+        "bounds_max": [
+          0.05853401497006416,
+          0.054510679095983505,
+          0.43127942085266113
+        ]
+      },
+      "cordvip_geometry": {
+        "triangles": 1050,
+        "bounds_min": [
+          -0.057912249118089676,
+          -0.057176098227500916,
+          -0.05798553675413132
+        ],
+        "bounds_max": [
+          0.05853401497006416,
+          0.054510679095983505,
+          0.43127942085266113
+        ]
+      }
+    },
+    {
+      "link": "wrist_1_link",
+      "kind": "visual",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/visual/wrist1.dae",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/visual/wrist1.dae",
+      "official_sha256": "3eb98c0a440ea8f4e91fd2cbb3bf39bd8b96acbb5ebdb697e64603395f1d0a79",
+      "cordvip_sha256": "1cc29d29a40f2eefc89a280236dac1317babcb583538e7b31fdbc621f6a284a0",
+      "bytes_equal": false,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          -0.093
+        ],
+        "rpy": [
+          1.5707963267948966,
+          0.0,
+          0.0
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": "<material name=\"LightGrey\">\n        <color rgba=\"0.7 0.7 0.7 1.0\" />\n      </material>\n    ",
+      "official_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 6201,
+            "sha256": "de4b25f413aee977a7022dc43a67567a8dbf8fe195812f9a9c543a5f5a76bbac"
+          },
+          {
+            "tag": "float_array",
+            "count": 6012,
+            "sha256": "aab0af2b4992c617a64510a52af1c48dfe642fc2a94d48b20f591ea2f4d85c58"
+          },
+          {
+            "tag": "p",
+            "count": 1692,
+            "sha256": "688ed7b6e87016740f90a5a7cc97e0a9afdf99e63e6f68f5bd7a770cbe07c6d7"
+          },
+          {
+            "tag": "p",
+            "count": 18588,
+            "sha256": "ab78fe06362ddee0efe4b34358b6cad469d28585a4f40e7c80d6a260e1bb4e11"
+          },
+          {
+            "tag": "float_array",
+            "count": 18057,
+            "sha256": "932c63aa26a51a0c8662b558a6efd98b3b872b9a7a60c6ab573d5e4a326a4db7"
+          },
+          {
+            "tag": "float_array",
+            "count": 19416,
+            "sha256": "ad25fc6ca1cd7e090da19d7af884b7a8537c472136e0c9ab9f34b03d49cc85ea"
+          },
+          {
+            "tag": "p",
+            "count": 64164,
+            "sha256": "c23296b25c6d109ae4691be491cb754eafec49bf18078ff2615d65d687727e34"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.9999999,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.9999999,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_025-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.9999999,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape1_0-Mesh_019-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.9999999,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 8086,
+        "position_bounds_min": [
+          -0.03874987,
+          0.04750001,
+          -0.05719989
+        ],
+        "position_bounds_max": [
+          0.03874993,
+          0.1323537,
+          0.04749995
+        ],
+        "geometry_canonical_sha256": "b0e740df3263e977e62b5b3af08d0f8c4b0733a906ef49b4ae3731432e979373",
+        "materials_canonical_sha256": "b6bff53523ac09e724747b14e8f5e16daac9aed4f4cdc879624f5ec113e38330",
+        "effects_canonical_sha256": "57d2b520c820d99280d7f855554d019f78091323649b12f91164ad98d0ef5ac5",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "cordvip_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 6201,
+            "sha256": "de4b25f413aee977a7022dc43a67567a8dbf8fe195812f9a9c543a5f5a76bbac"
+          },
+          {
+            "tag": "float_array",
+            "count": 6012,
+            "sha256": "aab0af2b4992c617a64510a52af1c48dfe642fc2a94d48b20f591ea2f4d85c58"
+          },
+          {
+            "tag": "p",
+            "count": 1692,
+            "sha256": "688ed7b6e87016740f90a5a7cc97e0a9afdf99e63e6f68f5bd7a770cbe07c6d7"
+          },
+          {
+            "tag": "p",
+            "count": 18588,
+            "sha256": "ab78fe06362ddee0efe4b34358b6cad469d28585a4f40e7c80d6a260e1bb4e11"
+          },
+          {
+            "tag": "float_array",
+            "count": 18057,
+            "sha256": "932c63aa26a51a0c8662b558a6efd98b3b872b9a7a60c6ab573d5e4a326a4db7"
+          },
+          {
+            "tag": "float_array",
+            "count": 19416,
+            "sha256": "ad25fc6ca1cd7e090da19d7af884b7a8537c472136e0c9ab9f34b03d49cc85ea"
+          },
+          {
+            "tag": "p",
+            "count": 64164,
+            "sha256": "c23296b25c6d109ae4691be491cb754eafec49bf18078ff2615d65d687727e34"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              0.6859207,
+              -0.3240135,
+              0.6515582,
+              7.481132,
+              0.7276763,
+              0.3054208,
+              -0.6141704,
+              -6.50764,
+              0.0,
+              0.8953956,
+              0.4452714,
+              5.343665,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.9999999,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.9999999,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_025-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.9999999,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape1_0-Mesh_019-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.9999999,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 8086,
+        "position_bounds_min": [
+          -0.03874987,
+          0.04750001,
+          -0.05719989
+        ],
+        "position_bounds_max": [
+          0.03874993,
+          0.1323537,
+          0.04749995
+        ],
+        "geometry_canonical_sha256": "b0e740df3263e977e62b5b3af08d0f8c4b0733a906ef49b4ae3731432e979373",
+        "materials_canonical_sha256": "b6bff53523ac09e724747b14e8f5e16daac9aed4f4cdc879624f5ec113e38330",
+        "effects_canonical_sha256": "57d2b520c820d99280d7f855554d019f78091323649b12f91164ad98d0ef5ac5",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "numeric_geometry_equal": true,
+      "canonical_geometry_equal": true,
+      "geometry_instance_transforms_equal": true,
+      "materials_equal": true,
+      "effects_equal": true
+    },
+    {
+      "link": "wrist_1_link",
+      "kind": "collision",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/collision/wrist1.stl",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/collision/wrist1.stl",
+      "official_sha256": "0a1fd12150140efdee91650dcb4c2d0443065551a9207a2d2dbde58ff1fb4eb7",
+      "cordvip_sha256": "0a1fd12150140efdee91650dcb4c2d0443065551a9207a2d2dbde58ff1fb4eb7",
+      "bytes_equal": true,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          -0.093
+        ],
+        "rpy": [
+          1.5707963267948966,
+          0.0,
+          0.0
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": null,
+      "official_geometry": {
+        "triangles": 702,
+        "bounds_min": [
+          -0.03860008716583252,
+          0.0474993996322155,
+          -0.05717611685395241
+        ],
+        "bounds_max": [
+          0.03888977691531181,
+          0.1325002759695053,
+          0.047499947249889374
+        ]
+      },
+      "cordvip_geometry": {
+        "triangles": 702,
+        "bounds_min": [
+          -0.03860008716583252,
+          0.0474993996322155,
+          -0.05717611685395241
+        ],
+        "bounds_max": [
+          0.03888977691531181,
+          0.1325002759695053,
+          0.047499947249889374
+        ]
+      }
+    },
+    {
+      "link": "wrist_2_link",
+      "kind": "visual",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/visual/wrist2.dae",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/visual/wrist2.dae",
+      "official_sha256": "2a60ae57fd85ee06e77482029b10fe09fd53dc68169138380e64d98d5f134f09",
+      "cordvip_sha256": "d8cc770127fc7cc3c587594660971811b52092df75b6178895828f74df37ea0f",
+      "bytes_equal": false,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          -0.095
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": "<material name=\"LightGrey\">\n        <color rgba=\"0.7 0.7 0.7 1.0\" />\n      </material>\n    ",
+      "official_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 6195,
+            "sha256": "dadc4b2ed835e93339a975ce9e9795d2a8f0321b21f60223c99c7758b5b93f0a"
+          },
+          {
+            "tag": "float_array",
+            "count": 5979,
+            "sha256": "fc3203520e92793ed1f5edf848380034a0100caa85de8cc807b265faf5b0afe5"
+          },
+          {
+            "tag": "p",
+            "count": 1692,
+            "sha256": "ec813d574c70bc8b4795e3d06b89a4f3b060edcec75184c1485e3ce42b731f94"
+          },
+          {
+            "tag": "p",
+            "count": 18588,
+            "sha256": "713ec1880a92ebead198ed2aadd9d5354783d990432a8af945e1c31b23877aa9"
+          },
+          {
+            "tag": "float_array",
+            "count": 18051,
+            "sha256": "e2defb6ea9bcc43cd4c7eff4a111de3fecc287addd09803e0833ce1a66301b6d"
+          },
+          {
+            "tag": "float_array",
+            "count": 19380,
+            "sha256": "8b5886603297546bcbe7dea864291ef63db6ea35bbeebc99a56c6596db1a7db5"
+          },
+          {
+            "tag": "p",
+            "count": 64164,
+            "sha256": "68be787c228fa3a80d27a281300ae2cba1c80b59d5eb12a906e717f69a305f61"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_026-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape1_0-Mesh_020-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 8082,
+        "position_bounds_min": [
+          -0.03874987,
+          -0.05719995,
+          0.04914999
+        ],
+        "position_bounds_max": [
+          0.03874993,
+          0.04749995,
+          0.1333999
+        ],
+        "geometry_canonical_sha256": "c605f128092fd423a2cf46e6341e6c8027446e7005ecf4653ce7c4fbf3fe4cd8",
+        "materials_canonical_sha256": "8dbaa4f84fdb0ad4f030443a2c9f04af539474c308fd9d1821fb027b6e9c7bd5",
+        "effects_canonical_sha256": "fb3a93f9a9338b54f35710eb8bd82cbba01b2a0f10c56f7577735142cae27d6f",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "cordvip_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 6195,
+            "sha256": "dadc4b2ed835e93339a975ce9e9795d2a8f0321b21f60223c99c7758b5b93f0a"
+          },
+          {
+            "tag": "float_array",
+            "count": 5979,
+            "sha256": "fc3203520e92793ed1f5edf848380034a0100caa85de8cc807b265faf5b0afe5"
+          },
+          {
+            "tag": "p",
+            "count": 1692,
+            "sha256": "ec813d574c70bc8b4795e3d06b89a4f3b060edcec75184c1485e3ce42b731f94"
+          },
+          {
+            "tag": "p",
+            "count": 18588,
+            "sha256": "713ec1880a92ebead198ed2aadd9d5354783d990432a8af945e1c31b23877aa9"
+          },
+          {
+            "tag": "float_array",
+            "count": 18051,
+            "sha256": "e2defb6ea9bcc43cd4c7eff4a111de3fecc287addd09803e0833ce1a66301b6d"
+          },
+          {
+            "tag": "float_array",
+            "count": 19380,
+            "sha256": "8b5886603297546bcbe7dea864291ef63db6ea35bbeebc99a56c6596db1a7db5"
+          },
+          {
+            "tag": "p",
+            "count": 64164,
+            "sha256": "68be787c228fa3a80d27a281300ae2cba1c80b59d5eb12a906e717f69a305f61"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              0.6859207,
+              -0.3240135,
+              0.6515582,
+              7.481132,
+              0.7276763,
+              0.3054208,
+              -0.6141704,
+              -6.50764,
+              0.0,
+              0.8953956,
+              0.4452714,
+              5.343665,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_026-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "#ActorShape1_0-Mesh_020-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 8082,
+        "position_bounds_min": [
+          -0.03874987,
+          -0.05719995,
+          0.04914999
+        ],
+        "position_bounds_max": [
+          0.03874993,
+          0.04749995,
+          0.1333999
+        ],
+        "geometry_canonical_sha256": "c605f128092fd423a2cf46e6341e6c8027446e7005ecf4653ce7c4fbf3fe4cd8",
+        "materials_canonical_sha256": "8dbaa4f84fdb0ad4f030443a2c9f04af539474c308fd9d1821fb027b6e9c7bd5",
+        "effects_canonical_sha256": "fb3a93f9a9338b54f35710eb8bd82cbba01b2a0f10c56f7577735142cae27d6f",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "numeric_geometry_equal": true,
+      "canonical_geometry_equal": true,
+      "geometry_instance_transforms_equal": true,
+      "materials_equal": true,
+      "effects_equal": true
+    },
+    {
+      "link": "wrist_2_link",
+      "kind": "collision",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/collision/wrist2.stl",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/collision/wrist2.stl",
+      "official_sha256": "c1d9f7843366068cb331f3f5c43fa716d3eceeb8c80216eccbbc878905dab123",
+      "cordvip_sha256": "c1d9f7843366068cb331f3f5c43fa716d3eceeb8c80216eccbbc878905dab123",
+      "bytes_equal": true,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          -0.095
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": null,
+      "official_geometry": {
+        "triangles": 702,
+        "bounds_min": [
+          -0.03888968005776405,
+          -0.057188112288713455,
+          0.04914984107017517
+        ],
+        "bounds_max": [
+          0.0386943444609642,
+          0.04749998822808266,
+          0.13338255882263184
+        ]
+      },
+      "cordvip_geometry": {
+        "triangles": 702,
+        "bounds_min": [
+          -0.03888968005776405,
+          -0.057188112288713455,
+          0.04914984107017517
+        ],
+        "bounds_max": [
+          0.0386943444609642,
+          0.04749998822808266,
+          0.13338255882263184
+        ]
+      }
+    },
+    {
+      "link": "wrist_3_link",
+      "kind": "visual",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/visual/wrist3.dae",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/visual/wrist3.dae",
+      "official_sha256": "23430d8b8ec0c94c5a69fe5e70931399d3d8e07d40f277334fe62d82b959cef5",
+      "cordvip_sha256": "8ee319c507ad0e0db4d77594cc03192f1660a3d0db03bae6f827518876d027af",
+      "bytes_equal": false,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          -0.0818
+        ],
+        "rpy": [
+          1.5707963267948966,
+          0.0,
+          0.0
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": "<material name=\"LightGrey\">\n        <color rgba=\"0.7 0.7 0.7 1.0\" />\n      </material>\n    ",
+      "official_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 5007,
+            "sha256": "cff4f4f89e8a5d12230eab6e6dc61e61635dc655d68b8924b40a6480fb95a662"
+          },
+          {
+            "tag": "float_array",
+            "count": 2937,
+            "sha256": "dc593d34b2de2531c24dad351e19ad195e0ff72f93011a06c3ea7c26a362a63a"
+          },
+          {
+            "tag": "p",
+            "count": 7332,
+            "sha256": "710aeee820ff7c8d58cd4f730c6c47336e6c5b72b18d651009a9ad83f3b776a5"
+          },
+          {
+            "tag": "p",
+            "count": 2616,
+            "sha256": "7a3bbc8789951353b487ee18bcacdbf2f7e479fab0e0d8d1563e6fb64397bb2a"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_003-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 1669,
+        "position_bounds_min": [
+          -0.03749996,
+          0.04732495,
+          -0.03749996
+        ],
+        "position_bounds_max": [
+          0.03749996,
+          0.08182489,
+          0.04299998
+        ],
+        "geometry_canonical_sha256": "cac9746a8e7600456ca12c686e5b2c4ee3ec823e6b5569c02daab7b7c01037df",
+        "materials_canonical_sha256": "93051904e523a796841120fa319cb6579f5c61355a88f139b8f669e4585916bb",
+        "effects_canonical_sha256": "c80b7ae6ebef182c679609edb960522a41fae8ef812825cb419c5d6796c88b26",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "cordvip_geometry": {
+        "numeric_geometry": [
+          {
+            "tag": "float_array",
+            "count": 5007,
+            "sha256": "cff4f4f89e8a5d12230eab6e6dc61e61635dc655d68b8924b40a6480fb95a662"
+          },
+          {
+            "tag": "float_array",
+            "count": 2937,
+            "sha256": "dc593d34b2de2531c24dad351e19ad195e0ff72f93011a06c3ea7c26a362a63a"
+          },
+          {
+            "tag": "p",
+            "count": 7332,
+            "sha256": "710aeee820ff7c8d58cd4f730c6c47336e6c5b72b18d651009a9ad83f3b776a5"
+          },
+          {
+            "tag": "p",
+            "count": 2616,
+            "sha256": "7a3bbc8789951353b487ee18bcacdbf2f7e479fab0e0d8d1563e6fb64397bb2a"
+          }
+        ],
+        "scene_transforms_including_cameras": [
+          {
+            "tag": "matrix",
+            "values": [
+              0.6859207,
+              -0.3240135,
+              0.6515582,
+              7.481132,
+              0.7276763,
+              0.3054208,
+              -0.6141704,
+              -6.50764,
+              0.0,
+              0.8953956,
+              0.4452714,
+              5.343665,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "tag": "matrix",
+            "values": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "geometry_instances": [
+          {
+            "geometry": "#ActorShape0_0-Mesh_003-mesh",
+            "transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "position_count": 1669,
+        "position_bounds_min": [
+          -0.03749996,
+          0.04732495,
+          -0.03749996
+        ],
+        "position_bounds_max": [
+          0.03749996,
+          0.08182489,
+          0.04299998
+        ],
+        "geometry_canonical_sha256": "cac9746a8e7600456ca12c686e5b2c4ee3ec823e6b5569c02daab7b7c01037df",
+        "materials_canonical_sha256": "93051904e523a796841120fa319cb6579f5c61355a88f139b8f669e4585916bb",
+        "effects_canonical_sha256": "c80b7ae6ebef182c679609edb960522a41fae8ef812825cb419c5d6796c88b26",
+        "unit": {
+          "name": "meter",
+          "meter": "1"
+        },
+        "up_axis": "Z_UP"
+      },
+      "numeric_geometry_equal": true,
+      "canonical_geometry_equal": true,
+      "geometry_instance_transforms_equal": true,
+      "materials_equal": true,
+      "effects_equal": true
+    },
+    {
+      "link": "wrist_3_link",
+      "kind": "collision",
+      "official_path": "source/ur5_leap/assets/official/ur5/meshes/ur5/collision/wrist3.stl",
+      "cordvip_path": "source/ur5_leap/assets/references/cordvip/ur5_leaphand/ur5/collision/wrist3.stl",
+      "official_sha256": "cf7220397b56f1d3047be9465eea1181d471b40fc82728052e31c97588585b4b",
+      "cordvip_sha256": "cf7220397b56f1d3047be9465eea1181d471b40fc82728052e31c97588585b4b",
+      "bytes_equal": true,
+      "official_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          -0.0818
+        ],
+        "rpy": [
+          1.5707963267948966,
+          0.0,
+          0.0
+        ]
+      },
+      "cordvip_origin": {
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "official_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cordvip_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "official_urdf_material": null,
+      "cordvip_urdf_material": null,
+      "official_geometry": {
+        "triangles": 446,
+        "bounds_min": [
+          -0.037515703588724136,
+          0.04732474312186241,
+          -0.03751566633582115
+        ],
+        "bounds_max": [
+          0.03751571848988533,
+          0.08182505518198013,
+          0.0429999865591526
+        ]
+      },
+      "cordvip_geometry": {
+        "triangles": 446,
+        "bounds_min": [
+          -0.037515703588724136,
+          0.04732474312186241,
+          -0.03751566633582115
+        ],
+        "bounds_max": [
+          0.03751571848988533,
+          0.08182505518198013,
+          0.0429999865591526
+        ]
+      }
+    }
+  ],
+  "mesh_placements_at_zero": [
+    {
+      "link": "base_link",
+      "kind": "visual",
+      "translation_error_m": 0.0,
+      "rotation_error_rad": 3.14159
+    },
+    {
+      "link": "base_link",
+      "kind": "collision",
+      "translation_error_m": 0.0,
+      "rotation_error_rad": 3.14159
+    },
+    {
+      "link": "shoulder_link",
+      "kind": "visual",
+      "translation_error_m": 0.0,
+      "rotation_error_rad": 1.9915989227223765e-16
+    },
+    {
+      "link": "shoulder_link",
+      "kind": "collision",
+      "translation_error_m": 0.0,
+      "rotation_error_rad": 1.9915989227223765e-16
+    },
+    {
+      "link": "upper_arm_link",
+      "kind": "visual",
+      "translation_error_m": 2.786329500464125e-11,
+      "rotation_error_rad": 2.0516187163071603e-10
+    },
+    {
+      "link": "upper_arm_link",
+      "kind": "collision",
+      "translation_error_m": 2.786329500464125e-11,
+      "rotation_error_rad": 2.0516187163071603e-10
+    },
+    {
+      "link": "forearm_link",
+      "kind": "visual",
+      "translation_error_m": 0.00035000000000013845,
+      "rotation_error_rad": 2.0516187163071603e-10
+    },
+    {
+      "link": "forearm_link",
+      "kind": "collision",
+      "translation_error_m": 0.00035000000000013845,
+      "rotation_error_rad": 2.0516187163071603e-10
+    },
+    {
+      "link": "wrist_1_link",
+      "kind": "visual",
+      "translation_error_m": 7.314149290983379e-12,
+      "rotation_error_rad": 2.0533703416769776e-10
+    },
+    {
+      "link": "wrist_1_link",
+      "kind": "collision",
+      "translation_error_m": 7.314149290983379e-12,
+      "rotation_error_rad": 2.0533703416769776e-10
+    },
+    {
+      "link": "wrist_2_link",
+      "kind": "visual",
+      "translation_error_m": 0.0003499999736112369,
+      "rotation_error_rad": 4.103237403379665e-10
+    },
+    {
+      "link": "wrist_2_link",
+      "kind": "collision",
+      "translation_error_m": 0.0003499999736112369,
+      "rotation_error_rad": 4.103237403379665e-10
+    },
+    {
+      "link": "wrist_3_link",
+      "kind": "visual",
+      "translation_error_m": 0.0004999999611741697,
+      "rotation_error_rad": 2.0533691768337796e-10
+    },
+    {
+      "link": "wrist_3_link",
+      "kind": "collision",
+      "translation_error_m": 0.0004999999611741697,
+      "rotation_error_rad": 2.0533691768337796e-10
+    }
+  ],
+  "mounting": {
+    "ee_fixed_joint": {
+      "type": "fixed",
+      "parent": "wrist_3_link",
+      "child": "ee_link",
+      "origin": {
+        "xyz": [
+          0.0,
+          0.0823,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          1.57079632679
+        ]
+      },
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limits": null
+    },
+    "mount_joint": {
+      "type": "fixed",
+      "parent": "ee_link",
+      "child": "palm_lower",
+      "origin": {
+        "xyz": [
+          0.0,
+          0.03,
+          0.06
+        ],
+        "rpy": [
+          3.14159,
+          -1.57079,
+          3.14159
+        ]
+      },
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limits": null
+    }
+  },
+  "cordvip_joint_order": [
+    "shoulder_pan_joint",
+    "shoulder_lift_joint",
+    "elbow_joint",
+    "wrist_1_joint",
+    "wrist_2_joint",
+    "wrist_3_joint",
+    "joint0",
+    "joint1",
+    "joint2",
+    "joint3",
+    "joint4",
+    "joint5",
+    "joint6",
+    "joint7",
+    "joint8",
+    "joint9",
+    "joint10",
+    "joint11",
+    "joint12",
+    "joint13",
+    "joint14",
+    "joint15"
+  ],
+  "official_joint_order": [
+    "shoulder_pan_joint",
+    "shoulder_lift_joint",
+    "elbow_joint",
+    "wrist_1_joint",
+    "wrist_2_joint",
+    "wrist_3_joint"
+  ],
+  "scope": "Static CPU analysis only. USD import, collision cooking, physics stepping and real-hardware calibration were not performed.",
+  "existing_reference_usd": {
+    "entry_point": "source/ur5_leap/assets/references/cordvip/generated/usd/cordvip_ur5_leap.usd/ur5_leaphand/ur5_leaphand.usda",
+    "entry_point_sha256": "3d8f6fea6d5b268cb2fa58169c7f256bfa690224591777e04b5f06e27fb2c65f",
+    "physics_layer": "source/ur5_leap/assets/references/cordvip/generated/usd/cordvip_ur5_leap.usd/ur5_leaphand/payloads/Physics/physics.usda",
+    "physics_layer_sha256": "d14f55cfe788d74a79a163a44493b013a0578af89d9a11ca9f7d3f03a7ad70ce",
+    "revolute_joint_order_in_physics_layer": [
+      "shoulder_pan_joint",
+      "shoulder_lift_joint",
+      "elbow_joint",
+      "wrist_1_joint",
+      "wrist_2_joint",
+      "wrist_3_joint",
+      "joint0",
+      "joint1",
+      "joint2",
+      "joint3",
+      "joint4",
+      "joint5",
+      "joint6",
+      "joint7",
+      "joint8",
+      "joint9",
+      "joint10",
+      "joint11",
+      "joint12",
+      "joint13",
+      "joint14",
+      "joint15"
+    ],
+    "validation_scope": "Textual USDA declaration inspection, not composed-stage or simulator index verification"
+  },
+  "sources": [
+    {
+      "id": "ur",
+      "repository": "UniversalRobots/Universal_Robots_ROS2_Description",
+      "branch": "rolling",
+      "commit": "81f7c9fe003c2f0e02eec5a7253f1b262ad38b61"
+    },
+    {
+      "id": "cord",
+      "repository": "xuanxuanzzzii/cordvip",
+      "branch": "main",
+      "commit": "ad6d441abe7b0480cf79b0311db266965c1313b6"
+    }
+  ],
+  "evaluated_checkout_commit": "7ffe8150c",
+  "comparison_tolerances": {
+    "kinematics_m_or_rad": 1e-06,
+    "limit_absolute": 1e-09,
+    "dynamics_relative": 1e-06
+  },
+  "sampling": {
+    "poses": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.5707963267948966,
+        0.0,
+        -1.5707963267948966,
+        0.0,
+        0.0
+      ],
+      [
+        -3.0408615023369467,
+        -2.0789529986881554,
+        0.9709069211413617,
+        -3.005551084404751,
+        0.37933567916700595,
+        -2.7511539557148645
+      ],
+      [
+        1.1237725763426392,
+        0.8189953806655526,
+        -1.9940002017063592,
+        -1.8958523360554147,
+        0.3767095805939449,
+        1.97758769059317
+      ],
+      [
+        0.4264208331059134,
+        -1.2118904000311663,
+        1.1491987250146876,
+        -1.9640389163125005,
+        2.5185245897757227,
+        3.0924427920138786
+      ],
+      [
+        -1.5114571348824777,
+        2.4225180034886566,
+        1.624787336181849,
+        -0.7006398351257075,
+        -1.2772403378815147,
+        0.5843415549356936
+      ],
+      [
+        2.007424639646813,
+        -2.7384911859124847,
+        -2.9302197438030277,
+        0.718870260392344,
+        -2.6881318779932655,
+        3.085286991056752
+      ],
+      [
+        -1.2079217243148892,
+        -1.7333970855696414,
+        0.9859453250624233,
+        2.6211076007962246,
+        0.03208249612322378,
+        2.3098342204059126
+      ],
+      [
+        -0.492269077596029,
+        -1.76679077281802,
+        1.0710533270115308,
+        0.5965679426151818,
+        -1.4353373996433283,
+        1.1519581208248644
+      ],
+      [
+        -0.41497471164367683,
+        -2.6318317519388,
+        -2.2927294632472335,
+        -0.05034676869378041,
+        0.9973671376779212,
+        1.9322180687978818
+      ],
+      [
+        2.7613282764222813,
+        1.4818476204381232,
+        -2.520847352784129,
+        -0.1750957033752143,
+        2.828869641626012,
+        2.5032610444812553
+      ],
+      [
+        1.2982005789118656,
+        1.3107202143958938,
+        1.113544933444449,
+        -2.572341582195382,
+        -0.5308676884271453,
+        -0.041337919917398214
+      ],
+      [
+        0.0025767511820671274,
+        2.9279462833232035,
+        -0.08164687283138106,
+        -1.7554607469557446,
+        -1.5198439640803854,
+        1.7975594318621813
+      ],
+      [
+        -0.524244921322484,
+        -0.3968291892337268,
+        -0.4470019618905292,
+        1.7305538845266817,
+        0.44247057774832665,
+        -0.05170816297643954
+      ],
+      [
+        -2.78537914032512,
+        -0.018429388062487284,
+        1.7113946557855089,
+        -1.4518778550753968,
+        0.24564662373731538,
+        -0.7525002908548122
+      ],
+      [
+        3.07083308007752,
+        -0.7021430599599161,
+        -1.0704946285931887,
+        0.5849108198667441,
+        1.7805261888168307,
+        1.2661684922509986
+      ],
+      [
+        -0.12313523612753396,
+        -0.057665242054615984,
+        1.8631505816127314,
+        -1.9893786958950996,
+        -0.852529983786996,
+        -0.7068022820227502
+      ],
+      [
+        2.3169113566831268,
+        -1.465334173336723,
+        0.8877950912509158,
+        0.6136495671660995,
+        0.46335892331426054,
+        -3.115920598499105
+      ],
+      [
+        -1.9799770260629561,
+        -0.14585254417931504,
+        2.8001032136056816,
+        -2.4017970217919826,
+        1.3299300138512464,
+        -2.463219597896213
+      ],
+      [
+        1.4480783695463497,
+        -1.308970010188287,
+        -3.1253582704842713,
+        0.6728888697809388,
+        0.380985797871245,
+        -1.016382069189528
+      ],
+      [
+        -0.8191296665485335,
+        -2.0582230494794507,
+        0.15228861390651538,
+        0.17960530989198453,
+        1.915250014131792,
+        -2.9149319709582784
+      ],
+      [
+        -0.7030989366333742,
+        -1.1763705748251987,
+        -3.0301739574491076,
+        1.3742762956976238,
+        -1.8940725256425313,
+        -2.9982488636964706
+      ],
+      [
+        1.5187801068940052,
+        3.1135625133031777,
+        0.7029414499274971,
+        1.9421388173499095,
+        0.7206061353620115,
+        -2.963311606386354
+      ],
+      [
+        0.31368374882904293,
+        -2.92688891338727,
+        -1.6761533701617926,
+        2.9157509274826436,
+        1.516149411832303,
+        -1.0617902254183154
+      ],
+      [
+        -2.762633954839045,
+        -2.9206463566691765,
+        1.9977828748921054,
+        -2.031483756540312,
+        -0.3903724444041692,
+        -0.09887643836490811
+      ],
+      [
+        -2.6848329401301267,
+        2.844168128214384,
+        -0.07970815428533307,
+        -1.0143491697990816,
+        -0.5787771681645051,
+        -1.8404152841227128
+      ],
+      [
+        2.4048132467137826,
+        2.8419405617241997,
+        -1.987419419245463,
+        2.8446487508585507,
+        -1.9215129749724624,
+        1.4491254367255069
+      ],
+      [
+        -0.3306861143970905,
+        2.287867654056515,
+        1.6725450305651774,
+        -0.2927650673757052,
+        -2.5733667277478443,
+        -0.42358623332744116
+      ],
+      [
+        0.4504587306986507,
+        -1.7034657287909913,
+        1.5796962198478308,
+        3.0569753421255337,
+        0.8855585765137244,
+        -0.8065611157496235
+      ],
+      [
+        1.3555984098870795,
+        1.7622913954121913,
+        0.6438935109576627,
+        -1.9466880310989392,
+        1.5822445263094869,
+        2.754376476192684
+      ],
+      [
+        2.963373890670079,
+        -0.5255664866098013,
+        2.69785122376416,
+        -0.031831484945243016,
+        0.9821598228364943,
+        -3.1262944046343044
+      ],
+      [
+        -0.2797442159828556,
+        1.7517951018740234,
+        1.1893123253362452,
+        2.43816193265687,
+        1.6764867881857306,
+        -1.2651346419452407
+      ],
+      [
+        1.4625394532943794,
+        -2.006349453627122,
+        1.357375413264533,
+        0.549890233848215,
+        2.1703943355963693,
+        -1.4450948588575687
+      ],
+      [
+        0.6746700981322324,
+        -0.9438165641209135,
+        -0.047980341177305874,
+        -0.13139260541313869,
+        0.34215671918540913,
+        1.0308357901056446
+      ],
+      [
+        2.0161210462266492,
+        -3.101536966992871,
+        -0.7024943766140854,
+        2.1955997837879755,
+        -0.48773359057638466,
+        -0.6008478632440037
+      ],
+      [
+        0.059140852907461294,
+        -1.6781202360607537,
+        1.660176619572459,
+        1.2713942209539777,
+        -0.003295316080975219,
+        0.2560206125730007
+      ],
+      [
+        -2.723495718153723,
+        2.636507885747357,
+        2.411113732816908,
+        0.4531432939844029,
+        0.23782720203239371,
+        2.569857232704587
+      ],
+      [
+        1.8311980550170404,
+        2.212594609776753,
+        -0.16042243948501245,
+        -0.3599429992949026,
+        -1.2315048229869752,
+        -1.8853151033540374
+      ],
+      [
+        -2.9210215245616724,
+        -2.5848289356722036,
+        0.7816578656875959,
+        2.9539255247980067,
+        0.1861009110788916,
+        0.10497208493496135
+      ],
+      [
+        0.7888810774985258,
+        0.643768051602116,
+        -2.2538529409988484,
+        0.982248078896033,
+        1.6908009245883848,
+        0.5108201974786377
+      ],
+      [
+        1.7585993297578089,
+        -0.3506403529911073,
+        0.04181791160267512,
+        -1.313553845730375,
+        -0.4604985265092556,
+        2.6843199172678984
+      ],
+      [
+        2.4060277187923873,
+        1.1728775228919215,
+        -0.4735661660614552,
+        0.6819300441222076,
+        0.7237749450735151,
+        2.3793863430927917
+      ],
+      [
+        -1.9579520638675627,
+        1.6380920618165566,
+        2.258387103132006,
+        0.17367459967169951,
+        -3.096567137361261,
+        -1.5830923710810818
+      ],
+      [
+        -2.578853758991517,
+        -1.3388471116870937,
+        -2.822740171363326,
+        1.9503259082775433,
+        -1.477957914103949,
+        1.0702076873364552
+      ],
+      [
+        0.5718822088275397,
+        3.0908042750660396,
+        1.3399684466024029,
+        -0.6057500054380585,
+        -0.3764105123372854,
+        0.748959884705283
+      ],
+      [
+        -0.2075096672086283,
+        3.0994587064139116,
+        -1.2459397554087306,
+        -2.945293205752156,
+        -1.6117619591556678,
+        -1.6291639386407142
+      ],
+      [
+        -1.814357199212434,
+        -0.5956913453533117,
+        -2.4241080337131384,
+        1.268079117560962,
+        -1.6813603628647475,
+        1.3458000555409937
+      ],
+      [
+        -1.8728793644988857,
+        2.5514766207062296,
+        -0.3398698163328948,
+        2.5172600788275252,
+        2.3018449660055964,
+        -0.9162667627970538
+      ],
+      [
+        -0.9044714805541085,
+        1.2454773510832515,
+        0.2143541648845675,
+        0.3503329124187067,
+        0.15870419803575153,
+        -0.2236537075268874
+      ],
+      [
+        -2.526460341738726,
+        -2.478177058971686,
+        2.1158047886049767,
+        -2.826167418053948,
+        -2.2736241242322515,
+        2.541911290733971
+      ],
+      [
+        -1.9655856652011363,
+        -1.4840114757685696,
+        -0.755287475992195,
+        -0.06763863709649698,
+        -2.3507525378511036,
+        -2.5088035897050087
+      ],
+      [
+        -2.682987560053789,
+        -2.4258585780008968,
+        -1.0788417550737144,
+        2.4080854440365718,
+        -1.8063711825258972,
+        1.6822814804080295
+      ],
+      [
+        0.5811777254918891,
+        -2.1218435822203228,
+        -0.20558545119572402,
+        -0.20261180633800002,
+        -0.42197608416576804,
+        2.036682925133057
+      ],
+      [
+        -0.3294463874285509,
+        -1.7960225894834811,
+        1.4562662761148149,
+        2.3061635676199606,
+        2.1444630997953533,
+        -0.48057193260717
+      ],
+      [
+        0.880617775852194,
+        1.9328648838572313,
+        -1.7282849824118907,
+        2.1721975966024587,
+        1.3048216367950252,
+        -0.4457729083200488
+      ],
+      [
+        0.4584069211941433,
+        -1.9390564877339809,
+        2.4393233501315557,
+        -2.5498204953002963,
+        0.6484673878417566,
+        -2.0158694320949233
+      ],
+      [
+        -0.38764001102256307,
+        0.6018303035252268,
+        1.2484395634853769,
+        2.338997285099282,
+        -1.5673346068531275,
+        -0.674229547467637
+      ],
+      [
+        -0.9299060033811553,
+        -0.6658404860462803,
+        -2.733970769522219,
+        0.9871122886099499,
+        -0.4085469916799589,
+        3.126675824606375
+      ],
+      [
+        -0.7027163199844972,
+        0.9492834215523827,
+        -0.9522283629665167,
+        -2.3506284417298464,
+        -1.240484187191077,
+        2.1551909539758647
+      ],
+      [
+        0.2978245776232984,
+        -2.2667711041235346,
+        1.005142497561792,
+        -0.8786987752136746,
+        -1.9543976124818385,
+        -1.3656474036913482
+      ],
+      [
+        1.1373607823911351,
+        -1.4513255675164851,
+        1.7796599076548052,
+        -0.012544004423895583,
+        -1.2086021889696166,
+        -0.6295062552834381
+      ],
+      [
+        1.5870126759693912,
+        1.2403124754487056,
+        0.7441158983593161,
+        1.1852157397771723,
+        1.4671303291199758,
+        -1.4915484324603898
+      ],
+      [
+        -2.7908995013608497,
+        -2.0860083161920793,
+        0.6014352184466527,
+        0.8572857777498117,
+        -2.982886648392803,
+        2.647869528712942
+      ],
+      [
+        0.7412653271138447,
+        -2.6435877463964776,
+        -0.3620910567536031,
+        -1.0281859748822502,
+        0.3724902165787505,
+        0.608930868668756
+      ],
+      [
+        -1.3169662711490386,
+        2.4526137707765727,
+        2.7840605445312354,
+        2.8061873111327573,
+        -1.643863881234713,
+        -0.770499859173396
+      ],
+      [
+        0.42355893364908503,
+        1.908250507058976,
+        -1.4565707464099065,
+        -2.6451510345802003,
+        0.6625018800916358,
+        1.3553089454961
+      ],
+      [
+        -0.22171642612000575,
+        2.756633913261557,
+        -1.2081565686690894,
+        -3.1278147903624136,
+        -0.29801067354023614,
+        -3.0749939010757257
+      ],
+      [
+        -1.1046647639026763,
+        1.417076796204042,
+        -1.5323282437639139,
+        1.3080857507661374,
+        -0.7023914495205212,
+        2.1553171861233995
+      ],
+      [
+        1.1612861710591247,
+        2.7091751293729187,
+        -1.51667866882637,
+        -2.16377097647647,
+        -0.5999763595199847,
+        -1.0431423053963784
+      ],
+      [
+        -0.7864468853947444,
+        2.2959915838330263,
+        1.091136560444581,
+        -1.806416536168404,
+        -1.1826817434073955,
+        1.049888437879984
+      ],
+      [
+        -0.2797679072005588,
+        -2.8373694466963486,
+        -1.2740773523681577,
+        -0.2564157378647205,
+        0.48838931469081404,
+        1.0307558560510026
+      ],
+      [
+        -0.41470023769015096,
+        1.2182727079842728,
+        -1.8574361738461715,
+        -1.191312222981726,
+        -2.370749161771631,
+        -0.928928729656394
+      ],
+      [
+        2.367310426321983,
+        -2.5627216152478325,
+        1.1648395752807863,
+        -0.6192100378063059,
+        -1.3840312053889563,
+        2.325089209577764
+      ],
+      [
+        0.38956894189267155,
+        -0.16699192040688082,
+        0.676737051947911,
+        -0.948349185921534,
+        -2.237114378958642,
+        0.6452060898516532
+      ],
+      [
+        -1.2666970338436077,
+        1.142638749383833,
+        2.546671992431608,
+        2.7785627709003506,
+        -2.0502166122703285,
+        -0.29139812503031415
+      ],
+      [
+        -1.5026601781337627,
+        1.2150311217805,
+        -1.0927057726796607,
+        -0.21350587942432497,
+        -1.5434374115759115,
+        1.614237846797515
+      ],
+      [
+        2.4116626153576632,
+        0.7813896314677118,
+        0.28694342205856493,
+        -1.4421947619682487,
+        -0.4652213536601666,
+        -0.8064639438455483
+      ],
+      [
+        -1.2450988367254454,
+        -0.11536069810120386,
+        -0.5718580148674164,
+        -1.2807533685095076,
+        1.0430515207372775,
+        -2.887240473190783
+      ],
+      [
+        0.8388710524717169,
+        2.9237162839679014,
+        1.4295412154353162,
+        -1.9270036020351984,
+        -3.0700404293607724,
+        2.941897038940099
+      ],
+      [
+        -2.0162318938345125,
+        -1.1521824841510915,
+        2.2981150625136637,
+        3.087171500158764,
+        0.7130262599918469,
+        -3.027898033699133
+      ],
+      [
+        -0.3321793940855664,
+        -1.8008481782719878,
+        2.2450754093202328,
+        0.24420100777219877,
+        0.36789840645670013,
+        2.8834827525749427
+      ],
+      [
+        1.411230329979583,
+        -2.7546949391977207,
+        0.7041987042190914,
+        -1.5129928903089331,
+        2.5176401370812176,
+        1.1124183933823923
+      ],
+      [
+        -1.5151115984934658,
+        0.3658261327666499,
+        -2.6785430165111874,
+        -1.2073738021067169,
+        -1.7008294444356757,
+        -1.0461540129990499
+      ],
+      [
+        2.3063601134932625,
+        1.0722717087716456,
+        -0.5430512217519432,
+        -1.4421005246962466,
+        -2.8838916921269577,
+        2.7992839475375195
+      ],
+      [
+        -1.2247854239354758,
+        1.3642112422617432,
+        -0.5854433760379005,
+        1.4548070189784799,
+        -1.0807779287720396,
+        -3.0941184748547674
+      ],
+      [
+        -1.8883423203913419,
+        -1.790731859491379,
+        -1.9374944164195096,
+        -1.6221217124890128,
+        1.6653991417574403,
+        -0.6142823762701415
+      ],
+      [
+        -2.4510320789628826,
+        -0.4723026546658122,
+        -2.8646992009236274,
+        -3.0231324632125873,
+        -1.535343403419079,
+        2.7579118768813835
+      ],
+      [
+        -1.033481893648517,
+        -2.868867757211322,
+        -0.48568987950373543,
+        -1.7533344946591716,
+        -1.4570458302075777,
+        0.020253954460858647
+      ],
+      [
+        2.3022775798686936,
+        -1.2200829278688183,
+        0.19844113514818318,
+        -1.918301594265349,
+        -2.9657996658577623,
+        -0.19499554576958644
+      ],
+      [
+        0.8444000901491941,
+        -2.6727385513096023,
+        2.9695726104004585,
+        2.8976740681334334,
+        -0.34341621878655326,
+        -2.004438799866386
+      ],
+      [
+        0.5465338739747021,
+        -2.975888747145365,
+        -1.0946419344901317,
+        2.3686742447149243,
+        -1.5439865860330009,
+        2.1547419164607424
+      ],
+      [
+        -1.9200639721923909,
+        1.3919158494537234,
+        -2.85991060575315,
+        -1.7307010852244842,
+        -3.019181094839251,
+        -0.02626912303121287
+      ],
+      [
+        -2.5134137961117258,
+        -1.239994520072398,
+        0.9348186305738642,
+        1.5802946351439644,
+        -1.5464822423069604,
+        -0.2954544351319903
+      ],
+      [
+        0.7933625493602436,
+        -2.5468818015133055,
+        -3.123711672552412,
+        2.7055379726940307,
+        0.8804088155777006,
+        1.4714206653606636
+      ],
+      [
+        3.040484324430019,
+        -1.7952466899474784,
+        -1.7860909636454942,
+        1.557089108205635,
+        1.0339839293962605,
+        1.9599667215782777
+      ],
+      [
+        2.6708983621349995,
+        1.3450461297479794,
+        1.645605719986949,
+        -1.2265362998165352,
+        0.8808480529119782,
+        -0.9568288806218059
+      ],
+      [
+        1.185102124340168,
+        2.1197597677807556,
+        1.8894087445624512,
+        -0.9400045181618499,
+        -1.4941145005265215,
+        2.7048649650186753
+      ],
+      [
+        -2.537832686945196,
+        -1.1492120624221804,
+        -0.5170405183267843,
+        0.5298723203850972,
+        2.7757623104902036,
+        -0.4648139206028685
+      ],
+      [
+        1.7450213747571812,
+        0.03095361531580476,
+        -0.30737520709251287,
+        -1.017105292273356,
+        -2.3402744225169414,
+        -1.1817727992381102
+      ],
+      [
+        -0.32087290088498843,
+        -0.16656787006798224,
+        -2.2409459273918415,
+        -2.2928130665845057,
+        1.4816182330902707,
+        -0.600366806201182
+      ],
+      [
+        1.8133096621306777,
+        0.41191288615750654,
+        -2.7965721554931955,
+        -2.1744969889291004,
+        -0.9425582885902521,
+        2.9710921975070965
+      ],
+      [
+        0.24308679223824958,
+        2.0934102859148798,
+        -2.9081741637783116,
+        0.3002387267275033,
+        2.365901062482429,
+        1.3982729125719047
+      ],
+      [
+        0.6649851858814189,
+        0.8758300766599136,
+        0.9403845689852179,
+        -1.6105703127216886,
+        2.3542680450501834,
+        -1.0240928655107164
+      ],
+      [
+        2.374627443334174,
+        1.3098005426931048,
+        -2.972605976739945,
+        0.3506991322452304,
+        0.6439395239072936,
+        -0.4602263510906539
+      ],
+      [
+        -1.0086551960416337,
+        0.14205959134467383,
+        2.091704912165069,
+        0.14476560903250935,
+        -1.2043688463135658,
+        1.0269055751797787
+      ],
+      [
+        -1.104613715369656,
+        2.3520399988953278,
+        0.706218760289059,
+        2.204616434700066,
+        -1.8861152246126,
+        -1.8379809862460437
+      ],
+      [
+        -0.3747619165740992,
+        0.6211284251740721,
+        -0.925326817737461,
+        -2.6136078818439743,
+        3.0661669839334573,
+        -2.5551247048720636
+      ],
+      [
+        -2.5890755937661627,
+        1.2301770755202286,
+        2.441999748302198,
+        1.556548957353856,
+        1.8834092044227217,
+        -2.0048794304723043
+      ],
+      [
+        0.3385772339745299,
+        -2.856332540395945,
+        1.4215474434804127,
+        2.1055161422135216,
+        1.8719688206013618,
+        -0.396367391798361
+      ],
+      [
+        -0.25795895271770464,
+        0.44269549301615996,
+        1.5418317243898363,
+        -2.0538903997174396,
+        2.2798309017129457,
+        -1.7957843840399463
+      ],
+      [
+        -1.331503624136496,
+        -2.8240366631713703,
+        1.3767012871129864,
+        -0.2760832175910819,
+        -1.1116600148611844,
+        -1.8057739958639674
+      ],
+      [
+        2.4701874059424407,
+        -2.570571187239761,
+        0.24452656024187647,
+        2.8357454409294727,
+        1.2724511755739245,
+        2.573763772964651
+      ],
+      [
+        -2.338230645500968,
+        1.1197544029296242,
+        -1.596990121761754,
+        -2.8894619356009024,
+        1.951133056596376,
+        2.814675753718114
+      ],
+      [
+        1.9599034005562865,
+        2.9977892621588147,
+        -0.8980640553543129,
+        -1.4595361423914552,
+        2.9558339668433486,
+        3.045581075337399
+      ],
+      [
+        -3.0010466856827014,
+        -0.49320323859999204,
+        0.16796073572533032,
+        -3.054782456838147,
+        -2.0819231344003164,
+        2.1133251043099133
+      ],
+      [
+        0.5535096231201924,
+        -2.4333544636188607,
+        2.376249154064621,
+        -1.514563783245405,
+        1.1547751693422246,
+        2.5556416645852646
+      ],
+      [
+        -2.5025165603864843,
+        -2.238091021936586,
+        -2.866771505225948,
+        1.55638460150485,
+        -0.21607594232794103,
+        1.5949793292338033
+      ],
+      [
+        2.4415029792508047,
+        0.951259938047448,
+        -1.8661387060047292,
+        -2.5292602523237124,
+        0.29583709187608376,
+        -1.6014837974045262
+      ],
+      [
+        3.0125367564211603,
+        0.864032247456251,
+        1.6498063236384812,
+        -2.4726350036044598,
+        0.11421490603942308,
+        -2.0692069154618085
+      ],
+      [
+        2.088345320645603,
+        -1.5393428710495642,
+        -2.061497149539841,
+        -2.712675433592519,
+        0.23144815975344812,
+        -3.024384973043596
+      ],
+      [
+        2.4635470259426917,
+        0.9665466183632336,
+        -1.282466934611423,
+        2.5533113035866544,
+        1.0257691632315398,
+        -2.97090456057994
+      ],
+      [
+        -1.6689198403062715,
+        -2.244857192795238,
+        -1.4613227199203394,
+        -1.373896962506517,
+        -2.451665708250155,
+        -0.7277767921657485
+      ],
+      [
+        -2.488473970463218,
+        3.1292691535421264,
+        1.6666849386091762,
+        0.44848368427626717,
+        -1.765547828237312,
+        2.1469901101104885
+      ],
+      [
+        -1.703188416909897,
+        0.7067892555992028,
+        -1.764344076289963,
+        -0.6755115093258066,
+        1.621209856840773,
+        0.4775294518455748
+      ],
+      [
+        -2.4237168241727085,
+        -0.4706185609619662,
+        1.8545857003187196,
+        1.363270467782253,
+        -0.6719125001974326,
+        2.380355904625783
+      ],
+      [
+        -3.0307809710768208,
+        1.7520835427518984,
+        2.2629280722072176,
+        0.8244821892135157,
+        -0.2397367736635294,
+        -0.2231303364937256
+      ],
+      [
+        2.1670099960470575,
+        3.1201552179072696,
+        -3.1137512409674972,
+        2.249182573638368,
+        2.2605011514175875,
+        0.9148074227849774
+      ],
+      [
+        2.133646335987849,
+        2.715629611396052,
+        1.9490745076444256,
+        -2.0084373147542585,
+        -2.025486278533958,
+        -0.24195186361263543
+      ],
+      [
+        -1.3507953546919695,
+        2.099342006173714,
+        -0.812484181865663,
+        1.117768199803364,
+        -1.655766931206135,
+        -1.6346431170790132
+      ],
+      [
+        1.6825804017451205,
+        1.4921405237664889,
+        -1.8283434784469148,
+        -2.9994052653867103,
+        -0.582373240476111,
+        0.9461216787772848
+      ],
+      [
+        2.7181134647011262,
+        1.8648370163988748,
+        -1.005002038692652,
+        -1.596087775568317,
+        2.477037543305027,
+        1.7900727098710334
+      ],
+      [
+        0.6970089905252514,
+        -0.8829525898667003,
+        -2.4610697835699584,
+        -3.0951200581861302,
+        0.4830173208029884,
+        1.3572310228242497
+      ],
+      [
+        -2.01690544581483,
+        2.917677042945246,
+        2.7423808594546086,
+        1.3578368222426125,
+        1.2456086994285158,
+        0.9977291607693779
+      ],
+      [
+        -1.100502639619581,
+        2.6805518874182246,
+        -1.322255794152829,
+        -0.7448831251958916,
+        -0.26983707083445063,
+        2.3820283717161272
+      ],
+      [
+        0.9539042197811582,
+        -0.3745869740284231,
+        -1.412502071399326,
+        -2.779292844861366,
+        1.7808815402863214,
+        0.9542208065689985
+      ],
+      [
+        1.2310170112544911,
+        -0.05679384420048006,
+        2.899132315738168,
+        1.7218570286358998,
+        -0.6870042980170656,
+        -0.33634888884828884
+      ],
+      [
+        -2.809572692318363,
+        -1.3092314205997306,
+        -2.699621087025307,
+        -0.5423510426170006,
+        -0.46026658343761984,
+        2.0726369568777168
+      ],
+      [
+        -1.1743976819470134,
+        -2.278640013239663,
+        -1.5475883769438583,
+        -2.4250855497182444,
+        1.835122760484209,
+        -1.925291536131956
+      ],
+      [
+        2.365752441176209,
+        2.9090231137356737,
+        -1.0448530991035314,
+        1.3483419893167667,
+        -1.4088536480961475,
+        1.6379761507340822
+      ],
+      [
+        1.740471065829098,
+        2.5204718320586696,
+        2.5589669225397005,
+        2.1425681824765324,
+        0.21565455402620515,
+        2.5353598244360365
+      ],
+      [
+        -1.495337214632169,
+        1.741979934090553,
+        -2.2707991642469993,
+        -1.47778679459701,
+        2.812781537707747,
+        -2.4862795050180537
+      ],
+      [
+        0.7971365031552677,
+        1.2911170826383103,
+        0.9599303827997767,
+        1.8885192565577844,
+        1.0568362545198005,
+        2.4381327158305526
+      ],
+      [
+        -2.507825747217195,
+        -0.5006670644939968,
+        -1.882350766048399,
+        0.5274211551927244,
+        0.8253470380691645,
+        2.486665949667704
+      ],
+      [
+        -0.22429304226319902,
+        2.985619880668131,
+        2.8684536887840792,
+        1.6563725547527133,
+        1.999125221504518,
+        0.8377666372805037
+      ],
+      [
+        1.189566000710883,
+        2.545810475965787,
+        -1.8412953350265266,
+        -2.22355974558148,
+        -3.046946356591806,
+        2.56954826986033
+      ],
+      [
+        -1.3769438080116714,
+        0.5459430216206793,
+        1.83436070258188,
+        0.9834540132265586,
+        -1.4141448291997802,
+        -0.40688138791762896
+      ],
+      [
+        -0.5185554585722252,
+        0.17887475575248146,
+        0.07112844310390054,
+        0.5437041580292372,
+        -0.6549442813114128,
+        -0.1620855181911507
+      ],
+      [
+        0.16979763437056983,
+        1.6027430489431573,
+        1.685169017953343,
+        -2.375801269015804,
+        -1.902884184583971,
+        1.058294432905627
+      ],
+      [
+        -2.8234319744778316,
+        2.842641527715873,
+        -0.13750082743866354,
+        2.79848025006375,
+        2.6302529962791654,
+        0.8471935779405695
+      ],
+      [
+        1.8340452732307089,
+        -0.2576845719319705,
+        0.15140115628584905,
+        -1.3609232999620506,
+        -1.4453332333056035,
+        0.9901947613433144
+      ],
+      [
+        2.054291120127071,
+        0.3923577838398291,
+        -2.4739723809140286,
+        1.714024209906401,
+        -0.18259428749556683,
+        -1.3870022355854725
+      ],
+      [
+        -2.675963947967385,
+        2.480299335875694,
+        1.3611915207226257,
+        -2.5095998051604385,
+        -3.133949549947518,
+        -0.036170482232028345
+      ],
+      [
+        2.2432540344716285,
+        2.155064605797686,
+        1.7810346685659555,
+        -2.685788765476169,
+        0.4686884765083832,
+        1.2296468667855764
+      ],
+      [
+        -2.20926528233776,
+        -2.6629889541097436,
+        -0.6172721497584841,
+        1.0256616674481798,
+        2.0355904555316657,
+        -1.3240749130324847
+      ],
+      [
+        -0.03216742204736933,
+        1.7338594881960265,
+        2.615408353098852,
+        -2.898800953472618,
+        2.980968404253286,
+        -0.14199504189915935
+      ],
+      [
+        1.719247336520385,
+        1.441282888776474,
+        -2.5453050554446,
+        -2.804596094103915,
+        -2.246299189385928,
+        -2.9456152821853854
+      ],
+      [
+        0.8272903858255996,
+        2.948354727059871,
+        -2.9466120024134557,
+        1.6991286947559203,
+        1.929197179240055,
+        1.086701862000643
+      ],
+      [
+        -1.4755074572306903,
+        -2.1729636044811844,
+        -0.21773478498845034,
+        1.0527556435173775,
+        0.7425633895900221,
+        -2.7605415392833383
+      ],
+      [
+        -1.0797163293540915,
+        1.8354014289506546,
+        0.867536027028474,
+        0.1823278039685592,
+        -0.32709455712504587,
+        3.0505576787194295
+      ],
+      [
+        -1.175422214147802,
+        -2.908620220054251,
+        2.334904459843038,
+        1.0167199280208097,
+        -1.2568022258631908,
+        -0.8275859273855888
+      ],
+      [
+        -0.6085808665673471,
+        -2.230672966870854,
+        0.23747942982917314,
+        -0.5029130119319616,
+        1.5032782226144006,
+        0.3856743209901996
+      ],
+      [
+        2.7692504514925744,
+        0.897449392785397,
+        -0.7130899018522445,
+        -0.4440206637558659,
+        -1.8705418940177243,
+        1.7144887110798077
+      ],
+      [
+        0.029605926366402358,
+        -1.7708981145214633,
+        1.1447333175541816,
+        -0.8962899248139133,
+        -1.2604496306645967,
+        0.2122193319007053
+      ],
+      [
+        1.6992362045689173,
+        -2.9380711257949295,
+        -2.2929861840752594,
+        -0.17191497173362658,
+        -0.27479925393661064,
+        -2.987992693562541
+      ],
+      [
+        0.6540089299299483,
+        1.3910197289619433,
+        -3.1202711201335105,
+        -0.07423881354516748,
+        -2.0572992480009265,
+        2.4068982601321878
+      ],
+      [
+        -2.3282152904481337,
+        -1.9959577518238394,
+        -0.5967022025962727,
+        -3.051500093325842,
+        -2.978406335108316,
+        1.6869586738652034
+      ],
+      [
+        1.1097461403064681,
+        -0.45343460587844353,
+        -3.0663409506359662,
+        1.1155706848938065,
+        -2.646893617903717,
+        -1.3931583312341715
+      ],
+      [
+        0.40305251085775895,
+        -1.9979792771778262,
+        -1.105227641766159,
+        0.0031331293685665784,
+        -3.0299643157706724,
+        1.9456726329320562
+      ],
+      [
+        2.397927719002219,
+        -1.7770021600603698,
+        0.6968556702560469,
+        1.7650596485713388,
+        3.13072998042911,
+        0.22578134741622735
+      ],
+      [
+        -0.1948132748381397,
+        -3.0082372004117124,
+        3.097889777444771,
+        -2.8767776043436695,
+        1.7031401018705052,
+        -2.464571169370489
+      ],
+      [
+        0.3804906770503478,
+        1.8417580689834656,
+        -2.0518022344779676,
+        -0.012420234278550435,
+        -0.09964748704454918,
+        3.127211508139143
+      ],
+      [
+        1.3477744461167749,
+        -1.4421354319113138,
+        -2.1694556447089477,
+        2.4662539822327476,
+        1.6907457254514986,
+        0.26516944561857336
+      ],
+      [
+        1.9235472636187536,
+        2.9927816933560623,
+        3.1313144114691243,
+        0.520905772085432,
+        0.05150884732778005,
+        1.770653353692965
+      ],
+      [
+        -2.605660598703489,
+        -0.9814254729966363,
+        0.9620660752268666,
+        3.1253491819082324,
+        -1.198306836419656,
+        0.196871959009572
+      ],
+      [
+        0.40262776949110135,
+        -2.436828396268314,
+        2.6409174208135946,
+        1.117545755258032,
+        -0.3762082448780206,
+        -0.18204037707884568
+      ],
+      [
+        0.2428362607156469,
+        3.0152685461591524,
+        0.1761803980643326,
+        2.8712083091955973,
+        -0.08000982575050397,
+        2.688180582101114
+      ],
+      [
+        0.9264582360352778,
+        1.851660255686074,
+        1.5932379098540626,
+        2.368000392955027,
+        2.4111685723171927,
+        -0.20958484172553815
+      ],
+      [
+        2.1927663021365085,
+        -2.260716763748024,
+        -3.085017678976217,
+        1.6308787615349,
+        2.7828267140930887,
+        -1.9828132741759172
+      ],
+      [
+        1.0581457440147402,
+        -1.5117133610304885,
+        -1.4028473315765917,
+        1.9702900353757595,
+        -0.7641171808629137,
+        1.8739796320723467
+      ],
+      [
+        0.8486037322808739,
+        -1.7800966928195734,
+        0.12369228986080705,
+        0.8124094842990233,
+        0.06430248473257416,
+        2.0645198257981363
+      ],
+      [
+        2.2737479166970553,
+        -1.7447233092631493,
+        -0.5899250876010815,
+        -2.486159368816251,
+        1.366582041595695,
+        0.33917764443723897
+      ],
+      [
+        0.8777648935839446,
+        -1.7581706094386658,
+        -2.599008716866882,
+        -2.7390932203649996,
+        -1.864897285791359,
+        -0.8214645495820334
+      ],
+      [
+        -1.1096171089413787,
+        -2.4325046589276518,
+        1.9410364263028859,
+        -0.03432224047567933,
+        2.3731783885241926,
+        -2.6057998723411795
+      ],
+      [
+        -0.5322744951380196,
+        -2.328361211042683,
+        -2.864571541078568,
+        2.479335896753552,
+        -2.611759481092947,
+        2.078322188032762
+      ],
+      [
+        -1.2023693553697605,
+        2.0506161789836383,
+        1.9142557991912446,
+        -0.2743610292670584,
+        -1.4329729024871534,
+        1.2009988324943057
+      ],
+      [
+        2.293236046073389,
+        -1.6241851582205271,
+        -1.8838420987894364,
+        -2.736075020062273,
+        2.9193424477935075,
+        2.318446735217269
+      ],
+      [
+        0.8330300438004477,
+        -0.014085507265101604,
+        -1.104837567757111,
+        1.5127976095419529,
+        -2.96874485991395,
+        0.7259013648164858
+      ],
+      [
+        2.697103091185383,
+        0.09985241740100781,
+        0.3890404357049997,
+        0.16584266742598386,
+        2.580996453789891,
+        -2.7678709691609136
+      ],
+      [
+        -1.0450506116733957,
+        -0.15454031465151363,
+        0.6022228224157335,
+        3.1202329226942114,
+        2.2424832241212833,
+        -0.19184581780558485
+      ],
+      [
+        -2.6532360624582654,
+        -1.4466197707441737,
+        1.9465240322701378,
+        2.2557360344829798,
+        -2.5409176068422856,
+        2.1518406631135356
+      ],
+      [
+        -1.4921717180788314,
+        1.0801216200757429,
+        -0.3169326072941776,
+        -2.2434058967710646,
+        -0.4027140946523793,
+        -0.7670880867883092
+      ],
+      [
+        2.479984970797493,
+        -2.8791038108582168,
+        0.908565938878545,
+        -2.721255379362533,
+        -1.075100749042662,
+        1.225121319522601
+      ],
+      [
+        1.532404177488023,
+        0.9459716846903348,
+        -2.402394730697806,
+        2.653953849539758,
+        -1.7513529584223764,
+        -2.665357384771847
+      ],
+      [
+        -1.0517509141269605,
+        -2.355907248237071,
+        -0.5208279202283248,
+        1.1924023524547547,
+        -0.6716074353357651,
+        -2.273081704497034
+      ],
+      [
+        1.2615785355740963,
+        1.9043921959662962,
+        1.2277402083633504,
+        -1.9547697335998826,
+        0.22690002195445436,
+        -0.7409234666294169
+      ],
+      [
+        0.628794401222172,
+        -2.189733099628802,
+        0.694056266700827,
+        -0.9912527001788503,
+        -1.1366887418603069,
+        -1.9325613531945869
+      ],
+      [
+        -1.854251203248949,
+        0.7676953661230024,
+        1.000382464654236,
+        2.7136210215636343,
+        -3.137528588902596,
+        -0.002831076038873892
+      ],
+      [
+        -0.1257654696661632,
+        -1.8676810258581957,
+        1.5823130498987386,
+        1.7666478697388408,
+        -0.3800313808424862,
+        2.9849621862095503
+      ],
+      [
+        -0.18952692184805509,
+        -2.294771465172961,
+        1.8838664325083307,
+        1.0124808579720508,
+        -0.20263462232897123,
+        -0.164234213764745
+      ],
+      [
+        -0.756161323287317,
+        -2.4972064611534424,
+        1.0917519797404287,
+        2.636024023141098,
+        2.8880030644166883,
+        3.108181632472159
+      ],
+      [
+        1.4407448427269056,
+        1.7015526949431843,
+        3.03384931365276,
+        -0.22413858909588713,
+        0.36403960515703515,
+        3.063470082434705
+      ],
+      [
+        -0.8293028652876222,
+        2.5203521434902694,
+        2.7039060952353173,
+        1.0978605807091624,
+        0.20456686163664495,
+        2.2837204769573782
+      ],
+      [
+        -1.4015790262893082,
+        2.8672483509792324,
+        -2.008735509434861,
+        -1.6225937952977234,
+        0.4253915779007533,
+        2.595882340178803
+      ],
+      [
+        2.093666997185929,
+        0.6614466452778411,
+        0.005372809541815737,
+        -0.6188922835795161,
+        1.579825637395512,
+        -0.6925737316199463
+      ],
+      [
+        1.6315818289354445,
+        -0.9185226632962395,
+        -0.4450670517428019,
+        -0.3513295699809489,
+        -0.2345180905746882,
+        -2.591582846703809
+      ],
+      [
+        2.9651412309509073,
+        0.2969884142041823,
+        -0.07247710519349981,
+        -0.6590450503069207,
+        -0.7589387554796678,
+        -2.5269993419273544
+      ],
+      [
+        -2.6134564890568486,
+        0.7964310792932592,
+        -0.17524665174077514,
+        -1.8540783668644993,
+        -1.897895535303002,
+        3.124266402015629
+      ],
+      [
+        -0.8567309563495882,
+        2.4950806307792597,
+        -0.11867068871098452,
+        -2.210087588504284,
+        0.9491008472841669,
+        -2.1404105873045984
+      ],
+      [
+        -1.725613322036621,
+        1.8150328131317561,
+        -1.9940721128725347,
+        -0.45241574918142824,
+        -0.8711567061782022,
+        -2.0260753287966446
+      ],
+      [
+        0.594130632814017,
+        -1.3460793731744063,
+        -2.564061176545217,
+        1.014986372835014,
+        -1.7046459408032562,
+        -2.2949414930617857
+      ],
+      [
+        2.6615643564916196,
+        2.6092652922252046,
+        2.1625566257759683,
+        -2.0112059007385086,
+        -0.28570431998163714,
+        2.5044896368410976
+      ],
+      [
+        1.387848404432261,
+        0.2750709281343857,
+        0.8608102928599504,
+        -0.23534149444712327,
+        -1.4132094286258425,
+        -0.975350734163754
+      ],
+      [
+        3.118088444799862,
+        -1.822092764042174,
+        -0.34120963164994444,
+        -0.5160871010846355,
+        0.7426169817205825,
+        -0.5094481526424337
+      ],
+      [
+        -2.844050581523935,
+        0.3123533211610523,
+        2.970117358378496,
+        1.886905793903325,
+        -0.8502687200452788,
+        2.4485414893835866
+      ],
+      [
+        1.3580591372804394,
+        2.413220238991303,
+        0.9640867863594433,
+        0.7697705991824537,
+        2.8717147637898943,
+        0.522146417524862
+      ],
+      [
+        -2.0795832909750818,
+        -2.1142311452274924,
+        -0.5562110692225843,
+        -2.6204273048449247,
+        -3.0542034969360374,
+        2.018936091015613
+      ],
+      [
+        1.3707019728454535,
+        0.0550321144015542,
+        -1.6549548835013403,
+        -1.4777229132026322,
+        0.5519256743899503,
+        0.24397082227684797
+      ],
+      [
+        -1.2463489747198766,
+        2.487917058534906,
+        0.2628692798489216,
+        -1.8480100153024361,
+        -2.2830759723200873,
+        -1.89705029272959
+      ],
+      [
+        -0.8627727776436394,
+        -0.12928539454874732,
+        -0.3316008871134577,
+        -0.0779812271375726,
+        0.4513661828555042,
+        -1.5294229426159724
+      ],
+      [
+        -0.7242009692153308,
+        -1.3827194169015935,
+        -3.0822814920615724,
+        -1.444302105882095,
+        0.2731620206883947,
+        -0.24741666732224665
+      ],
+      [
+        0.6748681491919566,
+        2.288709725843427,
+        0.17412871854920642,
+        0.08077681865156583,
+        -0.24637555099273367,
+        2.26257569691598
+      ],
+      [
+        -1.7139684096868744,
+        1.1140163849745104,
+        1.9016052232809892,
+        1.780781702016018,
+        -2.5688655999820447,
+        0.7371861127144035
+      ],
+      [
+        -0.7591596105568814,
+        -2.7167636280602787,
+        -2.24148774637253,
+        -0.8506614774386123,
+        2.9364428657142847,
+        -2.566190864022256
+      ],
+      [
+        2.96179535905174,
+        -1.6944819307705172,
+        -0.9775630323178222,
+        -0.5788558213825179,
+        -3.0265195778837617,
+        1.179533666111456
+      ],
+      [
+        1.2675913222083715,
+        0.3172613959312942,
+        -2.7954981390692555,
+        0.4094748390348979,
+        -2.65970701425119,
+        -2.1068069715026
+      ],
+      [
+        2.049864266506728,
+        -2.507726866097776,
+        -0.9605886916126263,
+        1.8183495223317356,
+        1.7952489609727236,
+        -0.04397060660495722
+      ],
+      [
+        1.949614782607732,
+        -0.3818013052765883,
+        -2.796982973702253,
+        -2.1377443176909035,
+        -2.7254584818577317,
+        -1.7857504549371972
+      ],
+      [
+        2.6962929920235137,
+        -3.0648976034861564,
+        -1.7027649190915617,
+        -2.654630324512216,
+        1.1060134407755235,
+        -1.7717874997483505
+      ],
+      [
+        1.388782576164333,
+        -2.7391713762966594,
+        0.1907495408197737,
+        -0.1658057492284346,
+        0.7221944677467254,
+        -1.3271935190295525
+      ],
+      [
+        -2.281802070684212,
+        1.1080295739310202,
+        1.2820421880390755,
+        -1.420853213166294,
+        -0.4387395137917003,
+        -2.931527030033526
+      ],
+      [
+        0.7800174858142586,
+        -1.0558142911759938,
+        1.0125657110014652,
+        1.315939160950733,
+        2.264288800321194,
+        -0.7957036209910142
+      ],
+      [
+        -3.05291632276243,
+        2.173181665926734,
+        -0.6179515543450247,
+        -1.243893983044712,
+        2.694852415177352,
+        -2.3262695490336363
+      ],
+      [
+        -2.99596481133435,
+        -2.6846546555603625,
+        0.539663083616464,
+        -2.9626796272630442,
+        -0.024271522701512893,
+        -2.0764479042767214
+      ],
+      [
+        -0.8613966156462816,
+        -1.9402380263236771,
+        3.032165002810361,
+        1.0946987073851133,
+        -0.12744504161103176,
+        2.3333475794879837
+      ],
+      [
+        -2.508643455214668,
+        2.8961221953477203,
+        1.2212520816063153,
+        1.5769066500041644,
+        -0.3332879616765627,
+        1.8088629374047942
+      ],
+      [
+        -2.8547546833361217,
+        0.7351232610932494,
+        -0.9960295192006128,
+        2.592137715552761,
+        -1.8800550995158243,
+        -2.3311419363445576
+      ],
+      [
+        3.0890800978949864,
+        -0.33705099334485444,
+        0.5493203753417935,
+        -0.6819511787226471,
+        -3.12236683064329,
+        1.4824607274162664
+      ],
+      [
+        0.15402079852324269,
+        -1.116166840711828,
+        2.5991032000986536,
+        -0.05273052014377555,
+        -0.499159818137505,
+        1.701910957768935
+      ],
+      [
+        1.372102639643237,
+        -2.8679621263992106,
+        0.9516504447433238,
+        0.2337662979244719,
+        1.512590018856022,
+        -0.3057033916434122
+      ],
+      [
+        -0.5731562384093389,
+        2.9233933269574095,
+        0.864689978883721,
+        0.7680425058202682,
+        2.119117868308307,
+        -0.6138187233221197
+      ],
+      [
+        0.9844401979487349,
+        2.0745719272635252,
+        0.4151914683852893,
+        2.4345942004164227,
+        0.3611231193783473,
+        -0.8518834493926581
+      ],
+      [
+        1.5317335281156206,
+        2.8861156152982144,
+        1.0832140235805277,
+        -2.2780301001092944,
+        -0.5345599954327036,
+        2.056028332154596
+      ],
+      [
+        -1.0934069167906988,
+        -2.4006911574981493,
+        1.32305527550833,
+        -0.8333818773081494,
+        0.026730864010324318,
+        -2.6782796350453433
+      ],
+      [
+        -0.37657548778316396,
+        1.1465879451159955,
+        2.9625122843951255,
+        0.7135476794561666,
+        1.1362252903658803,
+        -1.7524599458302337
+      ],
+      [
+        -0.5511576424556135,
+        -0.46276987498019606,
+        2.5499664042321557,
+        1.4808881047332738,
+        2.561485624580488,
+        2.2769810389471496
+      ],
+      [
+        1.0570817841805402,
+        0.011702870416695266,
+        -0.049390618139354636,
+        2.93105492561478,
+        -1.2649406390892277,
+        -1.8640863537393941
+      ],
+      [
+        -0.4259573819743898,
+        -1.6552651537789713,
+        -0.9982076955587922,
+        2.068884820345157,
+        -2.422704081877779,
+        0.014471379145315044
+      ],
+      [
+        -0.7793234093745731,
+        2.815353722696397,
+        1.1919422776654036,
+        -2.283977403038644,
+        3.0784504607154384,
+        -3.065489429174043
+      ],
+      [
+        1.924657901351277,
+        -0.9927594951506138,
+        -0.8559003909081144,
+        -2.1700281752193606,
+        2.672311966767303,
+        -2.5080996997673632
+      ],
+      [
+        -2.8546377283337887,
+        -1.3127467073719208,
+        0.39988594290364476,
+        1.7511917960668422,
+        -2.597150635122275,
+        -0.056453038298593494
+      ],
+      [
+        1.5771737362286204,
+        0.7702358931529676,
+        -0.9643624949476335,
+        0.5087089206641391,
+        -0.8225733763845611,
+        -1.6073743637490066
+      ],
+      [
+        1.997001842340838,
+        -1.256968021287056,
+        2.282682442026914,
+        -3.038662565582007,
+        2.7358358214320617,
+        -1.1011489223742688
+      ],
+      [
+        -2.211988987289146,
+        1.1520935429175623,
+        -0.6479454717057034,
+        -0.9093949902787766,
+        1.2456060667621376,
+        -0.7967581623085378
+      ],
+      [
+        -0.797899225189544,
+        2.1906047824261394,
+        2.3305911337297154,
+        -1.8257444728675012,
+        1.229365987402808,
+        0.7027376169541966
+      ],
+      [
+        -2.1209380063737693,
+        0.0917246573134638,
+        1.5800282690558536,
+        1.3650851103984696,
+        -0.2778324955828273,
+        -1.9518768781490374
+      ],
+      [
+        -2.1082859817482644,
+        -2.775662129047112,
+        1.1534701783783943,
+        1.2601886833366205,
+        -0.16889504866107163,
+        -1.9376334827848927
+      ],
+      [
+        -2.109883343530803,
+        -0.28906235013832626,
+        -1.8592880219507226,
+        -1.2193827904713854,
+        3.052218524694304,
+        0.9185307846097563
+      ],
+      [
+        -0.6960990352365903,
+        0.34237411951878727,
+        -1.3856520330692492,
+        0.6210977870383072,
+        -1.85717483614536,
+        -3.0965810421649564
+      ]
+    ],
+    "description": "zero, requested working pose, and 256 deterministic uniform joint-angle vectors in [-pi, pi]"
+  }
+}

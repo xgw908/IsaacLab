@@ -1,0 +1,30 @@
+# Copyright (c) 2022-2026, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+[build-system]
+requires = ["setuptools>=70.0,<82.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ur5_leap"
+version = "0.1.0"
+description = "Isaac Lab configurations for UR5 CB3 and LEAP Hand robots."
+license = {text = "BSD-3-Clause"}
+keywords = ["robotics", "assets", "isaaclab"]
+requires-python = ">=3.12"
+dependencies = ["isaaclab"]
+
+[tool.uv.sources]
+isaaclab = { path = "../isaaclab", editable = true }
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ur5_leap", "ur5_leap.*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.pyi"]
