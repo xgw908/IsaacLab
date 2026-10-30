@@ -1,0 +1,114 @@
+# Copyright (c) 2022-2026, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+"""Observation, shaping and sustained-lift success terms for the first learning task."""
+
+from __future__ import annotations
+
+from collections.abc import Sequence
+from typing import TYPE_CHECKING
+
+import torch
+
+from isaaclab.managers import ManagerTermBase, SceneEntityCfg
+from isaaclab.utils.math import quat_apply_inverse, subtract_frame_transforms
+
+if TYPE_CHECKING:
+    from isaaclab.envs import ManagerBasedRLEnv
+    from isaaclab.managers import TerminationTermCfg
+
+CUBE_SIZE = 0.04
+TABLE_HEIGHT = 0.15
+CUBE_REST_HEIGHT = TABLE_HEIGHT + CUBE_SIZE / 2.0
+LIFT_HEIGHT = 0.10
+FINGERTIP_NAMES = ["fingertip", "fingertip_2", "fingertip_3", "thumb_fingertip"]
+
+
+def object_state_b(env: ManagerBasedRLEnv) -> torch.Tensor:
+    """Cube position, xyzw quaternion and velocities in the fixed robot root frame: (N, 13)."""
+    robot = env.scene["robot"]
+    obj = env.scene["object"]
+    root_pos = robot.data.root_pos_w.torch
+    root_quat = robot.data.root_quat_w.torch
+    pos, quat = subtract_frame_transforms(root_pos, root_quat, obj.data.root_pos_w.torch, obj.data.root_quat_w.torch)
+    lin_vel = quat_apply_inverse(root_quat, obj.data.root_lin_vel_w.torch)
+    ang_vel = quat_apply_inverse(root_quat, obj.data.root_ang_vel_w.torch)
+    return torch.cat((pos, quat, lin_vel, ang_vel), dim=-1)
+
+
+def hand_positions_b(env: ManagerBasedRLEnv, robot_cfg: SceneEntityCfg) -> torch.Tensor:
+    """Selected hand link origins expressed in the fixed robot root frame: (N, 3 * links)."""
+    robot = env.scene[robot_cfg.name]
+    positions = robot.data.body_pos_w.torch[:, robot_cfg.body_ids] - robot.data.root_pos_w.torch[:, None, :]
+    rotations = robot.data.root_quat_w.torch[:, None, :].expand(-1, positions.shape[1], -1)
+    return quat_apply_inverse(rotations, positions).reshape(env.num_envs, -1)
+
+
+def _tip_distances(env: ManagerBasedRLEnv, robot_cfg: SceneEntityCfg) -> torch.Tensor:
+    robot = env.scene[robot_cfg.name]
+    tips = robot.data.body_pos_w.torch[:, robot_cfg.body_ids]
+    return torch.linalg.vector_norm(tips - env.scene["object"].data.root_pos_w.torch[:, None, :], dim=-1)
+
+
+def finger_reaching(env: ManagerBasedRLEnv, robot_cfg: SceneEntityCfg, std: float) -> torch.Tensor:
+    """Shape exploration by the mean distance of the four fingertip link origins to the cube."""
+    return 1.0 - torch.tanh(_tip_distances(env, robot_cfg).mean(dim=-1) / std)
+
+
+def opposing_finger_proximity(env: ManagerBasedRLEnv, robot_cfg: SceneEntityCfg, std: float) -> torch.Tensor:
+    """Reward proximity of both the thumb and at least one long finger; this is not a contact sensor."""
+    distances = _tip_distances(env, robot_cfg)
+    opposing_distance = torch.maximum(distances[:, 3], distances[:, :3].min(dim=-1).values)
+    return 1.0 - torch.tanh(opposing_distance / std)
+
+
+def _lift_state(env: ManagerBasedRLEnv, robot_cfg: SceneEntityCfg) -> tuple[torch.Tensor, torch.Tensor]:
+    distances = _tip_distances(env, robot_cfg)
+    near_hand = (distances[:, 3] < 0.10) & (distances[:, :3].min(dim=-1).values < 0.10)
+    # Subtract environment origins so cloning does not change the height convention.
+    height = env.scene["object"].data.root_pos_w.torch[:, 2] - env.scene.env_origins[:, 2] - CUBE_REST_HEIGHT
+    return height, near_hand
+
+
+def lift_progress(env: ManagerBasedRLEnv, robot_cfg: SceneEntityCfg) -> torch.Tensor:
+    """Reward height gained above the resting cube center, gated by opposing finger proximity."""
+    height, near_hand = _lift_state(env, robot_cfg)
+    return (height / LIFT_HEIGHT).clamp(0.0, 1.0) * near_hand.float()
+
+
+def success_bonus(env: ManagerBasedRLEnv) -> torch.Tensor:
+    """One terminal bonus; cancel RewardManager's step-duration scaling."""
+    return env.termination_manager.get_term("success").float() / env.step_dt
+
+
+class HeldLiftSuccess(ManagerTermBase):
+    """End an episode after a near-hand cube stays lifted and slow for a continuous interval.
+
+    Proximity is only a geometric gate. Sustained height and low cube speed reject a brief
+    airborne pass; this baseline does not independently certify opposing finger contacts.
+    """
+
+    def __init__(self, cfg: TerminationTermCfg, env: ManagerBasedRLEnv):
+        super().__init__(cfg, env)
+        self._held_time = torch.zeros(env.num_envs, device=env.device)
+
+    def reset(self, env_ids: Sequence[int] | torch.Tensor | slice | None = None) -> None:
+        if env_ids is None:
+            self._held_time.zero_()
+        else:
+            self._held_time[env_ids] = 0.0
+
+    def __call__(
+        self,
+        env: ManagerBasedRLEnv,
+        robot_cfg: SceneEntityCfg,
+        hold_time: float,
+        max_speed: float,
+    ) -> torch.Tensor:
+        height, near_hand = _lift_state(env, robot_cfg)
+        speed = torch.linalg.vector_norm(env.scene["object"].data.root_lin_vel_w.torch, dim=-1)
+        holding = (height >= LIFT_HEIGHT) & near_hand & (speed <= max_speed)
+        self._held_time = torch.where(holding, self._held_time + env.step_dt, 0.0)
+        return self._held_time >= hold_time

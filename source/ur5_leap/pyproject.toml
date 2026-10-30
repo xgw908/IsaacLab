@@ -14,10 +14,21 @@ description = "Isaac Lab configurations for UR5 CB3 and LEAP Hand robots."
 license = {text = "BSD-3-Clause"}
 keywords = ["robotics", "assets", "isaaclab"]
 requires-python = ">=3.12"
-dependencies = ["isaaclab"]
+dependencies = [
+    "isaaclab",
+    "isaaclab_physx",
+    "isaaclab_rl",
+    "isaaclab_tasks",
+]
+
+[project.entry-points."isaaclab.tasks"]
+ur5_leap = "ur5_leap.tasks"
 
 [tool.uv.sources]
 isaaclab = { path = "../isaaclab", editable = true }
+isaaclab_physx = { path = "../isaaclab_physx", editable = true }
+isaaclab_rl = { path = "../isaaclab_rl", editable = true }
+isaaclab_tasks = { path = "../isaaclab_tasks", editable = true }
 
 [tool.setuptools]
 include-package-data = true
