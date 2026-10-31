@@ -7,6 +7,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 from collections.abc import Sequence
 from typing import TYPE_CHECKING
@@ -39,6 +40,52 @@ def require_finite_observation(data: torch.Tensor, term_name: str) -> torch.Tens
             f"First [environment, column] indices: {indices}; values: {values}."
         )
     return data
+
+
+def checked_joint_positions(env: ManagerBasedRLEnv, asset_cfg: SceneEntityCfg) -> torch.Tensor:
+    """Diagnose raw state and applied targets when the debug joint observation becomes non-finite."""
+    robot = env.scene[asset_cfg.name]
+    positions = robot.data.joint_pos.torch[:, asset_cfg.joint_ids]
+    defaults = robot.data.default_joint_pos.torch[:, asset_cfg.joint_ids]
+    relative = positions - defaults
+    invalid = ~torch.isfinite(relative)
+    if invalid.any():
+        env_ids = invalid.any(dim=-1).nonzero(as_tuple=False).flatten()[:4].tolist()
+        _, names = robot.find_joints(asset_cfg.joint_names, preserve_order=asset_cfg.preserve_order)
+        actions = env.action_manager.action
+        targets = {name: env.action_manager.get_term(name).processed_actions for name in ("arm", "hand")}
+        # Observation shapes can be inspected before episode bookkeeping buffers are initialized.
+        episode_steps = getattr(env, "episode_length_buf", None)
+        rows = []
+        for env_id in env_ids:
+            bad_columns = invalid[env_id].nonzero(as_tuple=False).flatten().tolist()
+            rows.append(
+                {
+                    "environment": env_id,
+                    "episode_step": int(episode_steps[env_id]) if episode_steps is not None else None,
+                    "invalid_joints": [names[index] for index in bad_columns],
+                    "joint_pos_finite": bool(torch.isfinite(positions[env_id]).all()),
+                    "default_joint_pos_finite": bool(torch.isfinite(defaults[env_id]).all()),
+                    "joint_pos": positions[env_id].tolist(),
+                    "default_joint_pos": defaults[env_id].tolist(),
+                    "joint_vel": robot.data.joint_vel.torch[env_id, asset_cfg.joint_ids].tolist(),
+                    "environment_origin": env.scene.env_origins[env_id].tolist(),
+                    "root_pose_w": robot.data.root_pose_w.torch[env_id].tolist(),
+                    "actions_finite": bool(torch.isfinite(actions[env_id]).all()),
+                    "actions": actions[env_id].tolist(),
+                    "targets_finite": {
+                        name: bool(torch.isfinite(value[env_id]).all()) for name, value in targets.items()
+                    },
+                    "targets": {name: value[env_id].tolist() for name, value in targets.items()},
+                }
+            )
+        raise ValueError(
+            f"UR5 LEAP: policy.joint_pos contains NaN/Inf at control step "
+            f"{getattr(env, 'common_step_counter', None)}; "
+            f"{int(invalid.any(dim=-1).sum())}/{env.num_envs} environments affected. "
+            f"State/action details (up to 4 environments): {json.dumps(rows)}"
+        )
+    return relative
 
 
 def validate_hand_action_limits(

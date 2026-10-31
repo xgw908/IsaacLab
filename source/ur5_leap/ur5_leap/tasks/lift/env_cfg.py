@@ -99,7 +99,8 @@ class ObservationsCfg:
             self.enable_corruption = False
             # Opt-in checks synchronize with the GPU; keep them out of normal training.
             if mdp.CHECK_FINITE_OBSERVATIONS:
-                for name in ("joint_pos", "joint_vel", "object_state", "hand_positions", "last_action"):
+                self.joint_pos.func = mdp.checked_joint_positions
+                for name in ("joint_vel", "object_state", "hand_positions", "last_action"):
                     getattr(self, name).modifiers = [
                         ModifierCfg(func=mdp.require_finite_observation, params={"term_name": name})
                     ]
@@ -151,7 +152,8 @@ class TerminationsCfg:
 class UR5SimpleLeapLiftEnvCfg(ManagerBasedRLEnvCfg):
     """A first state-based lift task, to qualify and tune on the server before long training."""
 
-    scene: LiftSceneCfg = LiftSceneCfg(num_envs=128, env_spacing=2.5, replicate_physics=True)
+    # Qualify the custom converted articulation without native physics replication first.
+    scene: LiftSceneCfg = LiftSceneCfg(num_envs=128, env_spacing=2.5, replicate_physics=False)
     actions: ActionsCfg = ActionsCfg()
     observations: ObservationsCfg = ObservationsCfg()
     events: EventsCfg = EventsCfg()

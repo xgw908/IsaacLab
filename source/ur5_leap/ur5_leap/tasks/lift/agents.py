@@ -18,3 +18,4 @@ class UR5SimpleLeapLiftPPORunnerCfg(LiftCubePPORunnerCfg):
     num_steps_per_env = 32
     max_iterations = 3000
     clip_actions = 1.0
+    obs_groups = {"actor": ["policy"], "critic": ["policy"]}
