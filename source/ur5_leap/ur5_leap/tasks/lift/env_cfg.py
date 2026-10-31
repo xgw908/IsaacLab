@@ -22,6 +22,7 @@ from isaaclab.managers import SceneEntityCfg
 from isaaclab.managers import TerminationTermCfg as DoneTerm
 from isaaclab.scene import InteractiveSceneCfg
 from isaaclab.utils import configclass
+from isaaclab.utils.modifiers import ModifierCfg
 
 from ur5_leap import LEAP_JOINT_NAMES, UR5_JOINT_NAMES, UR5_SIMPLE_LEAP_CFG
 
@@ -96,12 +97,23 @@ class ObservationsCfg:
         def __post_init__(self):
             self.concatenate_terms = True
             self.enable_corruption = False
+            # Opt-in checks synchronize with the GPU; keep them out of normal training.
+            if mdp.CHECK_FINITE_OBSERVATIONS:
+                for name in ("joint_pos", "joint_vel", "object_state", "hand_positions", "last_action"):
+                    getattr(self, name).modifiers = [
+                        ModifierCfg(func=mdp.require_finite_observation, params={"term_name": name})
+                    ]
 
     policy: PolicyCfg = PolicyCfg()
 
 
 @configclass
 class EventsCfg:
+    validate_hand_limits = EventTerm(
+        func=mdp.validate_hand_action_limits,
+        mode="startup",
+        params={"asset_cfg": SceneEntityCfg("robot", joint_names=LEAP_JOINT_NAMES, preserve_order=True)},
+    )
     reset_scene = EventTerm(func=base_mdp.reset_scene_to_default, mode="reset", params={"reset_joint_targets": True})
     reset_cube = EventTerm(
         func=base_mdp.reset_root_state_uniform,

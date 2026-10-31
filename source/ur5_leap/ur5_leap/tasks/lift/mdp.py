@@ -7,6 +7,7 @@
 
 from __future__ import annotations
 
+import os
 from collections.abc import Sequence
 from typing import TYPE_CHECKING
 
@@ -24,6 +25,41 @@ TABLE_HEIGHT = 0.15
 CUBE_REST_HEIGHT = TABLE_HEIGHT + CUBE_SIZE / 2.0
 LIFT_HEIGHT = 0.10
 FINGERTIP_NAMES = ["fingertip", "fingertip_2", "fingertip_3", "thumb_fingertip"]
+CHECK_FINITE_OBSERVATIONS = os.environ.get("UR5_LEAP_CHECK_FINITE", "0") == "1"
+
+
+def require_finite_observation(data: torch.Tensor, term_name: str) -> torch.Tensor:
+    """Report the first non-finite observation term when opt-in diagnostics are enabled."""
+    invalid = ~torch.isfinite(data)
+    if invalid.any():
+        indices = invalid.nonzero(as_tuple=False)[:8].tolist()
+        values = data[invalid][:8].tolist()
+        raise ValueError(
+            f"UR5 LEAP: policy.{term_name} contains NaN/Inf. "
+            f"First [environment, column] indices: {indices}; values: {values}."
+        )
+    return data
+
+
+def validate_hand_action_limits(
+    env: ManagerBasedRLEnv,
+    env_ids: torch.Tensor | slice | None,
+    asset_cfg: SceneEntityCfg,
+) -> None:
+    """Check once that USD hand limits can be used to map normalized policy actions."""
+    robot = env.scene[asset_cfg.name]
+    limits = robot.data.soft_joint_pos_limits.torch[:, asset_cfg.joint_ids]
+    invalid = ~torch.isfinite(limits).all(dim=-1) | (limits[..., 0] >= limits[..., 1])
+    if invalid.any():
+        env_id, joint_index = invalid.nonzero(as_tuple=False)[0].tolist()
+        _, names = robot.find_joints(asset_cfg.joint_names, preserve_order=asset_cfg.preserve_order)
+        hard_limits = robot.data.joint_pos_limits.torch[:, asset_cfg.joint_ids]
+        raise ValueError(
+            f"UR5 LEAP: invalid action limits for {names[joint_index]!r} in environment {env_id}. "
+            f"USD limits: {hard_limits[env_id, joint_index].tolist()}; "
+            f"soft limits: {limits[env_id, joint_index].tolist()}. "
+            "JointPositionToLimitsAction requires finite lower < upper bounds."
+        )
 
 
 def object_state_b(env: ManagerBasedRLEnv) -> torch.Tensor:
