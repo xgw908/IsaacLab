@@ -3,11 +3,14 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
-"""Asset configurations for UR5 CB3 and LEAP Hand robots."""
+"""Asset configurations and registered reinforcement learning tasks for UR5 + LEAP."""
 
 import importlib.metadata
 
 from isaaclab.utils.module import lazy_export
+
+# Register Gym tasks without loading environment configurations or starting simulation.
+from . import tasks  # noqa: F401
 
 try:
     __version__ = importlib.metadata.version("ur5_leap")
